@@ -18,7 +18,7 @@ working record wins and this file is wrong.
 | 2 | The processed input tables, the external deliveries and the figure source data | Zenodo, direct upload | Marc Erhardt | **[data DOI pending]** |
 | 3 | The Supplementary Figure 4 simulated-trajectory bundle | Zenodo, direct upload | Marc Erhardt | **[trajectory DOI pending]** |
 | 4 | Motility simulation source code | Zenodo, through a GitHub release of `MPUSP/salmonella-motility-simulation` | Michael Jahn | **[motility DOI pending]** |
-| 5 | This analysis and figure collection | Zenodo, through a GitHub release | Marc Erhardt | **10.5281/zenodo.21950614** (v1.0.0) |
+| 5 | This analysis and figure collection | Zenodo, through a GitHub release | Marc Erhardt | **10.5281/zenodo.21951357** (v1.0.1) |
 
 Deposits 4 and 5 are separate records. The motility simulation is a third-party
 MIT code base with its own authorship; it is cited, not absorbed.
@@ -39,7 +39,7 @@ archive, is in
 **Version DOI, not concept DOI.** Zenodo mints both. The concept DOI,
 10.5281/zenodo.21950613, resolves to whatever version is newest; a future
 v2.0.0 would answer it and would not reproduce these figures. Every statement
-below therefore cites the version DOI, **10.5281/zenodo.21950614**, and names
+below therefore cites the version DOI, **10.5281/zenodo.21951357**, and names
 the concept DOI only as the pointer to the current version. The repository
 badge and `CITATION.cff` keep the concept DOI, which is correct there.
 
@@ -88,7 +88,7 @@ badge and `CITATION.cff` keep the concept DOI, which is correct there.
 > The analysis, simulation and figure-generation code that reproduces the
 > results of this study is available at
 > `https://github.com/`**SalmoLab/salmonella-flagella-cost-benefit** and is
-> archived at Zenodo under **10.5281/zenodo.21950614** (release v1.0.0). The
+> archived at Zenodo under **10.5281/zenodo.21951357** (release v1.0.0). The
 > release contains the pinned Python 3.12
 > environment, the workflow definition, the panel registry, the model
 > parameters, the random seeds and the exact reproduction commands. The
@@ -107,7 +107,7 @@ badge and `CITATION.cff` keep the concept DOI, which is correct there.
   URL. The Zenodo DOI carries that role. Keep both: the URL for a reader who
   wants the living repository, the DOI for the citable record.
 - The statement cites the **version DOI** of the tagged release,
-  10.5281/zenodo.21950614, not the concept DOI. This is the point of the
+  10.5281/zenodo.21951357, not the concept DOI. This is the point of the
   statement: the concept DOI, 10.5281/zenodo.21950613, resolves to the newest
   version, and a later version need not reproduce these figures. The concept
   DOI belongs in `CITATION.cff` and on the repository badge, and both keep it.

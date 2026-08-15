@@ -39,7 +39,7 @@ abstract: >-
   its random seeds. Reproduction is partial by design and the collection records
   the limits of each panel in machine-readable form.
 type: software
-version: 1.0.0
+version: 1.0.1
 # date-released: YYYY-MM-DD   # uncomment and set on the day of the release
 license: GPL-3.0-only
 repository-code: https://github.com/SalmoLab/salmonella-flagella-cost-benefit
@@ -124,8 +124,8 @@ identifiers:
     value: 10.5281/zenodo.21950613
     description: Concept DOI. It always resolves to the newest version.
   - type: doi
-    value: 10.5281/zenodo.21950614
-    description: DOI of version 1.0.0.
+    value: 10.5281/zenodo.21951357
+    description: DOI of version 1.0.1.
 
 # --------------------------------------------------------------------------
 # Templates. Paste them above this block and fill the values in.

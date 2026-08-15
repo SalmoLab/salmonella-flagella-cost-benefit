@@ -111,7 +111,7 @@ Cite the manuscript, and this repository through its Zenodo DOI
 10.5281/zenodo.21950613, which always resolves to the current version.
 
 To cite the exact code that produced the published figures, use the version DOI
-of the release instead: 10.5281/zenodo.21950614 (v1.0.0). A later version may
+of the release instead: 10.5281/zenodo.21951357 (v1.0.1). A later version may
 not reproduce them. Machine-readable metadata is in `CITATION.cff`.
 
 ## Licence

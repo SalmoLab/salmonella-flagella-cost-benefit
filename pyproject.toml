@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "flagella-manuscript-reproducibility"
-version = "1.0.0"
+version = "1.0.1"
 description = "Reproducible data, analyses, source data, and figures for the flagellar-number cost-benefit manuscript"
 requires-python = "==3.12.*"
 authors = [
