@@ -1,0 +1,71 @@
+figure_id: Supplementary_Figure_3
+status: partial_reproduction
+width_mm: 180
+height_mm: 166
+output_stem: build/figures/Supplementary_Figure_3/Supplementary_Figure_3_revision_partial
+limitations:
+- Raw trajectory processing lineage remains partial.
+panels:
+- label: A
+  kind: svg
+  source: build/panels/Supplementary_Figure_3/A/S3_A.svg
+  x: 3.5
+  y: 5
+  width: 55
+  height: 48
+- label: B
+  kind: svg
+  source: build/panels/Supplementary_Figure_3/B/S3_B.svg
+  x: 62.5
+  y: 5
+  width: 55
+  height: 48
+- label: C
+  kind: svg
+  source: build/panels/Supplementary_Figure_3/C/S3_C.svg
+  x: 121.5
+  y: 5
+  width: 55
+  height: 48
+- label: D
+  kind: svg
+  source: build/panels/Supplementary_Figure_3/D/S3_D.svg
+  x: 3.5
+  y: 59
+  width: 55
+  height: 48
+- label: E
+  kind: svg
+  source: build/panels/Supplementary_Figure_3/E/S3_E.svg
+  x: 62.5
+  y: 59
+  width: 55
+  height: 48
+- label: F
+  kind: svg
+  source: build/panels/Supplementary_Figure_3/F/S3_F.svg
+  x: 121.5
+  y: 59
+  width: 55
+  height: 48
+- label: G
+  kind: svg
+  source: build/panels/Supplementary_Figure_3/G/S3_G.svg
+  x: 3.5
+  y: 113
+  width: 55
+  height: 48
+- label: H
+  kind: svg
+  source: build/panels/Supplementary_Figure_3/H/S3_H.svg
+  x: 62.5
+  y: 113
+  width: 55
+  height: 48
+- label: I
+  kind: svg
+  source: build/panels/Supplementary_Figure_3/I/S3_I.svg
+  x: 121.5
+  y: 113
+  width: 55
+  height: 48

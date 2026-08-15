@@ -1,0 +1,79 @@
+{
+  "panel_id": "F1_C",
+  "figure_number": 1,
+  "panel_label": "C",
+  "recipe": "discrete_count",
+  "command_module": "analyses.figure_01.panel_c.scripts.plot",
+  "inputs": {
+    "cell_points": "data/processed/figure_01/F1_C/cell_points.csv",
+    "replicate_means": "data/processed/figure_01/F1_C/replicate_means.csv",
+    "legacy_statistics": "data/processed/figure_01/F1_C/legacy_statistics.csv"
+  },
+  "expected_rows": {
+    "cell_points": 23046,
+    "replicate_means": 21,
+    "legacy_statistics": 7
+  },
+  "category_column": "condition",
+  "value_column": "hook_count",
+  "replicate_mean_column": "hook_count_replicate_mean",
+  "reference": "WT (S171C background) (WT)",
+  "order": [
+    "WT (S171C background) (WT)",
+    "Ptet-flhDC 0 ng/mL",
+    "Ptet-flhDC 0.25 ng/mL",
+    "Ptet-flhDC 0.5 ng/mL",
+    "Ptet-flhDC 1 ng/mL",
+    "Ptet-flhDC 2 ng/mL",
+    "Ptet-flhDC 4 ng/mL"
+  ],
+  "labels": {
+    "WT (S171C background) (WT)": "WT",
+    "Ptet-flhDC 0 ng/mL": "0",
+    "Ptet-flhDC 0.25 ng/mL": "0.25",
+    "Ptet-flhDC 0.5 ng/mL": "0.5",
+    "Ptet-flhDC 1 ng/mL": "1",
+    "Ptet-flhDC 2 ng/mL": "2",
+    "Ptet-flhDC 4 ng/mL": "4"
+  },
+  "x_label": "PtetA-flhDC + AnTc (ng/mL)",
+  "y_label": "Hook count (per cell)",
+  "output_dir": "build/panels/F1_C",
+  "limitations": [
+    "Starts from migrated processed cell tables, not archived raw microscopy segmentation outputs.",
+    "The archived condition strings state the anhydrotetracycline dose in the wrong unit; the builder restates it as ng/mL, which Marc Erhardt confirmed on 15 August 2026. The dose numbers are unchanged.",
+    "Final multi-panel assembly and pixel-level reference comparison are not yet implemented."
+  ],
+  "color_keys": {
+    "WT (S171C background) (WT)": [
+      "mutant",
+      "WT"
+    ],
+    "Ptet-flhDC 0 ng/mL": [
+      "antc",
+      "0"
+    ],
+    "Ptet-flhDC 0.25 ng/mL": [
+      "antc",
+      "0.25"
+    ],
+    "Ptet-flhDC 0.5 ng/mL": [
+      "antc",
+      "0.5"
+    ],
+    "Ptet-flhDC 1 ng/mL": [
+      "antc",
+      "1"
+    ],
+    "Ptet-flhDC 2 ng/mL": [
+      "antc",
+      "2"
+    ],
+    "Ptet-flhDC 4 ng/mL": [
+      "antc",
+      "4"
+    ]
+  },
+  "tick_rotation": 0,
+  "annotation_headroom": 5.4
+}

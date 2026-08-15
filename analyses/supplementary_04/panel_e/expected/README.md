@@ -1,0 +1,1 @@
+Reference: `reference/2026-07-09/figures/Supplemental-figure_5.png`, panel E. That is the July number; this panel is Supplementary Figure 4 today. Generated output goes in `build/panels/Supplementary_Figure_4/E/`.

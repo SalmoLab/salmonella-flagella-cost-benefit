@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0.0",
+  "record_type": "derived_parameter_calibration",
+  "record_id": "motility_turn_angle_comparison_global",
+  "generated_at_utc": "2026-08-13T20:06:19.639125Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/motility_turn_angle_comparison/calibrate_global_turn_angle.py"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/motility_turn_angle_comparison/calibrate_global_turn_angle.py",
+      "sha256": "c698367413549da55696facc518e098bab2c1506ebd87a8317f4ebc69451c093",
+      "bytes": 15863
+    },
+    {
+      "relative_path": "analyses/motility_parameter_calibration/calibrate.py",
+      "sha256": "c9b1bb79904fa97cf8fb30244a38c37054c2ef57c3686a50182d760650fc23a5",
+      "bytes": 12895
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/data/motility_summary_parameters.csv",
+      "sha256": "82095121e2ac8154e2d7412f566a0da48466c0abe2395aaf709512c536a768c9",
+      "bytes": 933,
+      "rows": 8
+    },
+    {
+      "relative_path": "data/processed/figure_07_revision/paired_experimental_unit_measurements.csv",
+      "sha256": "e593124975f362714d5b7dc99bc21ea2b9f47b92c23e9ca337ac3a3f7478d59e",
+      "bytes": 87105,
+      "rows": 208
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "data/processed/motility_turn_angle_comparison/motility_summary_parameters_global_turn_angle.csv",
+      "sha256": "10545ec490819c32c18257b69885c1e2d44bcdec3e43fb97193624ffa669f743",
+      "bytes": 1027,
+      "rows": 6
+    },
+    {
+      "relative_path": "data/processed/motility_turn_angle_comparison/motility_summary_parameters_global_turn_angle.sha256",
+      "sha256": "9a14421ee60007051108ea2ed3d1a66c20cab92d9b09a25a0541ac7dc9aecd5b",
+      "bytes": 116
+    },
+    {
+      "relative_path": "data/processed/motility_turn_angle_comparison/global_turn_angle_calibration_audit.csv",
+      "sha256": "6cfd5535665ecd5c20ef413c3ef031a0a22558aef2338b7f7e35f03fe49b3b7f",
+      "bytes": 1137,
+      "rows": 6
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2"
+  },
+  "parameters": {
+    "persistence_relation": "tau = 1 / (D_r + lambda * (1 - exp(-sigma^2 / 2)))",
+    "global_turn_angle_sd_rad": 1.246844120703025,
+    "global_turn_angle_sd_deg": 71.43890582698351,
+    "anchor_mean_turn_angle_deg": 57.0,
+    "anchor_turn_count": 8058,
+    "anchor_source": "Taute KM, Gude S, Tans SJ, Shimizu TS (2015) Nat Commun 6:8776, doi:10.1038/ncomms9776, PMID 26522289",
+    "anchor_mapping": "sigma = radians(mean turn angle) / sqrt(2 / pi)",
+    "delivered_turn_angle_sd_rad_range": [
+      0.301403,
+      0.803552
+    ],
+    "turn_angle_diagnostics": {
+      "turn_angle_sd_rad": 1.246844120703025,
+      "turn_angle_sd_deg": 71.43890582698351,
+      "nominal_mean_abs_turn_deg": 57.00000000000001,
+      "wrapped_mean_abs_turn_deg": 56.488087313180515,
+      "fraction_wrapped": 0.01166,
+      "n_draws": 2000000,
+      "seed": 20260813
+    },
+    "excluded_phenotypes": [
+      "WT_slow"
+    ],
+    "tau_closure_residual_s": 2.7755575615628914e-17,
+    "turning_scale_factor_range": [
+      0.614194647192344,
+      3.8415799965183295
+    ]
+  },
+  "random_seeds": {
+    "turn_angle_diagnostics": 20260813
+  },
+  "findings": [
+    "The delivered turn width varies from 0.301 to 0.804 rad across the six phenotype-by-medium rows with no stated source. This table replaces all six with one value, 1.2468 rad, derived from the only published mean turn angle the source review could verify.",
+    "The persistence time closes on the same measured tau as the published calibration, so the two tables describe the same persistence. They differ only in how that persistence is split between continuous heading wander and discrete turns."
+  ],
+  "limitations": [
+    "The anchor was measured in three dimensions for E. coli. The simulator is two-dimensional and the organism is S. Typhimurium. The mapping matches the mean turn magnitude, not the shape of the turn-angle distribution.",
+    "A zero-mean Gaussian turn cannot reproduce the measured turn-angle shape, which is broad and skewed toward the forward hemisphere. Only the mean magnitude is matched.",
+    "Calibration still sets the persistence time to the measured mean, so the two reorientation rates remain fitted quantities with no independent physical meaning.",
+    "This table is a decision aid. It is not used by any manuscript panel unless a builder is pointed at it explicitly."
+  ]
+}

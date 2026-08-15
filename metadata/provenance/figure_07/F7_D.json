@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F7_D",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-12T00:00:00Z",
+  "command": [
+    ".venv/bin/python",
+    "analyses/figure_07_revision/build_figure_07_revision.py",
+    "--panel",
+    "D"
+  ],
+  "backend": "Python 3.12",
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_07_revision/build_figure_07_revision.py",
+      "sha256": "cee7de2223cefc1af226d531554e3c104eca3f8c6b014c98b89fc3e4dc81789f",
+      "bytes": 46639
+    },
+    {
+      "relative_path": "data/processed/figure_07_revision/direct_pair_track_measurements.csv.gz",
+      "sha256": "e6eb9f1aabff24207d9eceeee459bdf0c57d16b2c979c9b7bbccc19141d742ff",
+      "bytes": 11599568
+    },
+    {
+      "relative_path": "data/processed/figure_07_revision/paired_experimental_unit_measurements.csv",
+      "sha256": "e593124975f362714d5b7dc99bc21ea2b9f47b92c23e9ca337ac3a3f7478d59e",
+      "bytes": 87105
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/panels/Figure_7/D/Figure_7D.pdf",
+      "sha256": "e90126c46ad214b3d50ee1470a0d8c451776aaae89d6b65504e95558fb5bcc9e",
+      "bytes": 41102
+    },
+    {
+      "relative_path": "build/panels/Figure_7/D/Figure_7D.png",
+      "sha256": "52727af9037f5600c17114c624ffa44f9e16d93aea01f9253ffd274dea43411a",
+      "bytes": 110799
+    },
+    {
+      "relative_path": "build/panels/Figure_7/D/Figure_7D.svg",
+      "sha256": "1eb9eda2cd42390e4e47b0029ed61374f7633095b5d83a6aaf02381139e4e4bf",
+      "bytes": 42333
+    },
+    {
+      "relative_path": "build/source_data/Figure_7/D/Figure_7D_unit_log_contrasts.csv",
+      "sha256": "15b71ec4b08eb5f996c36dca639fb595e3c74bc0c21010c43573dd2512f4f4b0",
+      "bytes": 15117
+    },
+    {
+      "relative_path": "build/statistics/Figure_7/D/Figure_7D_effective_diffusivity_decomposition.csv",
+      "sha256": "cb41512b030c613f9c2c20d64e69336ed67d46bd106f46e2cd2101e609d2edd9",
+      "bytes": 1772
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3"
+  },
+  "random_seeds": {
+    "paired_unit_bootstrap": 20260812
+  },
+  "parameters": {
+    "bootstrap_iterations": 10000,
+    "paired_unit_statistic": "per-unit mean of ln speed, displayed in um/s, above per-unit mean of ln D_eff, displayed as log10",
+    "ratio_axis_limits": [
+      0.15384615384615385,
+      6.5
+    ],
+    "hook_axis_cap": 20,
+    "hook_count_geometry": "discrete_count, matching analyses/figure_01 panels C, D and H",
+    "contour_probability_mass": [
+      0.5,
+      0.8,
+      0.95
+    ],
+    "direct_pair_filter": "metadata keys from reciprocal-label paired-unit tables"
+  },
+  "results": {
+    "rows": 6,
+    "max_closure_error": 1.7763568394002505e-15
+  },
+  "limitations": [
+    "The canonical run starts from migrated direct-pair track and paired-unit tables, not raw tracking acquisitions.",
+    "The revised panel has not yet passed visual acceptance against the July reference.",
+    "Tau is derived exactly as 2*D_eff/v^2 and is a persistence-equivalent timescale, not an independent measurement.",
+    "The three rows are not independent: the product row is the exact product of the two component rows, printed so the reader does not have to multiply."
+  ],
+  "interpretation_limit": "The plotted tau is derived exactly as 2*D_eff/v^2 and is not an independent directional-persistence measurement."
+}

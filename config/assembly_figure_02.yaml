@@ -1,0 +1,29 @@
+figure_id: Figure_2
+status: partial_reproduction
+width_mm: 180
+height_mm: 72
+output_stem: build/figures/Figure_2/Figure_2_revision_partial
+limitations:
+- Mother-machine source lineage remains partial; WT(S171) was not measured.
+panels:
+- label: A
+  kind: svg
+  source: build/panels/Figure_2/A/F2_A.svg
+  x: 3.5
+  y: 5
+  width: 55
+  height: 60
+- label: B
+  kind: svg
+  source: build/panels/Figure_2/B/F2_B.svg
+  x: 62.5
+  y: 5
+  width: 55
+  height: 60
+- label: C
+  kind: svg
+  source: build/panels/Figure_2/C/F2_C.svg
+  x: 121.5
+  y: 5
+  width: 55
+  height: 60

@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F1_G",
+  "status": "blocked_asset",
+  "generated_at_utc": "2026-08-12T21:05:58.210372Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/figure_01/render_blocked_assets.py",
+    "--panel",
+    "G"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_01/panel_g/config/asset_intake.json",
+      "sha256": "5fb09a95022629e8c999a622f475622e50a457df407066d5d9b73a059a932188",
+      "bytes": 835
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/source_data/Figure_1/G/F1_G_source_data.csv",
+      "sha256": "adaa2dce08b18d35ac1bc9beea88ec08697caf28d98d856f9f39aa2524b116da",
+      "bytes": 154
+    },
+    {
+      "relative_path": "build/panels/Figure_1/G/F1_G.svg",
+      "sha256": "f2d73115809bcbfc9884c42e74ed3f167dbcf3d225ea1253672fabca00db8d93",
+      "bytes": 3187
+    },
+    {
+      "relative_path": "build/panels/Figure_1/G/F1_G.pdf",
+      "sha256": "995154ee5aa7b87ccf7e294af84e0011950130616d081bc34e8640098b17774c",
+      "bytes": 18750
+    },
+    {
+      "relative_path": "build/panels/Figure_1/G/F1_G.png",
+      "sha256": "63c8d6fd51f3957e33f871860fa4fac427af4cbe0f454f2bcaea9c91f7cfa946",
+      "bytes": 54276
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "matplotlib": "3.11.1"
+  },
+  "parameters": {
+    "scientific_values_plotted": 0
+  },
+  "random_seeds": {},
+  "limitations": [
+    "Missing: raw representative constitutive-series microscopy field and crop metadata. This output is an explicit placeholder."
+  ],
+  "blocker": {
+    "reason": "raw representative constitutive-series microscopy field and crop metadata",
+    "required_assets": [
+      "raw representative constitutive-series microscopy field and crop metadata"
+    ]
+  }
+}

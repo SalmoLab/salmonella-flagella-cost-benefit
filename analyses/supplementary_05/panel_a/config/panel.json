@@ -1,0 +1,1 @@
+{"panel_id": "S5_A", "status": "partial_reproduction", "filled_phenotype": "WT", "outlined_phenotype": "PproA", "media": ["agarose", "liquid"], "contour_probability_mass": [0.5, 0.95], "paired_units": {"agarose": 18, "liquid": 16}}

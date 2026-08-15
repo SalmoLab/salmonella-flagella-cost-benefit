@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F2_G",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-12T09:30:41.574521Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/collaborator_science/build_panels.py",
+    "--panel",
+    "F2_G"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/collaborator_science/build_panels.py",
+      "sha256": "8fea9b4ef898c4a34312920335bd07be0ee5d9e111b717f91e355a80ff681f9d",
+      "bytes": 22241
+    },
+    {
+      "relative_path": "analyses/figure_02/panel_g/config/panel.json",
+      "sha256": "0f36c5cecca390d6265abedcc7d1050aee7ee02fbe0b6e9a3840308a2d586414",
+      "bytes": 142
+    },
+    {
+      "relative_path": "analyses/figure_02/panel_g/scripts/reproduce.py",
+      "sha256": "76dab2ea543063e0eafb212897fbf785b26564e4e435a4ce3f5572af7825b4f5",
+      "bytes": 179
+    },
+    {
+      "relative_path": "models/cell_economy/upstream/UPSTREAM_SOURCE.md",
+      "sha256": "8ffe37555f1ad6af635cf38261b7add8aae4cb4afb21573e42f3a8c2f3c1db3e",
+      "bytes": 1055
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.00_ATP.csv",
+      "sha256": "97aae0d0941c2228ca4daba8cd7853a746f5282dcf6483a5bef33e8ac320b2f2",
+      "bytes": 6707
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.00_no_ATP.csv",
+      "sha256": "ebc04806c9d0b5821fcf80b82163fe573927753392cde8716be01a0920388ba3",
+      "bytes": 6604
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.01_ATP.csv",
+      "sha256": "90d3a630a37ca8ade4fdf9ace46aa5cabc6a5f11bd592e031976ac052d8e3a05",
+      "bytes": 6817
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.01_no_ATP.csv",
+      "sha256": "29703d5a93abb4e493824976f32bd02901030d8be5da46341f717a858be841c5",
+      "bytes": 6674
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.02_ATP.csv",
+      "sha256": "bd126d22fc0a5d1dc361f78950330ba34b6bcc6bcf78cb94643a6b6174b1b499",
+      "bytes": 6834
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.02_no_ATP.csv",
+      "sha256": "83af4f2db81dce18ea18bd6adbfd2e3abbe9af68b27874714f569abb19b67100",
+      "bytes": 6657
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.03_ATP.csv",
+      "sha256": "6da90314af1e6c619fc8335f568fe23c704900662b45b8c99e8a3f3892e93860",
+      "bytes": 6807
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.03_no_ATP.csv",
+      "sha256": "e36b3e280a89a7c140c9ee03b9657adf1f1479821c75cde59c02ac6572c8272b",
+      "bytes": 6710
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.04_ATP.csv",
+      "sha256": "3bd557e702c9c400293ed693b15e1fd2edcb2dfe7a7572ffa033a3d3f4f706c9",
+      "bytes": 6854
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.04_no_ATP.csv",
+      "sha256": "910ecc8df4f3cf809a3f0b4ef6b35898d137c4d77a150947fe14f0853266bbae",
+      "bytes": 6747
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.05_ATP.csv",
+      "sha256": "08ca216bd3bf33a2b74398f9febe5e8ef4a9d8ddfa6f643c359fb94285bf5c35",
+      "bytes": 6851
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.05_no_ATP.csv",
+      "sha256": "ae5d10f2f1c23167601822cfe1e27055288731e5ea2d92e8f0b1d22123cc0d80",
+      "bytes": 6732
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "data/source_data/superseded_2026-07/f2_g/F2_G_source_data.csv",
+      "sha256": "4e107b12c2094653af8c7a9d31fddfd61b692b8880651a64dfccb81f4afd8315",
+      "bytes": 387,
+      "rows": 12
+    },
+    {
+      "relative_path": "build/panels/F2_G/F2_G.png",
+      "sha256": "a43cbe0bd0b49a10f52f40974f0064ce9454091d5e3947adf7e2204d17c2b805",
+      "bytes": 83210
+    },
+    {
+      "relative_path": "build/panels/F2_G/F2_G.svg",
+      "sha256": "b1e7a36a15b1247adf30d189ea9962133905ecfb05b4f5af46d7ac6a2069d028",
+      "bytes": 16003
+    },
+    {
+      "relative_path": "build/panels/F2_G/F2_G.pdf",
+      "sha256": "aa1449f17879f639f55488fc08f116afd5dbda9017c2aae59fdf6ea7cfb69b5d",
+      "bytes": 15675
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2",
+    "matplotlib": "3.11.1",
+    "cell_economy_commit": "c5e534de7e2102d330356ecb6e78f6346f3cc14a"
+  },
+  "parameters": {
+    "backend": "Python 3.12",
+    "source_delivery": "2026-08-12",
+    "panel": "F2_G"
+  },
+  "random_seeds": {},
+  "limitations": [
+    "Proteomics panels reproduce from the delivered protein-level export; raw MS files, FASTA and Spectronaut settings were not supplied.",
+    "Model panels reproduce from fixed collaborator result tables. A local GEKKO 1.3.2 solve was attempted: solver 3 was unavailable and the APOPT fallback did not find a solution.",
+    "The collaborator parameter-sampling log does not record a random seed."
+  ]
+}

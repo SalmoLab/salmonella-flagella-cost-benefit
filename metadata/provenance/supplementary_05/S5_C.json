@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "S5_C",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-15T10:03:36.821712Z",
+  "command": [
+    ".venv/bin/python",
+    "analyses/supplementary_05/build_supplementary_05.py",
+    "--panel",
+    "C"
+  ],
+  "backend": "Python 3.12",
+  "inputs": [
+    {
+      "relative_path": "analyses/supplementary_05/build_supplementary_05.py",
+      "sha256": "d03c1496ba4aecee7efa20fcbb25041c063f7a1779ab44e709c38809e5c3dda7",
+      "bytes": 42857
+    },
+    {
+      "relative_path": "analyses/figure_07_revision/build_figure_07_revision.py",
+      "sha256": "cee7de2223cefc1af226d531554e3c104eca3f8c6b014c98b89fc3e4dc81789f",
+      "bytes": 46639
+    },
+    {
+      "relative_path": "data/processed/figure_07_revision/direct_pair_track_measurements.csv.gz",
+      "sha256": "e6eb9f1aabff24207d9eceeee459bdf0c57d16b2c979c9b7bbccc19141d742ff",
+      "bytes": 11599568
+    },
+    {
+      "relative_path": "data/processed/figure_07_revision/paired_experimental_unit_measurements.csv",
+      "sha256": "e593124975f362714d5b7dc99bc21ea2b9f47b92c23e9ca337ac3a3f7478d59e",
+      "bytes": 87105
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/statistics/Supplementary_Figure_5/C/S5_C_contour_grid_audit.csv",
+      "sha256": "150b8193853f40a3eef3db909f81a615575c7283df3c8dbcef9304e507008d4e",
+      "bytes": 1548,
+      "rows": 4
+    },
+    {
+      "relative_path": "build/statistics/Supplementary_Figure_5/C/S5_C_unit_centroids.csv",
+      "sha256": "e1610be03696937fe91573a12c235eab7568558ae70cd835843491d4876b5a35",
+      "bytes": 686,
+      "rows": 4
+    },
+    {
+      "relative_path": "build/statistics/Supplementary_Figure_5/C/S5_C_paired_centroid_differences.csv",
+      "sha256": "b20d99de82db9b9d4c3d3f8500336e7ac3aa92656c700ba48f581279f12d4631",
+      "bytes": 486,
+      "rows": 2
+    },
+    {
+      "relative_path": "build/statistics/Supplementary_Figure_5/C/S5_C_caption_sentences.txt",
+      "sha256": "df2040b6aa48cae63b20ae81f6bf02236bceb0b237d6afa2c4a8653765ff47e5",
+      "bytes": 1111
+    },
+    {
+      "relative_path": "build/panels/Supplementary_Figure_5/C/S5_C.svg",
+      "sha256": "736373c24509f688cd944ce19c2855cd9846e31d6254c42b50318cc7d4d2efa1",
+      "bytes": 197236
+    },
+    {
+      "relative_path": "build/panels/Supplementary_Figure_5/C/S5_C.pdf",
+      "sha256": "0a3ad31c70ac36959bf3efcb8f41aa40b10df45c518da395412c426688bbdc02",
+      "bytes": 78328
+    },
+    {
+      "relative_path": "build/panels/Supplementary_Figure_5/C/S5_C.png",
+      "sha256": "5ba38a7724f9815d00110148500b389f7177b4b25a4daeb14df4b761ffe988ae",
+      "bytes": 183776
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "scipy": "1.18.0"
+  },
+  "random_seeds": {
+    "paired_unit_bootstrap": 20260812
+  },
+  "parameters": {
+    "contrast": "PproA versus PproB",
+    "contour_probability_mass": [
+      0.5,
+      0.95
+    ],
+    "contour_levels_pre_specified": "The 50 % and 95 % masses were fixed before the panels were drawn and were not retuned to separate the phenotypes; a tighter outer level always increases apparent separation because the tails carry the overlap.",
+    "density_estimator": "scipy.stats.gaussian_kde, Scott bandwidth rule",
+    "density_grid_resolution": 260,
+    "density_grid_padding_bandwidths": 4.0,
+    "figure_07_density_grid": {
+      "speed_um_s": [
+        3.0,
+        60.0
+      ],
+      "log10_diffusivity": [
+        -1.3,
+        3.0
+      ]
+    },
+    "marginal_density_resolution": 200,
+    "marginal_density_scaling": "each marginal is rescaled to a peak of one",
+    "unit_centroid_definition": "arithmetic mean of speed and of log10 D_eff over the trajectories of one metadata_key, medium and phenotype",
+    "bootstrap_iterations": 10000,
+    "bootstrap_resampling_unit": "paired experimental unit, both phenotypes drawn together",
+    "direct_pair_filter": "metadata keys from the reciprocal-label paired-unit tables, imported from analyses/figure_07_revision/build_figure_07_revision.py",
+    "deterministic": "gaussian_kde and the grid are deterministic; the only random draw is the paired-unit bootstrap, which runs once for all six panel-medium cells from a generator seeded at BOOTSTRAP_SEED"
+  },
+  "figure_caption_sentences": [
+    "The 50 % and 95 % probability contours pool all trajectories of a phenotype, so the inferential unit is the paired experiment and not the trajectory.",
+    "The two contour levels were fixed at 50 % and 95 % in advance and were not retuned to separate the phenotypes, and the kernel-density grid is padded by four kernel bandwidths per axis so no contour is clipped by the grid.",
+    "Marginal kernel densities above and to the right of each axes use the same fill-against-outline convention as the contours.",
+    "The centroid marker of a phenotype is the mean of its per-unit centroids in the (speed, log10 D_eff) plane, and its whiskers are 95 % confidence intervals from a paired-unit bootstrap with 10 000 resamples at a fixed seed.",
+    "A whisker that does not extend past its marker denotes a confidence interval narrower than the marker, and the thin connector joins the two centroids of a pair.",
+    "Each whisker is a marginal interval for one phenotype, so two whiskers may overlap while the paired difference excludes zero; the paired differences and their intervals are reported in the statistics table, not read off the panel."
+  ],
+  "results": {
+    "agarose": {
+      "n_paired_units": 18,
+      "n_trajectories": {
+        "PproA": 4841,
+        "PproB": 9033
+      },
+      "border_over_level_95": {
+        "PproA": 6.920400543657767e-05,
+        "PproB": 5.728989186672478e-05
+      },
+      "paired_centroid_difference": {
+        "n_paired_units": 18,
+        "delta_speed_um_s": 9.10211866772049,
+        "delta_speed_um_s_ci95_low": 7.395016797116725,
+        "delta_speed_um_s_ci95_high": 10.733476341382527,
+        "delta_log10_diffusivity": 0.6127433984331023,
+        "delta_log10_diffusivity_ci95_low": 0.46243898775413583,
+        "delta_log10_diffusivity_ci95_high": 0.7606665254203963
+      },
+      "comparison": "PproB minus PproA"
+    },
+    "liquid": {
+      "n_paired_units": 16,
+      "n_trajectories": {
+        "PproA": 4087,
+        "PproB": 3921
+      },
+      "border_over_level_95": {
+        "PproA": 3.327113270697988e-05,
+        "PproB": 7.312247971545147e-05
+      },
+      "paired_centroid_difference": {
+        "n_paired_units": 16,
+        "delta_speed_um_s": 10.23249035217021,
+        "delta_speed_um_s_ci95_low": 7.769663628401433,
+        "delta_speed_um_s_ci95_high": 12.268326179247131,
+        "delta_log10_diffusivity": 0.49169931802655475,
+        "delta_log10_diffusivity_ci95_low": 0.3154432322064466,
+        "delta_log10_diffusivity_ci95_high": 0.6406496915303882
+      },
+      "comparison": "PproB minus PproA"
+    }
+  },
+  "limitations": [
+    "The run starts from migrated direct-pair track and paired-unit tables, not from raw tracking acquisitions.",
+    "The contours pool trajectories within a phenotype, so they show the trajectory distribution and not the between-experiment uncertainty; the paired experiment remains the inferential unit and is quantified in Figure 7D.",
+    "The kernel density is a smoothed description, so the contours and the marginals extend a little beyond the measured speed and diffusivity range.",
+    "The centroid whiskers are marginal 95 % intervals on each axis separately, so the pair of whiskers is a cross and not a joint two-dimensional confidence region, and two overlapping whiskers do not imply an absent paired difference.",
+    "This supplementary figure is new in the 12 August 2026 revision and has no frozen 9 July reference to accept against."
+  ],
+  "interpretation_limit": "A contour is a probability region of pooled trajectories, not a confidence region for a phenotype mean."
+}

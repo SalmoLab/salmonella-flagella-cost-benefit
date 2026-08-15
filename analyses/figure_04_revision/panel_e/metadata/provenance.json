@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F4_E",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-15T09:26:30.424498Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/figure_04_revision/panel_e/scripts/reproduce.py"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_04_revision/build.py",
+      "sha256": "e75f82bb58e69cc6d776f04661b1d627d148254eaf628fa1e5a2d11d72f3b162",
+      "bytes": 44440
+    },
+    {
+      "relative_path": "analyses/figure_04_revision/panel_e/scripts/reproduce.py",
+      "sha256": "a7e206a8ce427e6347c68f118fe2f20cae68a91b79446f856f9ba334307ecc28",
+      "bytes": 289
+    },
+    {
+      "relative_path": "analyses/figure_04_revision/panel_e/config/panel.json",
+      "sha256": "dfce9600a9bfc5d485052dc032c7c5215521ab5d13c3fff0a0f27d4af517e74b",
+      "bytes": 143
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/c_limitation/steady_state_flag_0.00.csv",
+      "sha256": "3d2752758300b7bf21d872f565f6e386e56bb77b481086121a4edefc618e88a0",
+      "bytes": 6663,
+      "rows": 12
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/c_limitation/steady_state_flag_0.01.csv",
+      "sha256": "8d8e11c3e18d3476bde0cae5f5bcbf9174fcf0d86ec42996cc16843c2993ff93",
+      "bytes": 6799,
+      "rows": 12
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/c_limitation/steady_state_flag_0.02.csv",
+      "sha256": "8b0f893a45f7096fa0c5f13ef2dc6f243466d7e5681c082d01e93c2278b72a21",
+      "bytes": 6833,
+      "rows": 12
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/c_limitation/steady_state_flag_0.03.csv",
+      "sha256": "69dd0697404a7c166c0f57f23693cb1cf4cd7134407673468a35e53f20821082",
+      "bytes": 6806,
+      "rows": 12
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/c_limitation/steady_state_flag_0.04.csv",
+      "sha256": "71fb513b80e8ad4bc1cf694ce495ab32fec52ff746ed6994ffe5c589fa5b6687",
+      "bytes": 6819,
+      "rows": 12
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/c_limitation/steady_state_flag_0.05.csv",
+      "sha256": "fbca4fc047581191f94d1bfb1313030e2c15d308ad7f7c4cfeb6a2795b6b03c3",
+      "bytes": 6829,
+      "rows": 12
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/panels/Figure_4/E/Figure_4_E.pdf",
+      "sha256": "d2f744a189946026576d216a1242f5176542af3577797c2997396e46e4d33a3c",
+      "bytes": 21532
+    },
+    {
+      "relative_path": "build/panels/Figure_4/E/Figure_4_E.png",
+      "sha256": "ae3d0b9ff7f4a7833785196a13dd5bd4d60d511376fa195063edb4fb26390d8d",
+      "bytes": 35709
+    },
+    {
+      "relative_path": "build/panels/Figure_4/E/Figure_4_E.svg",
+      "sha256": "a03ca6a0ba00c11a546dd9ace255edc7bf31f3046c055dfad49fe5463cfd65cf",
+      "bytes": 23467
+    },
+    {
+      "relative_path": "build/source_data/Figure_4/E/model_sector_allocation.csv",
+      "sha256": "ad9d5acabd2af80ea6fcb9f2dfaea9d63e9f994b75e0991e504c9e7f01fdcd0d",
+      "bytes": 1841,
+      "rows": 48
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2",
+    "matplotlib": "3.11.1"
+  },
+  "parameters": {
+    "overlay_reference": "delta from experimental \u0394flhDC and model 0%",
+    "protein_label_relative_threshold": 0.15,
+    "protein_label_absolute_floor": 0.0006,
+    "protein_label_abundance_leader_rank": 3,
+    "sector_overrides": {
+      "P0A2E3": "Fla to Oth",
+      "P0A2C5": "Fla to Tra"
+    },
+    "a1_inferential_unit": "six condition means"
+  },
+  "random_seeds": {},
+  "limitations": [
+    "Panel is regenerated from supplied solver result tables; the exact IPOPT runtime is unavailable locally."
+  ]
+}

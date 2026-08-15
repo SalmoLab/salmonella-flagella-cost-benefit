@@ -1,0 +1,63 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "flagella-manuscript-reproducibility"
+version = "1.0.0"
+description = "Reproducible data, analyses, source data, and figures for the flagellar-number cost-benefit manuscript"
+requires-python = "==3.12.*"
+authors = [
+  { name = "Marc Erhardt" },
+]
+dependencies = [
+  "adjusttext>=1.3,<2",
+  "cairosvg>=2.7,<3",
+  "cmcrameri>=1.9,<2",
+  "colorspacious>=1.1.2,<2",
+  "gekko==1.3.2",
+  "imageio>=2.36,<3",
+  "jsonschema>=4.23,<5",
+  "matplotlib>=3.9,<4",
+  "numpy>=2.1,<3",
+  "openpyxl>=3.1,<4",
+  "pandas>=2.2,<3",
+  "pillow>=11,<12",
+  "pyarrow>=18,<23",
+  "pyyaml>=6.0,<7",
+  "scikit-image>=0.25,<0.26",
+  "scikit-learn>=1.6,<2",
+  "scipy>=1.14,<2",
+  "seaborn>=0.13.2,<0.14",
+  "xlsxwriter>=3.2,<4",
+]
+
+[dependency-groups]
+workflow = [
+  "snakemake>=9,<10",
+]
+test = [
+  "pytest>=8.3,<9",
+  "pytest-regressions>=2.7,<3",
+]
+dev = [
+  { include-group = "test" },
+  "ruff>=0.9,<1",
+]
+
+[tool.uv]
+default-groups = ["workflow", "test"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/flagella_repro"]
+
+[tool.pytest.ini_options]
+addopts = "--strict-config --strict-markers"
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

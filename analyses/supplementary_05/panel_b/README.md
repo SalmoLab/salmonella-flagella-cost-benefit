@@ -1,0 +1,2 @@
+# S6B
+WT against PproB: swimming speed and log10 effective diffusivity, agarose and liquid. 18 paired experiments in agarose and 18 in liquid. The filled band is WT, the outline is PproB. See `../README.md` for the data source, the density grid and the limitations. Run `.venv/bin/python analyses/supplementary_05/build_supplementary_05.py --panel B`. No statistical test applies; the contours describe pooled trajectories. Status: partial reproduction.

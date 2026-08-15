@@ -1,0 +1,50 @@
+figure_id: Supplementary_Figure_4
+status: partial_reproduction
+width_mm: 180
+height_mm: 186
+output_stem: build/figures/Supplementary_Figure_4/Supplementary_Figure_4_revision_partial
+limitations:
+- Parameters begin from migrated measured summaries; trajectories are illustrative.
+panels:
+- label: A
+  kind: svg
+  source: build/panels/Supplementary_Figure_4/A/S4_A.svg
+  x: 3.5
+  y: 5
+  width: 84
+  height: 53
+- label: D
+  kind: svg
+  source: build/panels/Supplementary_Figure_4/D/S4_D.svg
+  x: 92.5
+  y: 5
+  width: 84
+  height: 53
+- label: B
+  kind: svg
+  source: build/panels/Supplementary_Figure_4/B/S4_B.svg
+  x: 3.5
+  y: 64
+  width: 84
+  height: 53
+- label: E
+  kind: svg
+  source: build/panels/Supplementary_Figure_4/E/S4_E.svg
+  x: 92.5
+  y: 64
+  width: 84
+  height: 53
+- label: C
+  kind: svg
+  source: build/panels/Supplementary_Figure_4/C/S4_C.svg
+  x: 3.5
+  y: 123
+  width: 84
+  height: 53
+- label: F
+  kind: svg
+  source: build/panels/Supplementary_Figure_4/F/S4_F.svg
+  x: 92.5
+  y: 123
+  width: 84
+  height: 53

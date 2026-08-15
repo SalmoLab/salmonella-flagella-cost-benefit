@@ -1,0 +1,43 @@
+figure_id: Figure_6
+status: partial_reproduction
+width_mm: 180
+height_mm: 142
+output_stem: build/figures/Figure_6/Figure_6_revision_partial
+limitations:
+- Original calibrated microscopy fields and scale bars remain unavailable.
+panels:
+- label: A
+  kind: svg
+  source: build/panels/Figure_6/A/Figure_6A.svg
+  x: 3.5
+  y: 5
+  width: 55
+  height: 58
+- label: B
+  kind: svg
+  source: build/panels/Figure_6/B/Figure_6B.svg
+  x: 62.5
+  y: 5
+  width: 55
+  height: 58
+- label: C
+  kind: svg
+  source: build/panels/Figure_6/C/Figure_6C.svg
+  x: 121.5
+  y: 5
+  width: 55
+  height: 58
+- label: D
+  kind: svg
+  source: build/panels/Figure_6/D/Figure_6D.svg
+  x: 3.5
+  y: 70
+  width: 84
+  height: 65
+- label: E
+  kind: svg
+  source: build/panels/Figure_6/E/Figure_6E.svg
+  x: 92.5
+  y: 70
+  width: 84
+  height: 65

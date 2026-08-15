@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F6_D",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-12T00:00:00Z",
+  "command": [
+    ".venv/bin/python",
+    "analyses/figure_06_revision/build_figure_06_revision.py",
+    "--panel",
+    "D"
+  ],
+  "backend": "Python 3.12",
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_06_revision/build_figure_06_revision.py",
+      "sha256": "7883c68bc10c75ebe9ff18dced9d5371ad81a2fc9689abdd004fea6b16957898",
+      "bytes": 46365
+    },
+    {
+      "relative_path": "assets/schematics/competition_design/competition_scheme_source.pptx",
+      "sha256": "fc70af99e68f06eba7a122121987f1024cdb34188bf6cb232ca79321409d56a9",
+      "bytes": 450609
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/panels/Figure_6/D/Figure_6D.pdf",
+      "sha256": "a4ed88c408bf2cd10acdf0ee8b56dbc00033d453115727aac5429d2f2389caed",
+      "bytes": 24627
+    },
+    {
+      "relative_path": "build/panels/Figure_6/D/Figure_6D.png",
+      "sha256": "aaab0a09b29e1b556fba1bc4eec252532630a2570bb6a3cc431ed7820203ea03",
+      "bytes": 93033
+    },
+    {
+      "relative_path": "build/panels/Figure_6/D/Figure_6D.svg",
+      "sha256": "28885c0c2aade3b50d4c308ef928f5bd1cf4e70e5e6886150f2b2e0da55a4e5a",
+      "bytes": 18206
+    },
+    {
+      "relative_path": "build/source_data/Figure_6/D/Figure_6D_schematic_elements.csv",
+      "sha256": "78cab419f6b0dbffa68257a0a0dd202cc47e965a47dd064944a3983e5af06fe9",
+      "bytes": 388
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3"
+  },
+  "parameters": {
+    "backend": "Python 3.12",
+    "scientific_values_are_in_source_data": true,
+    "stars_displayed": false
+  },
+  "random_seeds": {},
+  "results": {
+    "source_sha256": "fc70af99e68f06eba7a122121987f1024cdb34188bf6cb232ca79321409d56a9",
+    "text_runs": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "P",
+      "proA",
+      "-",
+      "fhlDC",
+      "P",
+      "proB",
+      "-",
+      "fhlDC"
+    ]
+  },
+  "limitations": [
+    "The canonical run starts from migrated processed measurement tables, not raw acquisitions.",
+    "The revised panel has not yet passed visual acceptance against the July reference.",
+    "Microscopy regions are intentional placeholders: raw calibrated fields, crop metadata and the intended scale-bar length have not been supplied; scale not inferred.",
+    "The soft-agar rings of the schematic are neutral greys that mark expansion distance only; the schematic makes no claim about which strain occupies which ring."
+  ]
+}

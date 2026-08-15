@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F5_B",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-15T09:03:17.202604Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/figure_05_revision/panel_b/scripts/reproduce.py"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_05_revision/build.py",
+      "sha256": "59d1f903db24c761e13e20a4d543cb2fbc8331562c7e600de30cb8555550e382",
+      "bytes": 46905
+    },
+    {
+      "relative_path": "analyses/figure_05_revision/panel_b/scripts/reproduce.py",
+      "sha256": "d069b15180884a45ebf9c48d7a078b1922f0bfc100ce80fe70525f44914b993a",
+      "bytes": 289
+    },
+    {
+      "relative_path": "analyses/figure_05_revision/panel_b/config/panel.json",
+      "sha256": "fdbe8a81c4d2a2bf2d6f4f78f245be711f139306fe45440e7465fe8ac8bfb522",
+      "bytes": 143
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/swimming/8500/dynamic_flag_0.005.csv",
+      "sha256": "7b6eeb0650bda6a58a9590d51757fe52ab107993439d6c106df459126333b1fa",
+      "bytes": 11914,
+      "rows": 18
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/swimming/8500/dynamic_flag_0.010.csv",
+      "sha256": "f93ea16ea209599e4ec3b195d4ffeaf1d0614d35842d0946d869da34382ff15c",
+      "bytes": 11918,
+      "rows": 18
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/swimming/8500/dynamic_flag_0.020.csv",
+      "sha256": "c7223dd00dbea9aabeedd6a663759742eab6ff83c768472a4f091f5a9ebf48e2",
+      "bytes": 12095,
+      "rows": 18
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/swimming/8500/dynamic_flag_0.030.csv",
+      "sha256": "9e1cabd7105a77fe7b0b2c1f70a879db251ac9333f1dfd8bd07662fbf306ee11",
+      "bytes": 11947,
+      "rows": 18
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/swimming/8500/dynamic_flag_0.040.csv",
+      "sha256": "ca18a673ad0b18be9733067856aa99a9d6cf5c007628f4da0b55721a6d1da817",
+      "bytes": 12053,
+      "rows": 18
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/swimming/8500/dynamic_flag_0.050.csv",
+      "sha256": "36e888f3a3adb0b4bdf0148ac9ab737a00a63c819e6a17f628cf41d383abfb1d",
+      "bytes": 11992,
+      "rows": 18
+    },
+    {
+      "relative_path": "models/cell_economy/low_allocation_sweep.py",
+      "sha256": "8dffa875fcae026a0e949cfc9c21301d1df2b291703b95eb05a84dba4b609665",
+      "bytes": 27575
+    },
+    {
+      "relative_path": "data/processed/figure_05_revision/A3_low_allocation_continuation_status.csv",
+      "sha256": "21f590706fdab21fe612f854f5351d310c1d1d04f95244ca75029ed261fea724",
+      "bytes": 4214,
+      "rows": 21
+    },
+    {
+      "relative_path": "data/processed/figure_05_revision/A3_trajectories/dynamic_flag_0.0000.csv",
+      "sha256": "3552b092ccc63db41b727803a0bca7c64a921df5a5242bf421f52cec145b9e46",
+      "bytes": 12090,
+      "rows": 18
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/panels/Figure_5/B/Figure_5_B.pdf",
+      "sha256": "edeef8fb4260325b56d0589d17965296f99c17ae28bcab9371a54e921ebecb69",
+      "bytes": 19590
+    },
+    {
+      "relative_path": "build/panels/Figure_5/B/Figure_5_B.png",
+      "sha256": "f5ea5467b6561b0d7d581d52b550b5cd2d2319d49e05e63eea8961bb71ad12d7",
+      "bytes": 71664
+    },
+    {
+      "relative_path": "build/panels/Figure_5/B/Figure_5_B.svg",
+      "sha256": "bfd8e012256e3b86a6a200b3d0c127062a4540af78280aa6b2bd26fa139b959b",
+      "bytes": 15746
+    },
+    {
+      "relative_path": "build/source_data/Figure_5/B/growth_trajectories.csv",
+      "sha256": "10eeb85a0c903af3ed1d2971f70604a31703c4fc96d9206c3dcdfde0caa5f394",
+      "bytes": 2891,
+      "rows": 119
+    },
+    {
+      "relative_path": "build/source_data/Figure_5/B/non_motile_gain.csv",
+      "sha256": "183ce31a85e19b888764d481a11696c72c6478e3735f31103c902335e2123eae",
+      "bytes": 842,
+      "rows": 6
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2",
+    "matplotlib": "3.11.1"
+  },
+  "parameters": {
+    "dynamic_gradient_age_h": 3,
+    "dynamic_duration_h": 8,
+    "active_model_cells_per_seed": 26,
+    "active_model_seed_range": [
+      1000,
+      1099
+    ],
+    "active_model_seed_count_per_group": 100,
+    "active_model_phenotypes": [
+      "PproA",
+      "WT",
+      "PproB"
+    ],
+    "active_model_observable": "mean net displacement per seed (um)",
+    "active_model_dt_s": 0.0025,
+    "active_model_config_dt_s": 0.05,
+    "active_model_dt_tolerance": 0.05,
+    "active_model_box_scale": 12,
+    "active_model_noise_scales": {
+      "run_translational_scale": 0.12,
+      "reorientation_diffusion_scale": 0.4,
+      "stall_slide_fraction": 0.28,
+      "stall_rotational_diffusion_scale": 1.8,
+      "stall_translational_scale": 0.2
+    }
+  },
+  "random_seeds": {
+    "population": "1000-1099",
+    "starting_positions": "population seed + 1",
+    "agarose_obstacles": "population seed + 300"
+  },
+  "limitations": [
+    "Trajectories at 0.5-5% flagellar allocation are the supplied solver result tables. The zero-allocation trajectory was solved here with IPOPT on the public APMonitor server, GEKKO remote=True.",
+    "The sweep between 0% and 1% is not drawn. A warm-start continuation with a multi-start solved every step, but the solved growth rates do not follow one consistent branch, so the interior is recorded and not plotted. build/statistics/Figure_5/A3/ holds the record.",
+    "The model is coarse-grained. It recovers the trend of a benefit that rises steeply from zero and then flattens; it does not fix the allocation of the optimum to the stated precision."
+  ]
+}

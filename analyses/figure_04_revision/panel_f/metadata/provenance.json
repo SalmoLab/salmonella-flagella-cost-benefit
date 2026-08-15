@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F4_F",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-15T09:26:30.426872Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/figure_04_revision/panel_f/scripts/reproduce.py"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_04_revision/build.py",
+      "sha256": "e75f82bb58e69cc6d776f04661b1d627d148254eaf628fa1e5a2d11d72f3b162",
+      "bytes": 44440
+    },
+    {
+      "relative_path": "analyses/figure_04_revision/panel_f/scripts/reproduce.py",
+      "sha256": "bcad297dc0940eca68b0c11c909bc1f4568fdd176bc873109b0f91f0930d897d",
+      "bytes": 289
+    },
+    {
+      "relative_path": "analyses/figure_04_revision/panel_f/config/panel.json",
+      "sha256": "8d6dc5d36874f634f159e607e4039ed443e73d307923375602c4ceed7feff828",
+      "bytes": 143
+    },
+    {
+      "relative_path": "data/external/promoter_series_proteomics/sector_mass_fractions.tsv",
+      "sha256": "333a94fffe36510855dc75b6f6710585ec267f5bef51e9d6f215d76627e9d7a7",
+      "bytes": 22004
+    },
+    {
+      "relative_path": "data/external/promoter_series_proteomics/protein_massfrac_annotated.csv",
+      "sha256": "89bc1046b89852c2ac3fa70d6c675edb2b4d255d87651dbab6b760d1d2878008",
+      "bytes": 27892466,
+      "rows": 66024
+    },
+    {
+      "relative_path": "analyses/figure_04_revision/config/protein_sector_overrides.csv",
+      "sha256": "3b966b06bca45ec8ffd19c129a01392e6044bf3a72e9b173520f2a835480fa79",
+      "bytes": 1144,
+      "rows": 2
+    },
+    {
+      "relative_path": "data/external/promoter_series_proteomics/population_growth_mutants.csv",
+      "sha256": "3fe37009a0129028a627aa497c1c517fe04a431177ee38dd49c806e0221c07dd",
+      "bytes": 38661,
+      "rows": 198
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/c_limitation/steady_state_flag_0.00.csv",
+      "sha256": "3d2752758300b7bf21d872f565f6e386e56bb77b481086121a4edefc618e88a0",
+      "bytes": 6663,
+      "rows": 12
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/c_limitation/steady_state_flag_0.01.csv",
+      "sha256": "8d8e11c3e18d3476bde0cae5f5bcbf9174fcf0d86ec42996cc16843c2993ff93",
+      "bytes": 6799,
+      "rows": 12
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/c_limitation/steady_state_flag_0.02.csv",
+      "sha256": "8b0f893a45f7096fa0c5f13ef2dc6f243466d7e5681c082d01e93c2278b72a21",
+      "bytes": 6833,
+      "rows": 12
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/c_limitation/steady_state_flag_0.03.csv",
+      "sha256": "69dd0697404a7c166c0f57f23693cb1cf4cd7134407673468a35e53f20821082",
+      "bytes": 6806,
+      "rows": 12
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/c_limitation/steady_state_flag_0.04.csv",
+      "sha256": "71fb513b80e8ad4bc1cf694ce495ab32fec52ff746ed6994ffe5c589fa5b6687",
+      "bytes": 6819,
+      "rows": 12
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/c_limitation/steady_state_flag_0.05.csv",
+      "sha256": "fbca4fc047581191f94d1bfb1313030e2c15d308ad7f7c4cfeb6a2795b6b03c3",
+      "bytes": 6829,
+      "rows": 12
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/panels/Figure_4/F/Figure_4_F.pdf",
+      "sha256": "9f756e6a45615a7f64932cf635d668e965a6e5c8cfb4d7f2c17d4d1289d45a62",
+      "bytes": 28480
+    },
+    {
+      "relative_path": "build/panels/Figure_4/F/Figure_4_F.png",
+      "sha256": "7e1689f9516b2f659fab591fa915b4755c6c9ee2e61e9f9b07aa2dea6be3dc99",
+      "bytes": 69791
+    },
+    {
+      "relative_path": "build/panels/Figure_4/F/Figure_4_F.svg",
+      "sha256": "eb084d556c5050af015d412d1dd7ef22ab56c3b01cb0fea23194b7be44b0e76a",
+      "bytes": 33432
+    },
+    {
+      "relative_path": "build/source_data/Figure_4/F/growth_allocation.csv",
+      "sha256": "f33c666cb39682fafdc74eb4b5f0f750d2436aecf4cfd345ef4b8fafb935dfd7",
+      "bytes": 4743,
+      "rows": 72
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2",
+    "matplotlib": "3.11.1"
+  },
+  "parameters": {
+    "overlay_reference": "delta from experimental \u0394flhDC and model 0%",
+    "protein_label_relative_threshold": 0.15,
+    "protein_label_absolute_floor": 0.0006,
+    "protein_label_abundance_leader_rank": 3,
+    "sector_overrides": {
+      "P0A2E3": "Fla to Oth",
+      "P0A2C5": "Fla to Tra"
+    },
+    "a1_inferential_unit": "six condition means"
+  },
+  "random_seeds": {},
+  "limitations": [
+    "Model curve begins from supplied solver results; experimental growth and proteomics batches are not paired at replicate level.",
+    "Sector assignment follows the delivered KEGG mapping except for the proteins listed in analyses/figure_04_revision/config/protein_sector_overrides.csv, which records one reason per protein."
+  ]
+}

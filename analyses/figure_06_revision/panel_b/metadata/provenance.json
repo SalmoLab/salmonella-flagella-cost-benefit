@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F6_B",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-12T00:00:00Z",
+  "command": [
+    ".venv/bin/python",
+    "analyses/figure_06_revision/build_figure_06_revision.py",
+    "--panel",
+    "B"
+  ],
+  "backend": "Python 3.12",
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_06_revision/build_figure_06_revision.py",
+      "sha256": "7883c68bc10c75ebe9ff18dced9d5371ad81a2fc9689abdd004fea6b16957898",
+      "bytes": 46365
+    },
+    {
+      "relative_path": "data/processed/figure_06_revision/figure_06B_ppro_motility_measurements.csv",
+      "sha256": "698161ef215086cc60fa61c18cb09122f0606c725a15d201027a11d291f07cf8",
+      "bytes": 1872
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/panels/Figure_6/B/Figure_6B.pdf",
+      "sha256": "3d3d1f77bf3293db18816eca6eb0d8607aac7d55bdba95bbc75b70df4cd49fc6",
+      "bytes": 24847
+    },
+    {
+      "relative_path": "build/panels/Figure_6/B/Figure_6B.png",
+      "sha256": "05a69e2fe2b9eed6537d6491ae8f1fe153e9821d2cd03e173a37d1fb65d6f1a4",
+      "bytes": 45927
+    },
+    {
+      "relative_path": "build/panels/Figure_6/B/Figure_6B.svg",
+      "sha256": "6833d19b2586284597edf686be798cb2f936dd4c9d39a8641f28af162c7c3764",
+      "bytes": 20189
+    },
+    {
+      "relative_path": "build/source_data/Figure_6/B/Figure_6B_replicate_points.csv",
+      "sha256": "e7e7eafd506e50543590c1f2fbcfb9647dec9b2c0d8bc3746136042aaf695680",
+      "bytes": 1875
+    },
+    {
+      "relative_path": "build/statistics/Figure_6/B/Figure_6B_paired_statistics.csv",
+      "sha256": "82638ef2c8b5cdb0f03199235f880c9e2bed9b7bd3dc24134080a848bb155854",
+      "bytes": 514
+    },
+    {
+      "relative_path": "build/statistics/Figure_6/B/Figure_6B_summary_95ci.csv",
+      "sha256": "86dc2c4fcecd635c1a13d34e52180bb49e2e89e06d3bd89564411948c79c3f40",
+      "bytes": 449
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3"
+  },
+  "parameters": {
+    "backend": "Python 3.12",
+    "scientific_values_are_in_source_data": true,
+    "stars_displayed": false
+  },
+  "random_seeds": {},
+  "results": {
+    "points": 30,
+    "pairs_per_comparison": 6
+  },
+  "limitations": [
+    "The canonical run starts from migrated processed measurement tables, not raw acquisitions.",
+    "The revised panel has not yet passed visual acceptance against the July reference.",
+    "The unit of analysis is the independent replicate, which carries a single measurement, so the measurement and the unit are the same number and the panel draws one mark for both."
+  ]
+}

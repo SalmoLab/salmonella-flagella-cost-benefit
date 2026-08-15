@@ -1,0 +1,8 @@
+{
+  "panel_id": "F3_D",
+  "figure_number": 3,
+  "panel_label": "D",
+  "entry_script": "analyses/figure_03_revision/panel_d/scripts/reproduce.py",
+  "input_glob": "data/external/cell_economy_results/rotation/steady_state_flag_*.csv",
+  "solver_status": "fixed collaborator outputs; exact local GEKKO rerun remains blocked"
+}

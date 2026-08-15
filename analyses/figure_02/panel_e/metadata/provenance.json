@@ -1,0 +1,72 @@
+{
+  "command": [
+    "python",
+    "analyses/figure_02/panel_e/scripts/plot.py"
+  ],
+  "generated_at_utc": "2026-08-12T09:30:39.451289Z",
+  "inputs": [
+    {
+      "bytes": 808,
+      "relative_path": "analyses/figure_02/panel_e/config/panel.json",
+      "sha256": "64e89d385e87387e66296b1992283364adec06e648c5e46d2d8e37aff5095ef4"
+    },
+    {
+      "bytes": 58901,
+      "relative_path": "data/processed/figure_02/F2_E/per_curve.csv",
+      "rows": 108,
+      "sha256": "0a3e030bcaa41a2b0c083e377ab70dcf9206935c9b60fd6115f3724bb2c05e62"
+    }
+  ],
+  "limitations": [
+    "The canonical run starts from migrated fitted growth-rate tables, not raw plate-reader workbooks.",
+    "The July multi-panel placement and crop have not yet passed visual regression."
+  ],
+  "outputs": [
+    {
+      "bytes": 13049,
+      "relative_path": "data/source_data/figure_02/F2_E.csv",
+      "rows": 150,
+      "sha256": "5d56d428b4d715d19bac87f4e2506218fae4c6131e26f50f16a6f6edf7460942"
+    },
+    {
+      "bytes": 493,
+      "relative_path": "data/source_data/figure_02/F2_E_statistics.csv",
+      "rows": 5,
+      "sha256": "83940b46436e431abc186cb12d08f063d975395a0ec4c1c811ce368ebcfb84f8"
+    },
+    {
+      "bytes": 45538,
+      "relative_path": "build/panels/F2_E/F2_E.svg",
+      "sha256": "b01df290400be4b87e7ab365e76e34e1017267b0b0554b7aaab0b7fff9afa5d5"
+    },
+    {
+      "bytes": 35144,
+      "relative_path": "build/panels/F2_E/F2_E.pdf",
+      "sha256": "17e4d02b87c96a8e5fd88e607bbd64064ce1ddcc9d53e749448d88a295053bfc"
+    },
+    {
+      "bytes": 123330,
+      "relative_path": "build/panels/F2_E/F2_E.png",
+      "sha256": "ebfe7ad85f92444e83cbedcbd4154fc9c33fdedfe4c5fd7d885483fee8b4e04f"
+    }
+  ],
+  "panel_id": "F2_E",
+  "parameters": {
+    "biological_unit": "experiment_day",
+    "bootstrap_draws": 20000,
+    "multiple_testing": "Benjamini-Hochberg within panel",
+    "statistical_test": "paired two-sided t-test by experiment day",
+    "technical_unit": "plate-reader curve"
+  },
+  "random_seeds": {
+    "bootstrap": 20260709
+  },
+  "schema_version": "1.0.0",
+  "software": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "python": "3.12.11"
+  },
+  "status": "partial_reproduction"
+}

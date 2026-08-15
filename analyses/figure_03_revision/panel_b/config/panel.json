@@ -1,0 +1,19 @@
+{
+  "panel_id": "F3_B",
+  "figure_number": 3,
+  "panel_label": "B",
+  "panel_dir": "panel_b",
+  "analysis_dir": "analyses/figure_03_revision",
+  "entry_script": "analyses/figure_03_revision/panel_b/scripts/plot.py",
+  "input_table": "data/processed/figure_02/F2_E/per_curve.csv",
+  "value_column": "mu_from_growth_rate_k",
+  "reference_strain": "TH5861",
+  "strain_order": ["TH5861", "EM16223", "EM4208", "EM4209", "EM16224", "EM16587"],
+  "labels": {"TH5861": "WT (fliC-ON)", "EM16223": "ΔflhDC", "EM4208": "ΔflgE", "EM4209": "ΔflgKL", "EM16224": "motB (D33N)", "EM16587": "ΔflgM flhAΔc"},
+  "bootstrap_seed": 20260812,
+  "bootstrap_draws": 20000,
+  "x_axis_label": "",
+  "x_label_rotation": 35,
+  "y_limits": [0.91, 1.2],
+  "display_metric": "growth_rate_relative_to_same_day_TH5861"
+}

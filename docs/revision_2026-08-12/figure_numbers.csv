@@ -1,0 +1,210 @@
+figure,panel_id,quantity,value,source_file,computation
+Figure 1,F1_C,cell-dot threshold,12,analyses/figure_01/plotting.py,the integer in the `if frequency <= N` rule that draws a sparse count as cell dots
+Figure 1,F1_D,cell-dot threshold,12,analyses/figure_01/plotting.py,the integer in the `if frequency <= N` rule that draws a sparse count as cell dots
+Figure 1,F1_H,cell-dot threshold,12,analyses/figure_01/plotting.py,the integer in the `if frequency <= N` rule that draws a sparse count as cell dots
+Figure 1,F1_E,"bubble size key, cells per bubble",10/100/1000,analyses/figure_01/plotting.py,the three cell numbers in the bubble-key tuple of the hook-versus-filament panel
+Figure 2,F2_A,independent days,6,build/source_data/Figure_2/A/F2_A_source_data.csv,distinct experiment_day of the technical-curve rows
+Figure 2,F2_A,growth curves per condition and day,10,build/source_data/Figure_2/A/F2_A_source_data.csv,distinct curve_id per experiment_day and strain; the build stops if the count varies
+Figure 2,F2_A,WT reference growth rate,1.087 1/h,build/source_data/Figure_2/A/F2_A_source_data.csv,"mean over the six days of reference_growth_rate_1_h, to three decimals"
+Figure 2,F2_B,independent days,6,build/source_data/Figure_2/B/F2_B_source_data.csv,distinct experiment_day of the technical-curve rows
+Figure 2,F2_B,growth curves per condition and day,3,build/source_data/Figure_2/B/F2_B_source_data.csv,distinct curve_id per experiment_day and strain; the build stops if the count varies
+Figure 2,F2_B,WT reference growth rate,1.624 1/h,build/source_data/Figure_2/B/F2_B_source_data.csv,"mean over the six days of reference_growth_rate_1_h, to three decimals"
+Figure 2,F2_B,between-series difference of the WT reference,0.537 1/h,build/source_data/Figure_2/A/F2_A_source_data.csv; build/source_data/Figure_2/B/F2_B_source_data.csv,"the B reference growth rate minus the A reference growth rate, both rounded to three decimals first"
+Figure 2,F2_C,independent experiments per strain,2,build/source_data/Figure_2/C/F2_C_source_data.csv.gz,distinct replicate per strain
+Figure 2,F2_C,cell values,126934,build/source_data/Figure_2/C/F2_C_source_data.csv.gz,row count of the cell-level table
+Figure 3,F3_B,independent days,6,build/source_data/Figure_3/B/F3_B_source_data.csv,distinct experiment_day of the technical-curve rows
+Figure 3,F3_C,independent experiments,2,build/source_data/Figure_3/C/F3_C_source_data.csv.gz,distinct replicate per strain
+Figure 3,F3_C,cell values,110983,build/source_data/Figure_3/C/F3_C_source_data.csv.gz,row count of the cell-level table
+Figure 3,F3_D,rotating penalty at 5%,8.4%,build/source_data/Figure_3/D/F3_D_source_data.csv,"one minus the growth rate at 0.05 divided by the growth rate at 0.00, rotating rows"
+Figure 3,F3_D,non-rotating penalty at 5%,7.4%,build/source_data/Figure_3/D/F3_D_source_data.csv,"one minus the growth rate at 0.05 divided by the growth rate at 0.00, non-rotating rows"
+Figure 3,F3_E,model flagellar mass fraction,5%,build/source_data/Figure_3/D/F3_D_source_data.csv,the largest flagella_mass_fraction the fixed model table carries
+Figure 4,F4_B,proteomics replicates per strain,4,build/source_data/Figure_4/B/delta_overlay.csv,distinct replicate per mutant of the experiment rows
+Figure 4,F4_C,proteomics replicates per strain,4,build/source_data/Figure_4/B/delta_overlay.csv,distinct replicate per mutant of the experiment rows
+Figure 4,F4_B,"dashed-line threshold, largest measured flagellar allocation",3.34%,build/source_data/Figure_4/B/delta_overlay.csv,"the largest x_flagella of the experiment rows, as a percentage to two decimals"
+Figure 4,F4_B,Oth sector constraint,0.35,build/source_data/Figure_4/E/model_sector_allocation.csv,the single mass_fraction the model holds for the Oth sector at every allocation
+Figure 4,F4_C,protein-label mass floor,0.06%,build/source_data/Figure_4/C/label_audit.csv,"the absolute_floor column, as a percentage of total protein mass"
+Figure 4,F4_C,protein-label share threshold,15%,build/source_data/Figure_4/C/label_audit.csv,"the relative_threshold column, as a percentage of the displayed sector subtotal"
+Figure 4,F4_C,abundance-leader rank,3,build/source_data/Figure_4/C/label_audit.csv,"the abundance_leader_rank column, the rank that always keeps a protein"
+Figure 4,F4_F,independent growth-experiment days per strain,6,build/source_data/Figure_4/F/growth_allocation.csv,distinct experiment_day per mutant of the experiment rows
+Figure 5,F5_A,glucose-profile age,3 h,build/provenance/Figure_5/A.json,the dynamic_gradient_age_h parameter of the panel provenance
+Figure 5,F5_B,flagellar allocation range of the colored lines,0.5% to 5%,build/source_data/Figure_5/B/non_motile_gain.csv,the smallest and the largest flagellar_allocation of the motile family
+Figure 5,F5_B,non-motile reference allocation,0%,build/statistics/Figure_5/A3/low_allocation_continuation_status.csv,"the flagellar_allocation of the solved baseline step, which the panel draws dashed"
+Figure 5,F5_B,non-motile growth rate at 8 h,1.063 1/h,build/source_data/Figure_5/B/non_motile_gain.csv,"the non_motile_growth_rate_8h_1h column, one value for every allocation"
+Figure 5,F5_B,non-motile distance from the source,8500 um,build/statistics/Figure_5/A3/low_allocation_continuation_status.csv,"the final_distance_um of the zero-allocation step, unchanged from the start"
+Figure 5,F5_B,glucose the non-motile cell holds,0.091 mM,build/statistics/Figure_5/A3/low_allocation_continuation_status.csv,the final_substrate_mM of the zero-allocation step
+Figure 5,F5_B,motile growth-rate range at 8 h,1.66-1.77 1/h,build/source_data/Figure_5/B/non_motile_gain.csv,the smallest and the largest growth_rate_8h_1h of the motile family
+Figure 5,F5_B,growth-rate gain over the non-motile cell,56% to 66%,build/source_data/Figure_5/B/non_motile_gain.csv,"the smallest and the largest growth_rate_gain, as a percentage above one"
+Figure 5,F5_B,compounded biomass gain over the non-motile cell,8.3-fold to 35.5-fold,build/source_data/Figure_5/B/non_motile_gain.csv,the smallest and the largest biomass_gain
+Figure 5,F5_B,trajectory duration,8 h,build/provenance/Figure_5/B.json,the dynamic_duration_h parameter of the panel provenance
+Figure 5,F5_B,solved steps of the 0-1% sweep,21,build/statistics/Figure_5/A3/low_allocation_continuation_status.csv,"row count of the warm-start continuation status table, all of status success"
+Figure 5,F5_C,unique optimum,3%,build/source_data/Figure_5/C/relative_biomass.csv,the flagella value that carries the largest relative_biomass
+Figure 5,F5_D,seeds per phenotype,100,build/source_data/Figure_5/D/liquid_seed_predictions.csv,distinct seed per phenotype
+Figure 5,F5_D,cells per seed,26,build/source_data/Figure_5/D/liquid_seed_predictions.csv,"the n_cells column, one value for every seed"
+Figure 5,F5_D,domain width and height,1776 x 1152 um,build/source_data/Figure_5/D/liquid_seed_predictions.csv,the box_width_um and box_height_um columns
+Figure 5,F5_D,integration step,0.0025 s,build/source_data/Figure_5/D/liquid_seed_predictions.csv,"the dt_s column, one value for every seed"
+Figure 5,F5_D,simulation interval percentiles,2.5-97.5%,build/statistics/Figure_5/D/liquid_simulation_interval.csv,the two interval column names of the statistics table
+Figure 5,F5_E,seeds per phenotype,100,build/source_data/Figure_5/E/agarose_seed_predictions.csv,distinct seed per phenotype
+Figure 5,F5_E,cells per seed,26,build/source_data/Figure_5/E/agarose_seed_predictions.csv,"the n_cells column, one value for every seed"
+Figure 5,F5_E,domain width and height,1776 x 1152 um,build/source_data/Figure_5/E/agarose_seed_predictions.csv,the box_width_um and box_height_um columns
+Figure 5,F5_E,integration step,0.0025 s,build/source_data/Figure_5/E/agarose_seed_predictions.csv,"the dt_s column, one value for every seed"
+Figure 5,F5_E,simulation interval percentiles,2.5-97.5%,build/statistics/Figure_5/E/agarose_simulation_interval.csv,the two interval column names of the statistics table
+Figure 5,F5_E,obstacle disks,8352,build/source_data/Figure_5/E/agarose_seed_predictions.csv,"the n_obstacles column, one value for every seed"
+Figure 5,F5_E,realised obstacle area fraction,0.187,build/source_data/Figure_5/E/agarose_seed_predictions.csv,"the mean obstacle_area_fraction over the seeds, to three decimals"
+Figure 5,F5_E,reorientation angle spread,1.247 rad,data/processed/motility_adopted_parameters/motility_summary_parameters_adopted.csv,"the turn_angle_sd_rad column, one value for all six strain-by-medium rows"
+Figure 5,F5_E,mean stall duration,0.949 s,data/processed/motility_adopted_parameters/motility_summary_parameters_adopted.csv,the stall_mean_duration_s column of the agarose rows
+Figure 5,F5_E,stall-probability exponent,0.704,data/processed/motility_adopted_parameters/adopted_stall_parameter_audit.csv,"minus the log ratio of the adopted stall probabilities of PproB and PproA, divided by the log ratio of their mean hook numbers"
+Figure 5,F5_E,published stall-frequency ratio,1.7 +/- 0.2,analyses/motility_stall_parameter_comparison/common.py,the GROGNOT_STALL_FREQUENCY_RATIO and GROGNOT_STALL_FREQUENCY_RATIO_SD constants the exponent is anchored to
+Figure 5,F5_E,anchor mean turn magnitude,57 deg,analyses/motility_turn_angle_comparison/calibrate_global_turn_angle.py,the TAUTE_MEAN_TURN_ANGLE_DEG constant the angle spread is fitted to
+Figure 5,F5_E,anchor turn count,8058,analyses/motility_turn_angle_comparison/calibrate_global_turn_angle.py,"the TAUTE_TURN_COUNT constant, the number of measured turns behind the anchor"
+Figure 5,F5_D,"simulated share of the measured effective diffusivity, liquid",87-90%,build/diagnostics/effective_diffusivity_check/effective_diffusivity_comparison.csv,the smallest and the largest ratio_to_measured_lag_corrected of the liquid rows of the corrected model
+Figure 5,F5_E,"simulated share of the measured effective diffusivity, agarose-like",69-76%,build/diagnostics/effective_diffusivity_check/effective_diffusivity_comparison.csv,the smallest and the largest ratio_to_measured_lag_corrected of the agarose rows of the corrected model
+Figure 5,F5_D,"simulated share of the implied v2 tau / 2, liquid",98-100%,build/diagnostics/effective_diffusivity_check/effective_diffusivity_comparison.csv,the smallest and the largest ratio_to_implied_lag_corrected of the liquid rows of the corrected model
+Figure 5,F5_E,convergence tolerance,5%,build/diagnostics/Figure_5/timestep_convergence.csv,the tolerance column of the time-step ladder
+Figure 5,F5_E,largest group deviation per time step,3.96/3.88/3.22/1.99/2.20/2.20%,build/diagnostics/Figure_5/timestep_convergence.csv,"the largest net_displacement_um_rel_deviation over the six strain-by-medium groups, per dt_s, coarsest step first"
+Figure 5,F5_E,"WT agarose-like mean path length, coarsest to finest step",325 to 595 um,build/diagnostics/Figure_5/timestep_convergence.csv,path_length_um_mean of the WT agarose rows at the largest and at the smallest dt_s
+Figure 5,F5_E,"PproA/WT path-length ratio, coarsest to finest step",0.54 to 1.10,build/diagnostics/Figure_5/timestep_convergence_ratios.csv,path_length_um_ratio_to_wt of the PproA agarose rows at the largest and at the smallest dt_s
+Figure 5,F5_E,PproB agarose-like group-mean change between the two finest steps,0.30%,build/diagnostics/Figure_5/timestep_convergence.csv,the relative change of net_displacement_um_mean of PproB agarose between dt = 0.00125 s and dt = 0.000625 s
+Figure 5,F5_E,PproB/PproA net-displacement ratio per time step,"3.45, 3.31, 3.50, 3.29, 3.35, 3.34",build/diagnostics/Figure_5/timestep_convergence_ratios.csv,"net_displacement_um_ratio_to_wt of PproB divided by that of PproA, per dt_s, coarsest step first"
+Figure 5,F5_E,tested time-step ladder,"0.05, 0.01, 0.005, 0.0025, 0.00125, 0.000625 s",build/diagnostics/Figure_5/timestep_convergence.csv,"the distinct dt_s of the ladder, coarsest step first"
+Figure 5,F5_E,declared configuration time step,0.05 s,build/provenance/Supplementary_Figure_4/D.json,the declared_config_dt_s parameter the builder overrides
+Figure 5,F5_E,"per-contact stall probability, PproA",0.210,data/processed/motility_adopted_parameters/motility_summary_parameters_adopted.csv,"the stall_probability column of that agarose row, to three decimals"
+Figure 5,F5_E,"per-contact stall probability, WT",0.177,data/processed/motility_adopted_parameters/motility_summary_parameters_adopted.csv,"the stall_probability column of that agarose row, to three decimals"
+Figure 5,F5_E,"per-contact stall probability, PproB",0.123,data/processed/motility_adopted_parameters/motility_summary_parameters_adopted.csv,"the stall_probability column of that agarose row, to three decimals"
+Figure 6,F6_A,soft-agar wells,93,build/source_data/Figure_6/A/Figure_6A_well_measurements.csv,row count of the well table
+Figure 6,F6_A,"WT well span, lower edge",94.3%,build/source_data/Figure_6/A/Figure_6A_well_measurements.csv,"the smallest motility_value of the WT wells, to one decimal"
+Figure 6,F6_A,"WT well span, upper edge",109.3%,build/source_data/Figure_6/A/Figure_6A_well_measurements.csv,"the largest motility_value of the WT wells, to one decimal"
+Figure 6,F6_A,"experiment days, WT",2,build/source_data/Figure_6/A/Figure_6A_well_measurements.csv,distinct day_repeat_id of the WT wells
+Figure 6,F6_A,"experiment days, each AnTc condition",4,build/source_data/Figure_6/A/Figure_6A_well_measurements.csv,distinct day_repeat_id per non-WT condition
+Figure 6,F6_B,independent replicates per strain,6,build/source_data/Figure_6/B/Figure_6B_replicate_points.csv,distinct replicate_id per condition
+Figure 6,F6_C,cells per radial region,257,build/source_data/Figure_6/C/Figure_6C_cell_points.csv,row count per condition of the cell table
+Figure 6,F6_C,cell-dot threshold,12,analyses/figure_06_revision/build_figure_06_revision.py,the integer in the `if frequency <= N` rule that draws a sparse count as cell dots
+Figure 6,F6_E,imaging fields R1/R2/R3/R4,18/13/13/12,build/source_data/Figure_6/E/Figure_6E_roi_fraction_mean_sd.csv,"the n_rois column, one value per region_id"
+Figure 7,F7_A,paired units agarose/liquid,18/16,build/source_data/Figure_7/A/Figure_7A_paired_unit_summaries.csv,distinct metadata_key per medium
+Figure 7,F7_B,paired units agarose/liquid,18/18,build/source_data/Figure_7/B/Figure_7B_paired_unit_summaries.csv,distinct metadata_key per medium
+Figure 7,F7_C,paired units agarose/liquid,18/16,build/source_data/Figure_7/C/Figure_7C_paired_unit_summaries.csv,distinct metadata_key per medium
+Figure 7,F7_D,paired-unit bootstrap resamples,10000,build/provenance/Figure_7/D.json,the bootstrap_iterations parameter of the panel provenance
+Figure 7,F7_D,symmetric log axis span,1/6.5 to 6.5,build/provenance/Figure_7/D.json,"the ratio_axis_limits parameter, printed as one over the upper bound to the upper bound"
+Figure 7,F7_E,independent days,6,build/source_data/Figure_7/E/Figure_7E_day_repeat_means.csv,distinct collapsed_repeat_id per phenotype
+Figure 7,F7_E,cell-dot threshold,12,analyses/figure_07_revision/build_figure_07_revision.py,the integer in the `if frequency <= N` rule that draws a sparse count as cell dots
+Figure 7,F7_F,independent days,6,build/source_data/Figure_7/F/Figure_7F_day_repeat_means.csv,distinct collapsed_repeat_id per phenotype
+Figure 7,F7_F,cell-dot threshold,12,analyses/figure_07_revision/build_figure_07_revision.py,the integer in the `if frequency <= N` rule that draws a sparse count as cell dots
+Figure 7,F7_G,independent days,6,build/source_data/Figure_7/G/Figure_7G_day_repeat_means.csv,distinct collapsed_repeat_id per phenotype
+Figure 7,F7_G,cell-dot threshold,12,analyses/figure_07_revision/build_figure_07_revision.py,the integer in the `if frequency <= N` rule that draws a sparse count as cell dots
+Supplementary Figure S1,S1_A,cell values,126934,build/source_data/Supplementary_Figure_1/A/S1_A_source_data.csv.gz,row count of the cell-level table
+Supplementary Figure S1,S1_A,pooled stable window,200-800 min,build/source_data/Supplementary_Figure_1/A/S1_A_source_data.csv.gz,the _window_start_min and _window_end_min columns
+Supplementary Figure S1,S1_A,independent experiments per strain and lineage class,2,build/source_data/Supplementary_Figure_1/A/S1_A_source_data.csv.gz,distinct replicate per strain
+Supplementary Figure S1,S1_B,cell values,65967,build/source_data/Supplementary_Figure_1/B/S1_B_source_data.csv.gz,row count of the cell-level table
+Supplementary Figure S1,S1_B,pooled stable window,180-480 min,build/source_data/Supplementary_Figure_1/B/S1_B_source_data.csv.gz,the _window_start_min and _window_end_min columns
+Supplementary Figure S1,S1_B,independent experiments per strain and lineage class,2,build/source_data/Supplementary_Figure_1/B/S1_B_source_data.csv.gz,distinct replicate per strain
+Supplementary Figure S2,S2_A,flagellar-sector proteins,60,data/source_data/s2_a/S2_A_source_data.csv,distinct uniprot_id of the plotted matrix
+Supplementary Figure S2,S2_A,proteomics replicates per strain,4,build/source_data/Figure_4/B/delta_overlay.csv,distinct replicate per mutant of the experiment rows; the panel plots their mean
+Supplementary Figure S2,S2_A,promoter-series conditions,6,data/source_data/s2_a/S2_A_source_data.csv,distinct mutant of the plotted matrix
+Supplementary Figure S4,S4_A,motile fraction,0.63,build/provenance/Supplementary_Figure_4/A.json,the motile_fraction model input of the panel provenance
+Supplementary Figure S4,S4_A,run speed,19.9 um/s,build/provenance/Supplementary_Figure_4/A.json,the run_speed_um_s model input of the panel provenance
+Supplementary Figure S4,S4_A,reorientation rate,6.21 1/s,build/provenance/Supplementary_Figure_4/A.json,the reorientation_rate_s model input of the panel provenance
+Supplementary Figure S4,S4_A,stall probability,0.00,build/provenance/Supplementary_Figure_4/A.json,the stall_probability model input of the panel provenance
+Supplementary Figure S4,S4_A,panel seed,24,build/provenance/Supplementary_Figure_4/A.json,the panel_seed entry of the panel provenance
+Supplementary Figure S4,S4_B,motile fraction,0.80,build/provenance/Supplementary_Figure_4/B.json,the motile_fraction model input of the panel provenance
+Supplementary Figure S4,S4_B,run speed,27.6 um/s,build/provenance/Supplementary_Figure_4/B.json,the run_speed_um_s model input of the panel provenance
+Supplementary Figure S4,S4_B,reorientation rate,6.62 1/s,build/provenance/Supplementary_Figure_4/B.json,the reorientation_rate_s model input of the panel provenance
+Supplementary Figure S4,S4_B,stall probability,0.00,build/provenance/Supplementary_Figure_4/B.json,the stall_probability model input of the panel provenance
+Supplementary Figure S4,S4_B,panel seed,106,build/provenance/Supplementary_Figure_4/B.json,the panel_seed entry of the panel provenance
+Supplementary Figure S4,S4_C,motile fraction,0.86,build/provenance/Supplementary_Figure_4/C.json,the motile_fraction model input of the panel provenance
+Supplementary Figure S4,S4_C,run speed,32.0 um/s,build/provenance/Supplementary_Figure_4/C.json,the run_speed_um_s model input of the panel provenance
+Supplementary Figure S4,S4_C,reorientation rate,5.09 1/s,build/provenance/Supplementary_Figure_4/C.json,the reorientation_rate_s model input of the panel provenance
+Supplementary Figure S4,S4_C,stall probability,0.00,build/provenance/Supplementary_Figure_4/C.json,the stall_probability model input of the panel provenance
+Supplementary Figure S4,S4_C,panel seed,65,build/provenance/Supplementary_Figure_4/C.json,the panel_seed entry of the panel provenance
+Supplementary Figure S4,S4_D,motile fraction,0.42,build/provenance/Supplementary_Figure_4/D.json,the motile_fraction model input of the panel provenance
+Supplementary Figure S4,S4_D,run speed,15.4 um/s,build/provenance/Supplementary_Figure_4/D.json,the run_speed_um_s model input of the panel provenance
+Supplementary Figure S4,S4_D,reorientation rate,13.15 1/s,build/provenance/Supplementary_Figure_4/D.json,the reorientation_rate_s model input of the panel provenance
+Supplementary Figure S4,S4_D,stall probability,0.21,build/provenance/Supplementary_Figure_4/D.json,the stall_probability model input of the panel provenance
+Supplementary Figure S4,S4_D,panel seed,17,build/provenance/Supplementary_Figure_4/D.json,the panel_seed entry of the panel provenance
+Supplementary Figure S4,S4_E,motile fraction,0.73,build/provenance/Supplementary_Figure_4/E.json,the motile_fraction model input of the panel provenance
+Supplementary Figure S4,S4_E,run speed,23.2 um/s,build/provenance/Supplementary_Figure_4/E.json,the run_speed_um_s model input of the panel provenance
+Supplementary Figure S4,S4_E,reorientation rate,7.81 1/s,build/provenance/Supplementary_Figure_4/E.json,the reorientation_rate_s model input of the panel provenance
+Supplementary Figure S4,S4_E,stall probability,0.18,build/provenance/Supplementary_Figure_4/E.json,the stall_probability model input of the panel provenance
+Supplementary Figure S4,S4_E,panel seed,99,build/provenance/Supplementary_Figure_4/E.json,the panel_seed entry of the panel provenance
+Supplementary Figure S4,S4_F,motile fraction,0.75,build/provenance/Supplementary_Figure_4/F.json,the motile_fraction model input of the panel provenance
+Supplementary Figure S4,S4_F,run speed,28.6 um/s,build/provenance/Supplementary_Figure_4/F.json,the run_speed_um_s model input of the panel provenance
+Supplementary Figure S4,S4_F,reorientation rate,6.82 1/s,build/provenance/Supplementary_Figure_4/F.json,the reorientation_rate_s model input of the panel provenance
+Supplementary Figure S4,S4_F,stall probability,0.12,build/provenance/Supplementary_Figure_4/F.json,the stall_probability model input of the panel provenance
+Supplementary Figure S4,S4_F,panel seed,58,build/provenance/Supplementary_Figure_4/F.json,the panel_seed entry of the panel provenance
+Supplementary Figure S4,S4_A,cells per panel,26,build/provenance/Supplementary_Figure_4/A.json,the n_cells parameter of the panel provenance
+Supplementary Figure S4,S4_A,simulated time,20 s,build/provenance/Supplementary_Figure_4/A.json,the track_duration_s parameter of the panel provenance
+Supplementary Figure S4,S4_A,integration step,0.0025 s,build/provenance/Supplementary_Figure_4/A.json,the dt_s parameter of the panel provenance
+Supplementary Figure S4,S4_A,published domain width and height,148 x 96 um,build/provenance/Supplementary_Figure_4/A.json,the box_width_um and box_height_um parameters of the panel provenance
+Supplementary Figure S4,S4_D,obstacle disks per map,58,build/provenance/Supplementary_Figure_4/D.json,the obstacle_config count parameter of the panel provenance
+Supplementary Figure S4,S4_D,obstacle-field seed offset,300,build/provenance/Supplementary_Figure_4/D.json,obstacle_seed minus panel_seed of the panel provenance
+Supplementary Figure S4,S4_A,starting-position seed offset,1,build/provenance/Supplementary_Figure_4/A.json,starting_position_seed minus panel_seed of the panel provenance
+Supplementary Figure S4,S4_D,reorientation angle spread,1.247 rad,data/processed/motility_adopted_parameters/motility_summary_parameters_adopted.csv,"the turn_angle_sd_rad column, one value for all six strain-by-medium rows"
+Supplementary Figure S4,S4_D,mean stall duration,0.949 s,data/processed/motility_adopted_parameters/motility_summary_parameters_adopted.csv,the stall_mean_duration_s column of the agarose rows
+Supplementary Figure S5,S5_A,paired experiments agarose/liquid,18/16,build/statistics/Supplementary_Figure_5/A/S5_A_contour_grid_audit.csv,the n_paired_units column per medium
+Supplementary Figure S5,S5_A,agarose trajectories per phenotype,4390/2823,build/statistics/Supplementary_Figure_5/A/S5_A_contour_grid_audit.csv,"the n_trajectories column of the agarose rows, first phenotype of the pair first"
+Supplementary Figure S5,S5_A,liquid trajectories per phenotype,4595/3132,build/statistics/Supplementary_Figure_5/A/S5_A_contour_grid_audit.csv,"the n_trajectories column of the liquid rows, first phenotype of the pair first"
+Supplementary Figure S5,S5_A,contour probability mass,50% and 95%,build/provenance/Supplementary_Figure_5/A.json,the contour_probability_mass parameter of the panel provenance
+Supplementary Figure S5,S5_A,centroid bootstrap resamples,10000,build/provenance/Supplementary_Figure_5/A.json,the bootstrap_iterations parameter of the panel provenance
+Supplementary Figure S5,S5_A,"density-grid padding, kernel bandwidths per axis",4,build/provenance/Supplementary_Figure_5/A.json,the density_grid_padding_bandwidths parameter of the panel provenance
+Supplementary Figure S5,S5_B,paired experiments agarose/liquid,18/18,build/statistics/Supplementary_Figure_5/B/S5_B_contour_grid_audit.csv,the n_paired_units column per medium
+Supplementary Figure S5,S5_B,agarose trajectories per phenotype,6213/5443,build/statistics/Supplementary_Figure_5/B/S5_B_contour_grid_audit.csv,"the n_trajectories column of the agarose rows, first phenotype of the pair first"
+Supplementary Figure S5,S5_B,liquid trajectories per phenotype,4741/3781,build/statistics/Supplementary_Figure_5/B/S5_B_contour_grid_audit.csv,"the n_trajectories column of the liquid rows, first phenotype of the pair first"
+Supplementary Figure S5,S5_B,contour probability mass,50% and 95%,build/provenance/Supplementary_Figure_5/B.json,the contour_probability_mass parameter of the panel provenance
+Supplementary Figure S5,S5_B,centroid bootstrap resamples,10000,build/provenance/Supplementary_Figure_5/B.json,the bootstrap_iterations parameter of the panel provenance
+Supplementary Figure S5,S5_B,"density-grid padding, kernel bandwidths per axis",4,build/provenance/Supplementary_Figure_5/B.json,the density_grid_padding_bandwidths parameter of the panel provenance
+Supplementary Figure S5,S5_C,paired experiments agarose/liquid,18/16,build/statistics/Supplementary_Figure_5/C/S5_C_contour_grid_audit.csv,the n_paired_units column per medium
+Supplementary Figure S5,S5_C,agarose trajectories per phenotype,4841/9033,build/statistics/Supplementary_Figure_5/C/S5_C_contour_grid_audit.csv,"the n_trajectories column of the agarose rows, first phenotype of the pair first"
+Supplementary Figure S5,S5_C,liquid trajectories per phenotype,4087/3921,build/statistics/Supplementary_Figure_5/C/S5_C_contour_grid_audit.csv,"the n_trajectories column of the liquid rows, first phenotype of the pair first"
+Supplementary Figure S5,S5_C,contour probability mass,50% and 95%,build/provenance/Supplementary_Figure_5/C.json,the contour_probability_mass parameter of the panel provenance
+Supplementary Figure S5,S5_C,centroid bootstrap resamples,10000,build/provenance/Supplementary_Figure_5/C.json,the bootstrap_iterations parameter of the panel provenance
+Supplementary Figure S5,S5_C,"density-grid padding, kernel bandwidths per axis",4,build/provenance/Supplementary_Figure_5/C.json,the density_grid_padding_bandwidths parameter of the panel provenance
+Figure 1,F1_C,"smallest Benjamini-Hochberg q value, six AnTc levels against WT",0.088,build/statistics/Figure_1/C/F1_C_statistics.csv,the smallest q_value_bh_fdr of the panel's correction family
+Figure 1,F1_D,"smallest Benjamini-Hochberg q value, six AnTc levels against WT",0.22,build/statistics/Figure_1/D/F1_D_statistics.csv,the smallest q_value_bh_fdr of the panel's correction family
+Figure 1,F1_H,"exact P value against TH9677, Ppro1-flhDC",0.012,build/statistics/Figure_1/H/F1_H_statistics.csv,"the p_value_welch_t column of that comparison row, to two significant figures"
+Figure 1,F1_H,"exact P value against TH9677, PproA-flhDC",0.013,build/statistics/Figure_1/H/F1_H_statistics.csv,"the p_value_welch_t column of that comparison row, to two significant figures"
+Figure 1,F1_H,"exact P value against TH9677, PproB-flhDC",0.0075,build/statistics/Figure_1/H/F1_H_statistics.csv,"the p_value_welch_t column of that comparison row, to two significant figures"
+Figure 1,F1_H,"exact P value against TH9677, PproD-flhDC",0.00034,build/statistics/Figure_1/H/F1_H_statistics.csv,"the p_value_welch_t column of that comparison row, to two significant figures"
+Figure 1,F1_H,"smallest Benjamini-Hochberg q value, four Ppro strains against TH9677",0.0014,build/statistics/Figure_1/H/F1_H_statistics.csv,the smallest q_value_bh_fdr of the panel's correction family
+Figure 1,F1_H,"largest Benjamini-Hochberg q value, four Ppro strains against TH9677",0.013,build/statistics/Figure_1/H/F1_H_statistics.csv,the largest q_value_bh_fdr of the panel's correction family
+Figure 2,F2_A,"exact P value, 0 ng/mL",0.0053,build/statistics/Figure_2/A/F2_A_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 2,F2_A,"exact P value, 0.25 ng/mL",0.0075,build/statistics/Figure_2/A/F2_A_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 2,F2_A,"exact P value, 0.5 ng/mL",0.45,build/statistics/Figure_2/A/F2_A_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 2,F2_A,"exact P value, 1 ng/mL",0.0011,build/statistics/Figure_2/A/F2_A_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 2,F2_A,"exact P value, 2 ng/mL",0.00019,build/statistics/Figure_2/A/F2_A_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 2,F2_A,"exact P value, 4 ng/mL",0.0043,build/statistics/Figure_2/A/F2_A_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 2,F2_A,"smallest Benjamini-Hochberg q value, six AnTc levels against the same-day WT",0.0011,build/statistics/Figure_2/A/F2_A_statistics.csv,the smallest q_value_bh of the panel's correction family
+Figure 2,F2_A,"largest Benjamini-Hochberg q value, six AnTc levels against the same-day WT",0.45,build/statistics/Figure_2/A/F2_A_statistics.csv,the largest q_value_bh of the panel's correction family
+Figure 2,F2_B,"exact P value, Ppro1-flhDC",1.4 × 10^-5,build/statistics/Figure_2/B/F2_B_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 2,F2_B,"exact P value, PproA-flhDC",3.6 × 10^-5,build/statistics/Figure_2/B/F2_B_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 2,F2_B,"exact P value, PproB-flhDC",0.0015,build/statistics/Figure_2/B/F2_B_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 2,F2_B,"exact P value, PproD-flhDC",5.3 × 10^-5,build/statistics/Figure_2/B/F2_B_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 2,F2_B,"smallest Benjamini-Hochberg q value, four Ppro strains against the same-day WT",5.5 × 10^-5,build/statistics/Figure_2/B/F2_B_statistics.csv,the smallest q_value_bh of the panel's correction family
+Figure 2,F2_B,"largest Benjamini-Hochberg q value, four Ppro strains against the same-day WT",0.0015,build/statistics/Figure_2/B/F2_B_statistics.csv,the largest q_value_bh of the panel's correction family
+Figure 2,F2_C,"exact P value, PproA-flhDC",0.021,build/statistics/Figure_2/C/F2_C_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 2,F2_C,"exact P value, PproB-flhDC",0.17,build/statistics/Figure_2/C/F2_C_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 2,F2_C,"exact P value, PproD-flhDC",0.071,build/statistics/Figure_2/C/F2_C_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 2,F2_C,"smallest Benjamini-Hochberg q value, three Ppro strains against Ppro1-flhDC",0.063,build/statistics/Figure_2/C/F2_C_statistics.csv,the smallest q_value_bh of the panel's correction family
+Figure 2,F2_C,"largest Benjamini-Hochberg q value, three Ppro strains against Ppro1-flhDC",0.17,build/statistics/Figure_2/C/F2_C_statistics.csv,the largest q_value_bh of the panel's correction family
+Figure 3,F3_B,"exact P value, ΔflhDC",4.2 × 10^-5,build/statistics/Figure_3/B/F3_B_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 3,F3_B,"exact P value, ΔflgE",2.9 × 10^-6,build/statistics/Figure_3/B/F3_B_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 3,F3_B,"exact P value, ΔflgKL",0.077,build/statistics/Figure_3/B/F3_B_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 3,F3_B,"exact P value, motB (D33N)",0.027,build/statistics/Figure_3/B/F3_B_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 3,F3_B,"exact P value, ΔflgM flhAΔc",0.086,build/statistics/Figure_3/B/F3_B_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 3,F3_B,"smallest Benjamini-Hochberg q value, five assembly mutants against the same-day WT",1.4 × 10^-5,build/statistics/Figure_3/B/F3_B_statistics.csv,the smallest q_value_bh of the panel's correction family
+Figure 3,F3_B,"largest Benjamini-Hochberg q value, five assembly mutants against the same-day WT",0.086,build/statistics/Figure_3/B/F3_B_statistics.csv,the largest q_value_bh of the panel's correction family
+Figure 3,F3_C,"exact P value, ΔflhDC",0.049,build/statistics/Figure_3/C/F3_C_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 3,F3_C,"exact P value, ΔflgE",0.11,build/statistics/Figure_3/C/F3_C_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 3,F3_C,"exact P value, ΔflgKL",0.11,build/statistics/Figure_3/C/F3_C_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 3,F3_C,"exact P value, motB (D33N)",0.41,build/statistics/Figure_3/C/F3_C_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 3,F3_C,"exact P value, ΔflgM flhAΔc",0.020,build/statistics/Figure_3/C/F3_C_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 3,F3_C,"smallest Benjamini-Hochberg q value, five assembly mutants against the replicate WT",0.10,build/statistics/Figure_3/C/F3_C_statistics.csv,the smallest q_value_bh of the panel's correction family
+Figure 3,F3_C,"largest Benjamini-Hochberg q value, five assembly mutants against the replicate WT",0.41,build/statistics/Figure_3/C/F3_C_statistics.csv,the largest q_value_bh of the panel's correction family
+Figure 3,F3_E,"exact P value against the same-day ΔflhDC reference, Rotating flagella",2.2 × 10^-5,build/statistics/Figure_3/E/F3_E_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 3,F3_E,"exact P value against the same-day ΔflhDC reference, Non-rotating flagella",0.00050,build/statistics/Figure_3/E/F3_E_statistics.csv,"the p_value_paired_t column of that comparison row, to two significant figures"
+Figure 3,F3_E,"smallest Benjamini-Hochberg q value, two rotation conditions",4.4 × 10^-5,build/statistics/Figure_3/E/F3_E_statistics.csv,the smallest q_value_bh of the panel's correction family
+Figure 3,F3_E,"largest Benjamini-Hochberg q value, two rotation conditions",0.00050,build/statistics/Figure_3/E/F3_E_statistics.csv,the largest q_value_bh of the panel's correction family
+Figure 4,F4_B,"exact P value, ribosomal-sector slope against flagellar allocation",0.00021,build/statistics/Figure_4/B/A1_sector_regressions.csv,"the p_value of the Rib row, a two-sided test that the slope is zero"
+Figure 4,F4_B,"Benjamini-Hochberg q value, ribosomal-sector slope",0.0015,build/statistics/Figure_4/B/A1_sector_regressions.csv,"the p_bh of the Rib row, corrected over the seven non-flagellar sectors"
+Figure 4,F4_B,ribosomal-sector slope with its 95% confidence interval,-1.49 (95% CI -1.81 to -1.17),build/statistics/Figure_4/B/A1_sector_regressions.csv,"the slope, slope_ci95_low and slope_ci95_high of the Rib row"
+Figure 6,F6_B,"exact P value, Ppro1 - WT",3.8 × 10^-8,build/statistics/Figure_6/B/Figure_6B_paired_statistics.csv,"the exact_p_value column of that comparison row, to two significant figures"
+Figure 6,F6_B,"exact P value, PproA - WT",4.5 × 10^-5,build/statistics/Figure_6/B/Figure_6B_paired_statistics.csv,"the exact_p_value column of that comparison row, to two significant figures"
+Figure 6,F6_B,"exact P value, PproB - WT",1.5 × 10^-6,build/statistics/Figure_6/B/Figure_6B_paired_statistics.csv,"the exact_p_value column of that comparison row, to two significant figures"
+Figure 6,F6_B,"exact P value, PproD - WT",1.9 × 10^-6,build/statistics/Figure_6/B/Figure_6B_paired_statistics.csv,"the exact_p_value column of that comparison row, to two significant figures"

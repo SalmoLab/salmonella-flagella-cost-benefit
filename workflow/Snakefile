@@ -1,0 +1,33 @@
+"""Canonical workflow entry point for available and strict reproduction."""
+
+from pathlib import Path
+
+from flagella_repro.reproduction import reproduce_available_panels
+
+
+PROJECT_ROOT = Path(workflow.basedir).parent.resolve()
+MODE = config.get("mode", "available")
+if MODE not in {"available", "strict"}:
+    raise ValueError("workflow config 'mode' must be 'available' or 'strict'")
+
+MANIFEST = f"build/workflow/{MODE}_reproduction.json"
+
+
+rule all:
+    input:
+        MANIFEST
+
+
+rule reproduce_registered_panels:
+    output:
+        MANIFEST
+    run:
+        result = reproduce_available_panels(
+            PROJECT_ROOT,
+            Path(output[0]),
+            strict=(MODE == "strict"),
+        )
+        print(
+            f"Executed {result['executed_panel_count']} provenance-backed panel workflows; "
+            f"complete={result['complete']}."
+        )

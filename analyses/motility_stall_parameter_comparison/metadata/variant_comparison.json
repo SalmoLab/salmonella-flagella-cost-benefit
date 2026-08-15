@@ -1,0 +1,403 @@
+{
+  "schema_version": "1.0.0",
+  "record_type": "model_variant_comparison",
+  "record_id": "motility_stall_parameter_comparison",
+  "generated_at_utc": "2026-08-13T21:45:02.841746Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/motility_stall_parameter_comparison/compare_stall_variants.py"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/motility_stall_parameter_comparison/compare_stall_variants.py",
+      "sha256": "8ff85e4252d6df2f87e85769616c423a90f2e574e42fa0d6098b63f90f5852c0",
+      "bytes": 25474
+    },
+    {
+      "relative_path": "analyses/motility_stall_parameter_comparison/common.py",
+      "sha256": "caf0af5a8101af94fc84d41c247c550aedc4d4fe937e78060753394b75402dec",
+      "bytes": 23011
+    },
+    {
+      "relative_path": "data/processed/motility_turn_angle_comparison/motility_summary_parameters_global_turn_angle.csv",
+      "sha256": "10545ec490819c32c18257b69885c1e2d44bcdec3e43fb97193624ffa669f743",
+      "bytes": 1027,
+      "rows": 6
+    },
+    {
+      "relative_path": "data/processed/figure_07_revision/hook_count_per_cell.csv",
+      "sha256": "dcc9d66eda5612d1b46e831a59884f9ba0a61ba77b1f734b9b907a0608bd2603",
+      "bytes": 12104232,
+      "rows": 29789
+    },
+    {
+      "relative_path": "data/processed/figure_07_revision/paired_experimental_unit_measurements.csv",
+      "sha256": "e593124975f362714d5b7dc99bc21ea2b9f47b92c23e9ca337ac3a3f7478d59e",
+      "bytes": 87105,
+      "rows": 208
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/src/salmonella_motility_simulation/simulation.py",
+      "sha256": "4a72d6f26ef2310adc9aa2bf03bfa3450f4b506aa52e168a3dd94d832590df2b",
+      "bytes": 12624
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/data/config.yml",
+      "sha256": "4d42d5b2273c0f681c74bedf00c0ae28131675e7f8a3ba256b56e93dee777c67",
+      "bytes": 874
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/double_counting_hindrance.csv",
+      "sha256": "8fb6719e59619ad90c7e0f58dc2d1499c16ee405c0fa40da990a9bda1e2a35e6",
+      "bytes": 1849,
+      "rows": 12
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/double_counting_ladder.pdf",
+      "sha256": "f96ceb4aa866b301eaa3e655d85dccd906b005ecc9ceda01dfbe973b869757d5",
+      "bytes": 44060
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/double_counting_ladder.png",
+      "sha256": "295a2c38f47fb3db3bc803f80bbf0785894d433ac4557afee5555f24251d6d9f",
+      "bytes": 165403
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/double_counting_runs.csv",
+      "sha256": "40792856dd22ce54bc2976ae24d8de04c1b21122e26e1b44807d0fc50fc8d367",
+      "bytes": 256358,
+      "rows": 1500
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/double_counting_strain_ratios.csv",
+      "sha256": "4bfd203cf4c9adb91d8781249fa84858860cc02ac3b421c30fe06ae10b2b7d80",
+      "bytes": 836,
+      "rows": 10
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/double_counting_summary.csv",
+      "sha256": "d7eb0f4aff6ea16217d22c1a5c467192e3f2bb831d389d2d59937788278ddee7",
+      "bytes": 3982,
+      "rows": 15
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/measured_reference.csv",
+      "sha256": "d8f38dbc69a4b75ea8990564338502c804056f3fe484bfded9c9dbc9cc7d28ac",
+      "bytes": 793,
+      "rows": 6
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_A_baseline.csv",
+      "sha256": "578592eb97a9608272b77621435b3e5b706c924a924fd71b4266843f3142abfb",
+      "bytes": 60621,
+      "rows": 300
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_A_baseline.sha256",
+      "sha256": "61d6dd87aef0cf8a14a8d44f5ce61a5b9657d137559a79c7793383a8093317ce",
+      "bytes": 65
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_B_global_global.csv",
+      "sha256": "7dc4ce2ebcf0bf07abba5aaf6e8505b8c66dd761e6ea37b56db695e092060f00",
+      "bytes": 62338,
+      "rows": 300
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_B_global_global.sha256",
+      "sha256": "e90acdb05f5bd0813e0720a6e64ee4e0542e183bd0aa976c8f3456e6d34a764a",
+      "bytes": 65
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_C_global_p_duration_inv_n.csv",
+      "sha256": "a0f49e77ab328f9c640e9a453f3fd3e2faeb5972b29a2ffa4026518588a868e7",
+      "bytes": 65202,
+      "rows": 300
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_C_global_p_duration_inv_n.sha256",
+      "sha256": "ea927d7a5555c413eb07d06cc3b377b3803c74e0f97dc10855b12dc5c976a5a7",
+      "bytes": 65
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_D_global_p_duration_inv_sqrt_n.csv",
+      "sha256": "41fa66974d1c3a583d3518c636ea2b8f64d662dffb4d1732912d1fd1d6fe875e",
+      "bytes": 66786,
+      "rows": 300
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_D_global_p_duration_inv_sqrt_n.sha256",
+      "sha256": "4709e9a416b98240c4c7ac661fcb24f065d1cab82ebd9b2639715d5d4987e4d7",
+      "bytes": 65
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_E_both_inv_n.csv",
+      "sha256": "9e17403a884574886a30c273dc72bf26b9fff08647918cb3f57fa2f08bc90cef",
+      "bytes": 61357,
+      "rows": 300
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_E_both_inv_n.sha256",
+      "sha256": "7fc35fe2d4c0ebb8713a3b9287bdae2781ca66c551e5f1cca61ab138e359484b",
+      "bytes": 65
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_F_literature_duration.csv",
+      "sha256": "ca3a90eaed78935cc17522c0fac89ce2efcf81e6172b35218bee84ca5407fa24",
+      "bytes": 63891,
+      "rows": 300
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_F_literature_duration.sha256",
+      "sha256": "97d9f84b76d3950b0fb8120867d4861e3087a3e7b1349f416c6faeb2e85c76cf",
+      "bytes": 65
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_G_grognot_probability.csv",
+      "sha256": "7fe40a46fe24dc4a04e59a228eb4b578faa207008504e8d638b10151f8d2b216",
+      "bytes": 63948,
+      "rows": 300
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_G_grognot_probability.sha256",
+      "sha256": "2060a91112c0c8272d7fe6e5400559716ce4342c89a2af493a58f45aa5035c46",
+      "bytes": 65
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_t0_agarose_free.csv",
+      "sha256": "42c20a5b2d1724151fb4838486b412579c6b543563353eac96aa887bb331d904",
+      "bytes": 52435,
+      "rows": 300
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_t0_agarose_free.sha256",
+      "sha256": "d835b2cc3a2ffae3e24f9187025a32952e1c44da4e0e1a4bb51ba5f790f3bee6",
+      "bytes": 65
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_t0_agarose_full.csv",
+      "sha256": "81beac83726f80472b78a1e868e078be8c8e7ef6c7385d73297adfc74a175022",
+      "bytes": 62121,
+      "rows": 300
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_t0_agarose_full.sha256",
+      "sha256": "61d6dd87aef0cf8a14a8d44f5ce61a5b9657d137559a79c7793383a8093317ce",
+      "bytes": 65
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_t0_agarose_obstacles.csv",
+      "sha256": "218307f5bc4c25327e3c45b3893e9a71cb8a6ff7ba2ddea08559e5c4a65df27a",
+      "bytes": 54915,
+      "rows": 300
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_t0_agarose_obstacles.sha256",
+      "sha256": "09fd9c13eb8eead38de55ec82246104b5339cd464bc636a4e5c56efeafb0e833",
+      "bytes": 65
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_t0_liquid.csv",
+      "sha256": "82d904bf139609e1dcd052b159c2e87432c42fedae2e248a5da079c31d9d40c5",
+      "bytes": 50355,
+      "rows": 300
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/runs_t0_liquid.sha256",
+      "sha256": "e2d150b25ffa510802f3d9663e40569751bcbb16ce680652775d3049bfe2f449",
+      "bytes": 65
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/stall_parameter_grid.pdf",
+      "sha256": "8e2ead0cfb55bdc5599b3c406c5befb74b6b68ed23418329ed123234764d7a20",
+      "bytes": 21835
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/stall_parameter_grid.png",
+      "sha256": "735cfa062d5d8ead6c43dd7592b02c932a5f52c0ab0ad936ebf4bc814ab813d4",
+      "bytes": 75387
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/variant_net_displacement.csv",
+      "sha256": "dd6ac3f5ca998587d963ab3114a4df1ff6ba3fe443bf5b6f62213b057d233a65",
+      "bytes": 4249,
+      "rows": 21
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/variant_net_displacement.pdf",
+      "sha256": "5cdb6cdd21df9d59610efb905167c231b9f879aa1dd3b0d0b8e44cb3d692fa64",
+      "bytes": 47186
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/variant_net_displacement.png",
+      "sha256": "87f00f8c972e2b82fb8c287dd76809e515e87f52d08086acfacbb2829bd6cd02",
+      "bytes": 87825
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/variant_ordering.csv",
+      "sha256": "6950f0f6696afa963f7ff7903ca085cf482574e977c33edc16aa990a0cb1b6cc",
+      "bytes": 1694,
+      "rows": 7
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/variant_parameters.csv",
+      "sha256": "0f116d755e3ba18c536391931b478357eebe4a8c940087ff18fc9f94ad3dbc3f",
+      "bytes": 2545,
+      "rows": 21
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/variant_runs.csv",
+      "sha256": "95ee5e07fe5236c10ca6f34b86bc671f2ee698739b67e897382f0a372533d99b",
+      "bytes": 484681,
+      "rows": 2100
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/variant_stall_diagnostics.csv",
+      "sha256": "4339d7cdebc3f841490f4d85b6471096d0c6bb266f409686b6101fd8cd91eab3",
+      "bytes": 3428,
+      "rows": 21
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/variant_stall_diagnostics.pdf",
+      "sha256": "c1383df0af8a4c9102a9a560d6a4df6c7626d81084e7e209e2f672a24fe3c3d8",
+      "bytes": 24562
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/variant_stall_diagnostics.png",
+      "sha256": "ad7ddaca99ce91fe985a16684798009e53895cd6085cef4d110183a1cfc962d9",
+      "bytes": 84772
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/variant_strain_ratios.csv",
+      "sha256": "19e3e9fe94fabe9dffc204f40aab8954b997c524922fb857cdff2eaa175f7203",
+      "bytes": 2150,
+      "rows": 14
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/variant_strain_ratios.pdf",
+      "sha256": "1e22770bec30c6289e2117eadd1bff304dbb2dbc1fa216fe3b05cb02d2513983",
+      "bytes": 17480
+    },
+    {
+      "relative_path": "build/diagnostics/stall_parameter_comparison/variant_strain_ratios.png",
+      "sha256": "0c121cafed87180c27a7bd63bffc90a4f6c677338f0e0b0e2d09b8ef692b1c6d",
+      "bytes": 62565
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2",
+    "matplotlib": "3.11.1"
+  },
+  "parameters": {
+    "variants": [
+      {
+        "key": "A_baseline",
+        "label": "A baseline",
+        "description": "Current table: per-strain probability, per-strain duration. Neither has a source.",
+        "probability_exponent": null,
+        "duration_exponent": null,
+        "duration_override_s": null
+      },
+      {
+        "key": "B_global_global",
+        "label": "B global p, global t",
+        "description": "Both parameters set to the mean of the three current values.",
+        "probability_exponent": 0.0,
+        "duration_exponent": 0.0,
+        "duration_override_s": null
+      },
+      {
+        "key": "C_global_p_duration_inv_n",
+        "label": "C global p, t ~ 1/N",
+        "description": "Global probability; duration inversely proportional to mean hook number.",
+        "probability_exponent": 0.0,
+        "duration_exponent": 1.0,
+        "duration_override_s": null
+      },
+      {
+        "key": "D_global_p_duration_inv_sqrt_n",
+        "label": "D global p, t ~ 1/sqrt(N)",
+        "description": "Global probability; duration inversely proportional to the square root of N.",
+        "probability_exponent": 0.0,
+        "duration_exponent": 0.5,
+        "duration_override_s": null
+      },
+      {
+        "key": "E_both_inv_n",
+        "label": "E p ~ 1/N, t ~ 1/N",
+        "description": "Both parameters inversely proportional to mean hook number.",
+        "probability_exponent": 1.0,
+        "duration_exponent": 1.0,
+        "duration_override_s": null
+      },
+      {
+        "key": "F_literature_duration",
+        "label": "F global p, t = 2.07 s",
+        "description": "Global probability (no source exists); duration set to the mean dwell time in 0.25 % agar of Datta et al. 2025.",
+        "probability_exponent": 0.0,
+        "duration_exponent": 0.0,
+        "duration_override_s": 2.07
+      },
+      {
+        "key": "G_grognot_probability",
+        "label": "G p ~ N^-0.70, global t",
+        "description": "Probability scaled with flagella number at the strength Grognot et al. 2023 measured for the stall frequency; duration global.",
+        "probability_exponent": 0.7037375337749607,
+        "duration_exponent": 0.0,
+        "duration_override_s": null
+      }
+    ],
+    "normalisation": "Every scaled column is renormalised so its arithmetic mean over the three strains equals the mean of the three current values.",
+    "current_stall_probability": {
+      "PproA": 0.145575,
+      "WT": 0.277361,
+      "PproB": 0.087004
+    },
+    "current_stall_mean_duration_s": {
+      "PproA": 1.813134,
+      "WT": 0.735375,
+      "PproB": 0.298256
+    },
+    "current_mean_stall_probability": 0.16998000000000002,
+    "current_mean_stall_duration_s": 0.9489216666666667,
+    "mean_hooks_per_cell": {
+      "PproA": 2.0851417570878543,
+      "WT": 2.665851201611743,
+      "PproB": 4.432001402032948
+    },
+    "grognot_exponent": 0.7037375337749607,
+    "grognot_stall_frequency_ratio": 1.7,
+    "grognot_stall_frequency_ratio_sd": 0.2,
+    "datta_mean_dwell_s": 2.07,
+    "dt_s": 0.0025,
+    "observable": "mean net displacement per seed (um)",
+    "reference_phenotype": "PproA",
+    "bootstrap_draws": 10000,
+    "seed_plan_check": {
+      "checked": true,
+      "seeds_match": true,
+      "dt_match": true,
+      "cells_match": true,
+      "phenotypes_match": true,
+      "obstacle_seed_rule_match": true
+    }
+  },
+  "random_seeds": {
+    "population": "1000-1099",
+    "starting_positions": "population seed + 1",
+    "agarose_obstacles": "population seed + 300",
+    "bootstrap": 20260813
+  },
+  "limitations": [
+    "Neither stall parameter has a source. The grid tests how an unsourced effect is distributed between strains; it cannot make the effect sourced.",
+    "Stall occupancy and stall entry rate are evaluated per time step of obstacle overlap and do not converge with the time step. They are diagnostics at dt = 0.0025 s, never model outputs.",
+    "Grognot et al. 2023 measured a second flagellar system in Vibrio alginolyticus, not a flagella count in Salmonella. Mapping their 1.7-fold stall-frequency ratio onto our hook numbers is an assumption made here.",
+    "Datta et al. 2025 measured Pseudomonas putida in 0.25 % agar and report a power-law dwell time. The model draws an exponential stall time, so the anchor fixes the mean and nothing else.",
+    "All variants share the seed set and therefore the starting positions, the motile mask and the obstacle field. They do not share the later random draws. The pairing removes the initial-condition variance, not all stochastic variation.",
+    "Nothing written by this script is a manuscript panel."
+  ]
+}

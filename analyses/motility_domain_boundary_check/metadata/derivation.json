@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0.0",
+  "record_type": "model_diagnostic",
+  "record_id": "motility_domain_boundary_check",
+  "generated_at_utc": "2026-08-14T07:14:45.949698Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/motility_domain_boundary_check/measure_box_compression.py"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/motility_domain_boundary_check/measure_box_compression.py",
+      "sha256": "b7f358da8fc3a511b689ac6d20a86bdc04bb3acfac1578a402c26629e4f18319",
+      "bytes": 19031
+    },
+    {
+      "relative_path": "data/processed/motility_adopted_parameters/motility_summary_parameters_adopted.csv",
+      "sha256": "bb85e998da21f7ef8db3feb3cb45db0f2f72784995f68803ee4f42adac92950e",
+      "bytes": 1033,
+      "rows": 6
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/data/config.yml",
+      "sha256": "4d42d5b2273c0f681c74bedf00c0ae28131675e7f8a3ba256b56e93dee777c67",
+      "bytes": 874
+    },
+    {
+      "relative_path": "models/motility_simulation/corrected/src/salmonella_motility_corrected/simulation.py",
+      "sha256": "4709e2363de1c712f4cd4366b7b45591a06b3d7c80bc2b3391d6a99fdeadac8b",
+      "bytes": 12966
+    },
+    {
+      "relative_path": "models/motility_simulation/corrected/src/salmonella_motility_corrected/obstacles.py",
+      "sha256": "e166b8f935beee0a39fb0b0dac40d7cebed4c39052cbb86dda252c50a238c984",
+      "bytes": 9832
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/diagnostics/domain_boundary_check/domain_box_runs.csv",
+      "sha256": "68685e39a124763429eea480a7c34690cf1338c0dce23bb5631c14c6d9fd5de2",
+      "bytes": 325635,
+      "rows": 3000
+    },
+    {
+      "relative_path": "build/diagnostics/domain_boundary_check/domain_box_group_means.csv",
+      "sha256": "c15bc168c0adfb7ec098313db373e04e2a429fac60dc7bb4097a7a4502d464a1",
+      "bytes": 3791,
+      "rows": 30
+    },
+    {
+      "relative_path": "build/diagnostics/domain_boundary_check/domain_box_strain_ratios.csv",
+      "sha256": "4644925bf1cead4c9584a05b1279ac2f00722c78a6012258ce297f26d577782c",
+      "bytes": 1565,
+      "rows": 20
+    },
+    {
+      "relative_path": "build/diagnostics/domain_boundary_check/domain_box_compression.csv",
+      "sha256": "ef79d8515cb2d7436e6e5a4c79d6d3a7ad95c3b56f43f76f912b3b349890db91",
+      "bytes": 941,
+      "rows": 4
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2"
+  },
+  "parameters": {
+    "box_scales": [
+      1,
+      2,
+      4,
+      8,
+      12
+    ],
+    "published_box_um": [
+      148.0,
+      96.0
+    ],
+    "obstacle_count_rule": "58 * box_scale^2, scaled with box area",
+    "obstacle_area_fraction_by_scale": {
+      "1": 0.18514796789824994,
+      "2": 0.1856366162619069,
+      "4": 0.1871464072126751,
+      "8": 0.18728973320949435,
+      "12": 0.1874327536576256
+    },
+    "seeds": [
+      1000,
+      1099
+    ],
+    "n_seeds": 100,
+    "n_cells": 26,
+    "dt_s": 0.0025,
+    "observable": "mean net displacement per seed (um)",
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 20260814,
+    "compression_pproB_over_pproA": {
+      "agarose": {
+        "compression": 0.12913693046138497,
+        "ci": [
+          0.08440463454078072,
+          0.17248558287781512
+        ],
+        "plateau_shift": -0.0028963382538107485
+      },
+      "liquid": {
+        "compression": 0.1708772959259568,
+        "ci": [
+          0.141714433977833,
+          0.19980163869005926
+        ],
+        "plateau_shift": -0.0012680352271123851
+      }
+    },
+    "wall_touched_fraction_by_scale": {
+      "agarose_scale_1_PproA": 0.20884615384615388,
+      "agarose_scale_1_PproB": 0.595,
+      "agarose_scale_1_WT": 0.4773076923076923,
+      "agarose_scale_2_PproA": 0.11230769230769232,
+      "agarose_scale_2_PproB": 0.3446153846153846,
+      "agarose_scale_2_WT": 0.26384615384615384,
+      "agarose_scale_4_PproA": 0.05153846153846154,
+      "agarose_scale_4_PproB": 0.18461538461538463,
+      "agarose_scale_4_WT": 0.13846153846153847,
+      "agarose_scale_8_PproA": 0.024615384615384615,
+      "agarose_scale_8_PproB": 0.08807692307692308,
+      "agarose_scale_8_WT": 0.06423076923076923,
+      "agarose_scale_12_PproA": 0.016153846153846154,
+      "agarose_scale_12_PproB": 0.06346153846153847,
+      "agarose_scale_12_WT": 0.041923076923076924,
+      "liquid_scale_1_PproA": 0.3869230769230769,
+      "liquid_scale_1_PproB": 0.7830769230769231,
+      "liquid_scale_1_WT": 0.655,
+      "liquid_scale_2_PproA": 0.21384615384615388,
+      "liquid_scale_2_PproB": 0.48846153846153845,
+      "liquid_scale_2_WT": 0.38,
+      "liquid_scale_4_PproA": 0.10615384615384617,
+      "liquid_scale_4_PproB": 0.26807692307692305,
+      "liquid_scale_4_WT": 0.1973076923076923,
+      "liquid_scale_8_PproA": 0.04807692307692309,
+      "liquid_scale_8_PproB": 0.14038461538461539,
+      "liquid_scale_8_WT": 0.09730769230769232,
+      "liquid_scale_12_PproA": 0.029615384615384616,
+      "liquid_scale_12_PproB": 0.08730769230769232,
+      "liquid_scale_12_WT": 0.065
+    }
+  },
+  "random_seeds": {
+    "population": "1000-1099",
+    "starting_positions": "population seed + 1",
+    "agarose_obstacles": "population seed + 300",
+    "bootstrap": 20260814
+  },
+  "findings": [
+    "The reflecting 148 x 96 um domain lowers the strain ratios of net displacement. The measured compression is reported per medium and per ratio in domain_box_compression.csv.",
+    "The obstacle count scales with box area, so the realised area fraction is the published one at every box scale. The ladder therefore isolates the wall rather than mixing it with a change of mesh density."
+  ],
+  "limitations": [
+    "Cells start uniformly in the box, so a wall-adjacent band stays at risk of a wall contact. The reported wall-touched fraction in the largest box states how much of that risk is left, and the plateau shift between the two largest boxes states what it costs the ratio.",
+    "Two box sizes consume the random stream differently once obstacles are present, so seeds are paired for the bootstrap but single seeds are not comparable one by one.",
+    "The intervals quantify stochastic seed variation, not biological sampling uncertainty.",
+    "Nothing here is a manuscript panel. No figure, config, theme or palette changes."
+  ]
+}

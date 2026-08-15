@@ -1,0 +1,9 @@
+{
+  "panel_id": "F1_A",
+  "status": "blocked_asset",
+  "asset_type": "schematic",
+  "reference_artifact": "reference/2026-07-09/figures/Figure_1.svg",
+  "required_assets": ["Editable vector or original authoring file for both native and PtetA-flhDC schematic components", "Any linked cell, flagellum or regulatory-element artwork"],
+  "required_metadata": ["Authoring software and version", "Fonts and font substitutions", "Colour definitions", "Source and licence for external icons", "Panel dimensions and deterministic SVG/PDF export settings"],
+  "acceptance_tests": ["All labels and genotype notation match the July reference", "Editable source exports without missing links or fonts", "Scripted or documented deterministic export matches the frozen panel"]
+}

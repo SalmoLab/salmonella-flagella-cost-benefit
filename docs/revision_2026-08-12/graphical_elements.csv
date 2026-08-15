@@ -1,0 +1,238 @@
+panel_id,element,definition_or_action
+F1_A,placeholder box,missing editable schematic; no scientific graphic invented
+F1_B,placeholder box,missing calibrated microscopy; no image invented
+F1_C,frequency mark,"one observed count, half-width set by the square root of its cell frequency"
+F1_C,cell dot,"one cell, drawn where a count carries 12 cells or fewer"
+F1_C,replicate point,independent replicate mean
+F1_C,mean bar,mean of the replicate means
+F1_C,count annotation,mean and SD of the replicate means with the cell count
+F1_D,frequency mark,"one observed count, half-width set by the square root of its cell frequency"
+F1_D,cell dot,"one cell, drawn where a count carries 12 cells or fewer"
+F1_D,replicate point,independent replicate mean
+F1_D,mean bar,mean of the replicate means
+F1_D,count annotation,mean and SD of the replicate means with the cell count
+F1_E,count bubble,"one observed hook and filament count pair, bubble area set by the square root of the cell number"
+F1_E,bubble size key,"10, 100 and 1000 cells per bubble"
+F1_F,placeholder box,missing editable schematic; no scientific graphic invented
+F1_G,placeholder box,missing calibrated microscopy; no image invented
+F1_H,frequency mark,"one observed count, half-width set by the square root of its cell frequency"
+F1_H,cell dot,"one cell, drawn where a count carries 12 cells or fewer"
+F1_H,replicate point,independent replicate mean
+F1_H,mean bar,mean of the replicate means
+F1_H,count annotation,mean and SD of the replicate means with the cell count
+F2_A,curve point,"one growth curve, pale and descriptive"
+F2_A,day point,"one independent experiment day, normalized to the same-day WT mean, and the unit of every test"
+F2_A,mean and 95% CI,black diamond at the mean of the day values with its 95% bootstrap percentile interval
+F2_A,reference line,"dashed line at 1.0, the same-day reference"
+F2_B,curve point,"one growth curve, pale and descriptive"
+F2_B,day point,"one independent experiment day, normalized to the same-day WT mean, and the unit of every test"
+F2_B,mean and 95% CI,black diamond at the mean of the day values with its 95% bootstrap percentile interval
+F2_B,reference line,"dashed line at 1.0, the same-day reference"
+F2_C,cell distribution,"violin of the cell values, descriptive, drawn without a box and without a quartile line"
+F2_C,replicate point,one independent mother-machine experiment mean
+F2_C,mean and 95% CI,black diamond at the mean of the replicate means with its 95% t interval
+F2_C,reference line,"dashed line at 1.0, the Ppro1-flhDC reference"
+F3_A,placeholder box,missing editable assembly-mutant schematic
+F3_B,curve point,"one growth curve, pale and descriptive"
+F3_B,day point,"one independent experiment day, normalized to the same-day WT mean, and the unit of every test"
+F3_B,mean and 95% CI,black diamond at the mean of the day values with its 95% bootstrap percentile interval
+F3_B,reference line,"dashed line at 1.0, the same-day reference"
+F3_C,cell distribution,"violin of the cell values, descriptive, drawn without a box and without a quartile line"
+F3_C,replicate point,one independent mother-machine experiment mean
+F3_C,mean and 95% CI,black diamond at the mean of the replicate means with its 95% t interval
+F3_C,reference line,"dashed line at 1.0, the replicate WT reference"
+F3_D,solid line,fixed cell-economy prediction for the named rotation condition
+F3_E,day point,"one experiment day, in the colour and the shape its strain carries in B and C"
+F3_E,experiment mean and 95% CI,black diamond at the mean of the day values with its 95% t interval
+F3_E,model marker,black square at the single cell-economy value for 5% flagellar mass fraction
+F3_E,reference line,"solid line at zero penalty, the flagella-free reference"
+F4_A,editable schematic elements,"cell-economy model species, sectors, fluxes, and constraints"
+F4_B,replicate point,one of the four biological proteomics replicates of a strain
+F4_B,condition mean,"diamond at the condition mean, with no dispersion mark drawn"
+F4_B,model line,"solid cell-economy-model change from the reference, in the summary ink and with no uncertainty band"
+F4_B,model line beyond data,"dashed continuation above 3.34% flagellar allocation, which no strain reaches"
+F4_C,stacked segment,protein contribution
+F4_C,segment separator,"thin white line drawn between two stacked segments, which marks the boundary and carries no value"
+F4_C,external label,retained protein identity
+F4_C,leader line,label association
+F4_D,stacked segment,measured mean sector fraction of each strain
+F4_D,segment separator,"thin white line drawn between two stacked segments, which marks the boundary and carries no value"
+F4_E,stacked segment,modeled sector fraction at each flagellar allocation
+F4_E,segment separator,"thin white line drawn between two stacked segments, which marks the boundary and carries no value"
+F4_F,experiment day point,"one of the six independent growth-experiment days of a strain, at that strain's single proteomics-derived allocation"
+F4_F,strain mean,diamond at the strain mean
+F4_F,model line,"solid cell-economy-model line, not a fit to these points and drawn with no confidence band"
+F4_F,model line beyond data,dashed continuation past the measured flagellar range
+F5_A,colored line,travelled distance
+F5_A,endpoint,final distance
+F5_A,grey area,fixed glucose profile
+F5_B,colored line,modeled growth trajectory at the stated flagellar allocation
+F5_C,ordered point,final normalized biomass
+F5_C,connecting line,ordering across allocation values
+F5_D,seed point,seed-level mean net displacement
+F5_D,median,median
+F5_D,simulation interval,2.5–97.5% seed variability
+F5_E,seed point,seed-level mean net displacement
+F5_E,median,median
+F5_E,simulation interval,2.5–97.5% seed variability
+F6_A,well measurement,"one soft-agar well, pale and descriptive"
+F6_A,day point,"one independent experiment day, the analysis unit"
+F6_A,mean and 95% CI,black diamond at the mean of the day values with its 95% t interval
+F6_A,reference line,"solid line at 100%, the same-day WT reference"
+F6_B,replicate point,"one independent replicate, the analysis unit, carrying a single measurement so no pale layer is drawn"
+F6_B,mean and 95% CI,black diamond at the mean of the replicate values with its 95% t interval
+F6_B,reference line,"solid line at 100%, the WT reference"
+F6_C,frequency mark,"one observed hook count, half-width set by the square root of its cell frequency"
+F6_C,cell dot,"one cell, drawn where a count carries 12 cells or fewer"
+F6_C,mean bar,black bar at the mean of all cells at that plate position
+F6_C,count annotation,mean and SD over all cells with the cell count
+F6_D,schematic node,"a labelled step of the competition workflow, from the two strains to the readout"
+F6_D,workflow arrow,the order of the steps
+F6_D,expansion ring,a neutral grey ring that marks expansion distance only and carries no strain identity
+F6_D,sampling label,the four sampled regions R1 to R4
+F6_E,region point,the mean fraction of all cells of one strain in that region carrying the given hook count
+F6_E,connecting line,the ordering across hook bins within one strain
+F6_E,SD whisker,"plus and minus one SD across imaging fields, which are not biological replicates"
+F6_E,strain key,PproA and PproB
+F6_E,image placeholder,unavailable calibrated region image
+F7_A,unit point,"paired experimental unit, plotted as its mean log10 D_eff"
+F7_A,pairing line,the two phenotypes imaged in the same session
+F7_A,unit violin,kernel density of the unit means
+F7_A,ratio annotation,"medium, paired-unit count, D ratio and its 95% CI"
+F7_A,reference line,dashed D_eff = 1
+F7_B,unit point,"paired experimental unit, plotted as its mean log10 D_eff"
+F7_B,pairing line,the two phenotypes imaged in the same session
+F7_B,unit violin,kernel density of the unit means
+F7_B,ratio annotation,"medium, paired-unit count, D ratio and its 95% CI"
+F7_B,reference line,dashed D_eff = 1
+F7_C,unit point,"paired experimental unit, plotted as its mean log10 D_eff"
+F7_C,pairing line,the two phenotypes imaged in the same session
+F7_C,unit violin,kernel density of the unit means
+F7_C,ratio annotation,"medium, paired-unit count, D ratio and its 95% CI"
+F7_C,reference line,dashed D_eff = 1
+F7_D,component bar,"horizontal bar from the reference ratio of 1 to the estimate, filled for agarose and open for liquid"
+F7_D,estimate marker,"the point estimate, a circle for agarose and a square for liquid"
+F7_D,95% interval,paired-unit bootstrap percentile interval
+F7_D,estimate label,the numeric point estimate beside its own interval
+F7_D,row rule,thin line that separates the speed² and τ component rows from the D_eff product row
+F7_D,reference line,dashed ratio = 1
+F7_D,unit count annotation,paired units per medium
+F7_E,frequency mark,"one observed hook count, half-width set by the square root of its cell frequency"
+F7_E,cell dot,"one cell, drawn where a count carries 12 cells or fewer"
+F7_E,day point,independent day-replicate mean
+F7_E,mean bar,mean of the day-replicate means
+F7_E,count annotation,"mean and SD of the day means with the cell count, and the cells above the clipped axis named in the key"
+F7_F,frequency mark,"one observed hook count, half-width set by the square root of its cell frequency"
+F7_F,cell dot,"one cell, drawn where a count carries 12 cells or fewer"
+F7_F,day point,independent day-replicate mean
+F7_F,mean bar,mean of the day-replicate means
+F7_F,count annotation,"mean and SD of the day means with the cell count, and the cells above the clipped axis named in the key"
+F7_G,frequency mark,"one observed hook count, half-width set by the square root of its cell frequency"
+F7_G,cell dot,"one cell, drawn where a count carries 12 cells or fewer"
+F7_G,day point,independent day-replicate mean
+F7_G,mean bar,mean of the day-replicate means
+F7_G,count annotation,"mean and SD of the day means with the cell count, and the cells above the clipped axis named in the key"
+S1_A,cell distribution,"violin of the cell values, descriptive, drawn without a box and without a quartile line"
+S1_A,replicate point,one independent mother-machine experiment mean
+S1_A,mean bar,"black bar at the mean of the two experiment means, with no interval because the panel runs no test"
+S1_A,reference line,"dashed line at 1.0, the Ppro1-flhDC reference"
+S1_A,lineage title,mother-only or non-mother sub-axes
+S1_B,cell distribution,"violin of the cell values, descriptive, drawn without a box and without a quartile line"
+S1_B,replicate point,one independent mother-machine experiment mean
+S1_B,mean bar,"black bar at the mean of the two experiment means, with no interval because the panel runs no test"
+S1_B,reference line,"dashed line at 1.0, the Ppro1-flhDC reference"
+S1_B,lineage title,mother-only or non-mother sub-axes
+S2_A,strain point,"the mean protein mass fraction of one strain over its four biological proteomics replicates, with no dispersion mark drawn"
+S2_A,gene title,the gene name of that sub-axes
+S2_A,strain key,"the six promoter-series strains, in the shared strain colours"
+S3_A,unit point,"one paired experimental unit, that is one metadata key in one medium, filled circle for agarose and open square for liquid"
+S3_A,pairing line,"joins the two strains of the same paired unit, solid for agarose and dashed for liquid"
+S3_A,unit violin,"kernel density of the unit values on the plotted scale, clipped to the observed range"
+S3_A,effect annotation,"paired-unit median-speed ratio with its 95% bootstrap percentile interval and the unit count, per medium"
+S3_B,unit point,"one paired experimental unit, that is one metadata key in one medium, filled circle for agarose and open square for liquid"
+S3_B,pairing line,"joins the two strains of the same paired unit, solid for agarose and dashed for liquid"
+S3_B,unit violin,"kernel density of the unit values on the plotted scale, clipped to the observed range"
+S3_B,effect annotation,"paired-unit median-speed ratio with its 95% bootstrap percentile interval and the unit count, per medium"
+S3_C,unit point,"one paired experimental unit, that is one metadata key in one medium, filled circle for agarose and open square for liquid"
+S3_C,pairing line,"joins the two strains of the same paired unit, solid for agarose and dashed for liquid"
+S3_C,unit violin,"kernel density of the unit values on the plotted scale, clipped to the observed range"
+S3_C,effect annotation,"paired-unit median-speed ratio with its 95% bootstrap percentile interval and the unit count, per medium"
+S3_D,unit point,"one paired experimental unit, that is one metadata key in one medium, filled circle for agarose and open square for liquid"
+S3_D,pairing line,"joins the two strains of the same paired unit, solid for agarose and dashed for liquid"
+S3_D,unit violin,"kernel density of the unit values on the plotted scale, clipped to the observed range"
+S3_D,effect annotation,"paired-unit swimming-fraction difference with its 95% bootstrap percentile interval and the unit count, per medium"
+S3_E,unit point,"one paired experimental unit, that is one metadata key in one medium, filled circle for agarose and open square for liquid"
+S3_E,pairing line,"joins the two strains of the same paired unit, solid for agarose and dashed for liquid"
+S3_E,unit violin,"kernel density of the unit values on the plotted scale, clipped to the observed range"
+S3_E,effect annotation,"paired-unit swimming-fraction difference with its 95% bootstrap percentile interval and the unit count, per medium"
+S3_F,unit point,"one paired experimental unit, that is one metadata key in one medium, filled circle for agarose and open square for liquid"
+S3_F,pairing line,"joins the two strains of the same paired unit, solid for agarose and dashed for liquid"
+S3_F,unit violin,"kernel density of the unit values on the plotted scale, clipped to the observed range"
+S3_F,effect annotation,"paired-unit swimming-fraction difference with its 95% bootstrap percentile interval and the unit count, per medium"
+S3_G,unit point,"one paired experimental unit, that is one metadata key in one medium, filled circle for agarose and open square for liquid"
+S3_G,pairing line,"joins the two strains of the same paired unit, solid for agarose and dashed for liquid"
+S3_G,unit violin,"kernel density of the unit values on the plotted scale, clipped to the observed range"
+S3_G,effect annotation,"paired-unit directional-persistence ratio with its 95% bootstrap percentile interval and the unit count, per medium"
+S3_H,unit point,"one paired experimental unit, that is one metadata key in one medium, filled circle for agarose and open square for liquid"
+S3_H,pairing line,"joins the two strains of the same paired unit, solid for agarose and dashed for liquid"
+S3_H,unit violin,"kernel density of the unit values on the plotted scale, clipped to the observed range"
+S3_H,effect annotation,"paired-unit directional-persistence ratio with its 95% bootstrap percentile interval and the unit count, per medium"
+S3_H,medium key,"the single figure-level key for agarose and liquid, drawn once below this panel"
+S3_I,unit point,"one paired experimental unit, that is one metadata key in one medium, filled circle for agarose and open square for liquid"
+S3_I,pairing line,"joins the two strains of the same paired unit, solid for agarose and dashed for liquid"
+S3_I,unit violin,"kernel density of the unit values on the plotted scale, clipped to the observed range"
+S3_I,effect annotation,"paired-unit directional-persistence ratio with its 95% bootstrap percentile interval and the unit count, per medium"
+S4_A,track line,"the simulated path of one cell in the phenotype colour, fainter and thinner where the cell is non-motile"
+S4_A,run end marker,filled circle at the last position of a cell that ended in a run
+S4_A,stalled marker,filled square at the last position of a stalled cell
+S4_A,non-motile marker,open circle at the last position of a non-motile cell
+S4_A,medium title,names the medium and states that speed and turning are calibrated inputs
+S4_B,track line,"the simulated path of one cell in the phenotype colour, fainter and thinner where the cell is non-motile"
+S4_B,run end marker,filled circle at the last position of a cell that ended in a run
+S4_B,stalled marker,filled square at the last position of a stalled cell
+S4_B,non-motile marker,open circle at the last position of a non-motile cell
+S4_B,medium title,names the medium and states that speed and turning are calibrated inputs
+S4_C,track line,"the simulated path of one cell in the phenotype colour, fainter and thinner where the cell is non-motile"
+S4_C,run end marker,filled circle at the last position of a cell that ended in a run
+S4_C,stalled marker,filled square at the last position of a stalled cell
+S4_C,non-motile marker,open circle at the last position of a non-motile cell
+S4_C,medium title,names the medium and states that speed and turning are calibrated inputs
+S4_D,track line,"the simulated path of one cell in the phenotype colour, fainter and thinner where the cell is non-motile"
+S4_D,run end marker,filled circle at the last position of a cell that ended in a run
+S4_D,stalled marker,filled square at the last position of a stalled cell
+S4_D,non-motile marker,open circle at the last position of a non-motile cell
+S4_D,obstacle disc,one grey disc is one agarose-like obstacle
+S4_D,medium title,names the medium and states that speed and turning are calibrated inputs
+S4_E,track line,"the simulated path of one cell in the phenotype colour, fainter and thinner where the cell is non-motile"
+S4_E,run end marker,filled circle at the last position of a cell that ended in a run
+S4_E,stalled marker,filled square at the last position of a stalled cell
+S4_E,non-motile marker,open circle at the last position of a non-motile cell
+S4_E,obstacle disc,one grey disc is one agarose-like obstacle
+S4_E,medium title,names the medium and states that speed and turning are calibrated inputs
+S4_F,track line,"the simulated path of one cell in the phenotype colour, fainter and thinner where the cell is non-motile"
+S4_F,run end marker,filled circle at the last position of a cell that ended in a run
+S4_F,stalled marker,filled square at the last position of a stalled cell
+S4_F,non-motile marker,open circle at the last position of a non-motile cell
+S4_F,obstacle disc,one grey disc is one agarose-like obstacle
+S4_F,medium title,names the medium and states that speed and turning are calibrated inputs
+S5_A,filled contour band,"50% and 95% probability mass of the first phenotype, pooled over its trajectories"
+S5_A,contour outline,the same two levels of the second phenotype
+S5_A,marginal density,"kernel density of speed above the axes and of log10 D_eff to its right, in the same fill-against-outline convention"
+S5_A,centroid marker,"the mean of the per-unit centroids of a phenotype, with 95% paired-unit bootstrap whiskers, and the inferential mark of the panel"
+S5_A,centroid connector,joins the two centroids of the pair
+S5_A,reference line,dashed D_eff = 1
+S5_A,count annotation,paired experiments and trajectories per phenotype
+S5_B,filled contour band,"50% and 95% probability mass of the first phenotype, pooled over its trajectories"
+S5_B,contour outline,the same two levels of the second phenotype
+S5_B,marginal density,"kernel density of speed above the axes and of log10 D_eff to its right, in the same fill-against-outline convention"
+S5_B,centroid marker,"the mean of the per-unit centroids of a phenotype, with 95% paired-unit bootstrap whiskers, and the inferential mark of the panel"
+S5_B,centroid connector,joins the two centroids of the pair
+S5_B,reference line,dashed D_eff = 1
+S5_B,count annotation,paired experiments and trajectories per phenotype
+S5_C,filled contour band,"50% and 95% probability mass of the first phenotype, pooled over its trajectories"
+S5_C,contour outline,the same two levels of the second phenotype
+S5_C,marginal density,"kernel density of speed above the axes and of log10 D_eff to its right, in the same fill-against-outline convention"
+S5_C,centroid marker,"the mean of the per-unit centroids of a phenotype, with 95% paired-unit bootstrap whiskers, and the inferential mark of the panel"
+S5_C,centroid connector,joins the two centroids of the pair
+S5_C,reference line,dashed D_eff = 1
+S5_C,count annotation,paired experiments and trajectories per phenotype

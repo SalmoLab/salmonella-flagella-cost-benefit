@@ -1,0 +1,96 @@
+{
+  "command": [
+    "python",
+    "analyses/figure_02/panel_b/scripts/plot.py"
+  ],
+  "generated_at_utc": "2026-08-15T09:02:51.785794Z",
+  "inputs": [
+    {
+      "bytes": 752,
+      "relative_path": "analyses/figure_02/panel_b/config/panel.json",
+      "sha256": "7bcb89b4ce474e1dbe9dc35533154a0335d4a3f69c0cc09ae72cbd8aa04dea78"
+    },
+    {
+      "bytes": 17989,
+      "relative_path": "src/flagella_repro/population_growth.py",
+      "sha256": "7b179fe40d150ba006db2946f8047711dd58d0f9e141f9deb3355bade0a48bcb"
+    },
+    {
+      "bytes": 202,
+      "relative_path": "analyses/figure_02/panel_b/scripts/plot.py",
+      "sha256": "92a3b7ccae25be520c7077ca9ba87b78e9b6dafb49cbb8aeda468ca99848a2e8"
+    },
+    {
+      "bytes": 11960,
+      "relative_path": "src/flagella_repro/theme.py",
+      "sha256": "d3e93c1eed74fd0b647748e61326d019047f015627fb50377c8b3f1f2cb1cb41"
+    },
+    {
+      "bytes": 2704,
+      "relative_path": "config/palette.yaml",
+      "sha256": "1db43aaa3edd5b6f19a03cfcace6efdba38ccb13ac69260539b61e287eb424b7"
+    },
+    {
+      "bytes": 44980,
+      "relative_path": "data/processed/figure_02/F2_B/per_curve.csv",
+      "rows": 90,
+      "sha256": "c6620c5cf570f81ee029596435254aab2ee2e7e37b404b88120ba05cb2c2972d"
+    }
+  ],
+  "limitations": [
+    "The canonical run starts from migrated fitted growth-rate tables, not raw plate-reader workbooks.",
+    "The July multi-panel placement and crop have not yet passed visual regression."
+  ],
+  "outputs": [
+    {
+      "bytes": 15258,
+      "relative_path": "build/source_data/Figure_2/B/F2_B_source_data.csv",
+      "rows": 125,
+      "sha256": "5488ee5e3f9d59fd312eb75def90196438aee2abab774b2144b520626845201b"
+    },
+    {
+      "bytes": 867,
+      "relative_path": "build/statistics/Figure_2/B/F2_B_statistics.csv",
+      "rows": 4,
+      "sha256": "a2291368e9ff4547eb91be7a26d62103dcf4ea09015256eedb6e0402257ddda2"
+    },
+    {
+      "bytes": 39403,
+      "relative_path": "build/panels/Figure_2/B/F2_B.svg",
+      "sha256": "4ad95a19e1b4391f9454033467cc1cc4d684ac5f1d1cbadb2bcba2a890a0112c"
+    },
+    {
+      "bytes": 31745,
+      "relative_path": "build/panels/Figure_2/B/F2_B.pdf",
+      "sha256": "4cc3ed209685084b98425b2852f8ad8af7da486f7d7e5701a6618b402978ac7e"
+    },
+    {
+      "bytes": 80727,
+      "relative_path": "build/panels/Figure_2/B/F2_B.png",
+      "sha256": "0e535ffee22686278a4eff7e2a3b69afc07bc4615688ad07b6617605563eeb08"
+    }
+  ],
+  "panel_id": "F2_B",
+  "parameters": {
+    "biological_unit": "experiment_day",
+    "bootstrap_draws": 20000,
+    "curve_points_role": "descriptive within-day distribution",
+    "inferential_unit": "experiment_day",
+    "multiple_testing": "Benjamini-Hochberg within panel",
+    "normalization": "every observation, reference included, divided by the same-day reference-strain mean",
+    "statistical_test": "paired two-sided t-test by experiment day on normalized effect",
+    "technical_unit": "plate-reader curve"
+  },
+  "random_seeds": {
+    "bootstrap": 20260709,
+    "curve_cloud_jitter": 20260709
+  },
+  "schema_version": "1.0.0",
+  "software": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "python": "3.12.11"
+  },
+  "status": "partial_reproduction"
+}

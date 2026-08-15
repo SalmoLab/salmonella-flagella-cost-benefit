@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F1_F",
+  "status": "blocked_asset",
+  "generated_at_utc": "2026-08-12T21:05:55.557569Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/figure_01/render_blocked_assets.py",
+    "--panel",
+    "F"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_01/panel_f/config/asset_intake.json",
+      "sha256": "f7d524ce68c91fbb090815c20e615ddf9e32fb337b4bd414308e2eb767014890",
+      "bytes": 764
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/source_data/Figure_1/F/F1_F_source_data.csv",
+      "sha256": "b33e8a691304efb48d43cf0b7e1b338f54ec5bd644d423ee1327a0a6b544c55e",
+      "bytes": 121
+    },
+    {
+      "relative_path": "build/panels/Figure_1/F/F1_F.svg",
+      "sha256": "9defa2791f04a124f16fa7ff268249ef6827d49609ef61a8cc14b4c0017de97d",
+      "bytes": 2795
+    },
+    {
+      "relative_path": "build/panels/Figure_1/F/F1_F.pdf",
+      "sha256": "43138016227edd0f515a206e359b2acaf3d5b0075389a2863c305f7d98ff52d7",
+      "bytes": 18128
+    },
+    {
+      "relative_path": "build/panels/Figure_1/F/F1_F.png",
+      "sha256": "3c74b27bc7c7d7ec0e64dea650a4c5d0f07d6c97c27886c521e5c599e2a44833",
+      "bytes": 33276
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "matplotlib": "3.11.1"
+  },
+  "parameters": {
+    "scientific_values_plotted": 0
+  },
+  "random_seeds": {},
+  "limitations": [
+    "Missing: editable constitutive-promoter schematic. This output is an explicit placeholder."
+  ],
+  "blocker": {
+    "reason": "editable constitutive-promoter schematic",
+    "required_assets": [
+      "editable constitutive-promoter schematic"
+    ]
+  }
+}

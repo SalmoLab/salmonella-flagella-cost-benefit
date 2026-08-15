@@ -1,0 +1,9 @@
+{
+  "panel_id": "F1_B",
+  "status": "blocked_asset",
+  "asset_type": "microscopy",
+  "reference_artifact": "reference/2026-07-09/figures/Figure_1.svg",
+  "required_assets": ["Original WT field and exact PtetA-flhDC fields for 0, 0.25, 0.5, 1, 2 and 4 conditions", "Unmodified FliC, FlgE and DNA channels", "Processing scripts, Fiji macros or project files"],
+  "required_metadata": ["Microscope, objective and pixel calibration", "Exposure and acquisition settings", "Field-of-view and cell selection identifiers", "Projection, background, contrast and crop operations", "Channel colours", "Scale-bar source and dimensions"],
+  "acceptance_tests": ["Each displayed crop traces to one raw field by checksum", "Global image adjustments are replayable", "Scale bar is generated from calibration metadata", "Re-export matches the frozen panel"]
+}

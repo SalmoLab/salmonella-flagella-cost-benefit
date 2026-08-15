@@ -1,0 +1,90 @@
+{
+  "upload_type": "software",
+  "title": "Reproducible analyses and figures for \"The cost-benefit trade-off of peritrichous flagellation in bacteria\"",
+  "version": "1.0.0",
+  "language": "eng",
+  "access_right": "open",
+  "license": "gpl-3.0-only",
+  "description": "<p>This collection rebuilds every figure of the manuscript <em>\"The cost-benefit trade-off of peritrichous flagellation in bacteria\"</em> (Giralt-Z&uacute;&ntilde;iga et al.) from registered input tables with recorded provenance. It covers the 12 August 2026 revision: seven main figures, five supplementary figures, 60 panels.</p><p>Each panel has one canonical producer script, one output directory, and one provenance document that names its inputs, its software and its random seeds. A pinned Python 3.12 environment, a Snakemake workflow, a panel and artifact registry, a figure quality-control suite and a 130-test pytest suite are included.</p><p><strong>Scope and honest limits.</strong> Reproduction is partial by design and the collection says so in machine-readable form. 53 of 60 panels start from migrated processed tables rather than from raw instrument output; 2 panels reproduce end to end; 5 panels are asset-blocked and render a labelled placeholder instead of an invented graphic. The strict reproduction gate refuses until all 60 panels reach status <code>reproduced</code>.</p><p><strong>Data are archived separately.</strong> The large input, reference and archive trees are not part of this software record. See the Data Availability statement of the manuscript and the related identifiers below.</p><p><strong>Third-party code.</strong> Two upstream model code bases are vendored unmodified, each with its own licence and checksum record, and are <em>not</em> covered by this record's licence: <code>models/motility_simulation/upstream/</code> (MIT, Max Planck Unit for the Science of Pathogens) and <code>models/cell_economy/upstream/</code> (GPL-3.0-only, M. Jahn). See <code>LICENSES.md</code> in the repository for the per-directory licence map.</p>",
+  "creators": [
+    {
+      "name": "Giralt-Zúñiga, María José",
+      "affiliation": "Max Planck Unit for the Science of Pathogens, Berlin, Germany; Institute of Biology/Molecular Microbiology, Humboldt-Universität zu Berlin, Berlin, Germany"
+    },
+    {
+      "name": "Jahn, Michael",
+      "affiliation": "Max Planck Unit for the Science of Pathogens, Berlin, Germany",
+      "orcid": "0000-0002-3913-153X"
+    },
+    {
+      "name": "Franklin, Joshua L.",
+      "affiliation": "Department of Microbiology and Molecular Genetics, Michigan State University, East Lansing, MI, USA"
+    },
+    {
+      "name": "Alagesan, Kathirvel",
+      "affiliation": "Max Planck Unit for the Science of Pathogens, Berlin, Germany"
+    },
+    {
+      "name": "Kondrot, Florian",
+      "affiliation": "Max Planck Unit for the Science of Pathogens, Berlin, Germany"
+    },
+    {
+      "name": "Kaganovitch, Eugen",
+      "affiliation": "Institute of Biology/Molecular Microbiology, Humboldt-Universität zu Berlin, Berlin, Germany"
+    },
+    {
+      "name": "Hallenga, Lasse",
+      "affiliation": "Institute of Biology/Molecular Microbiology, Humboldt-Universität zu Berlin, Berlin, Germany"
+    },
+    {
+      "name": "Derado, Sarya",
+      "affiliation": "Institute of Biology/Molecular Microbiology, Humboldt-Universität zu Berlin, Berlin, Germany"
+    },
+    {
+      "name": "Hughes, Kelly T.",
+      "affiliation": "School of Biological Sciences, University of Utah, Salt Lake City, Utah, USA"
+    },
+    {
+      "name": "Popp, Philipp F.",
+      "affiliation": "Institute of Biology/Molecular Microbiology, Humboldt-Universität zu Berlin, Berlin, Germany"
+    },
+    {
+      "name": "Charpentier, Emmanuelle",
+      "affiliation": "Max Planck Unit for the Science of Pathogens, Berlin, Germany"
+    },
+    {
+      "name": "Dufour, Yann S.",
+      "affiliation": "Department of Microbiology and Molecular Genetics, Michigan State University, East Lansing, MI, USA"
+    },
+    {
+      "name": "Erhardt, Marc",
+      "affiliation": "Max Planck Unit for the Science of Pathogens, Berlin, Germany; Institute of Biology/Molecular Microbiology, Humboldt-Universität zu Berlin, Berlin, Germany"
+    }
+  ],
+  "keywords": [
+    "flagella",
+    "bacterial motility",
+    "Salmonella enterica",
+    "proteome allocation",
+    "growth trade-off",
+    "cost-benefit trade-off",
+    "reproducible research",
+    "figure reproduction",
+    "Snakemake"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/MPUSP/salmonella-motility-simulation",
+      "relation": "isDerivedFrom",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/m-jahn/cell-economy-models",
+      "relation": "isDerivedFrom",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ],
+  "notes": "LICENCE: decided by Marc Erhardt on 15 August 2026. \"gpl-3.0-only\" is the Zenodo identifier for this software record, which covers the collection's own code. It is the SPDX identifier GPL-3.0-only, lower-cased, as Zenodo's licence vocabulary spells it. GPL-3.0-only replaces the MIT licence chosen earlier on the same day; Marc did not want a permissive licence. All of the collection's own code now carries one licence, so models/cell_economy/ no longer differs from the root. The vendored trees under models/*/upstream/ keep their own licences. Documentation, figures and the separate data deposit stay CC-BY-4.0. LICENSE, models/cell_economy/LICENSE, LICENSES.md, CITATION.cff, config/artifacts.csv and config/fetch_manifest.csv all agree; LICENSES.md holds the per-directory map and is the authority.\n\nSTILL TO RESOLVE BEFORE THE RELEASE IS PUBLISHED. (1) ORCID: only Michael Jahn's ORCID (0000-0002-3913-153X) could be verified inside this repository. Every other creator has no orcid key. Do not guess; add each verified ORCID as \"orcid\": \"0000-0000-0000-0000\". A creator with no verified ORCID must keep the key absent, because Zenodo rejects a malformed value. (2) AUTHOR LIST: this list and its order are taken verbatim from the merged manuscript of 21 July 2026. Confirm that the software record should carry all thirteen manuscript authors rather than only the contributors to the code. (3) MANUSCRIPT DOI: add a related identifier {\"identifier\": \"<manuscript DOI>\", \"relation\": \"isSupplementTo\", \"resource_type\": \"publication-article\", \"scheme\": \"doi\"} once the paper has a DOI. It is omitted here because Zenodo rejects a placeholder DOI. (4) DATA DEPOSIT DOI: add {\"identifier\": \"<data deposit DOI>\", \"relation\": \"isSupplementedBy\", \"resource_type\": \"dataset\", \"scheme\": \"doi\"} once the Zenodo data record exists. (5) VERSION: 1.0.0 is a proposal. It must equal the git tag and the version in CITATION.cff and pyproject.toml.\n\nThis record covers the collection's own code, configuration and documentation only. The vendored trees under models/*/upstream/ keep their own licences: MIT (motility simulation, Max Planck Unit for the Science of Pathogens) and GPL-3.0-only (cell-economy models, M. Jahn). Their LICENSE files and CHECKSUMS.sha256 records are redistributed unchanged."
+}

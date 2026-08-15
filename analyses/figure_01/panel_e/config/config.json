@@ -1,0 +1,26 @@
+{
+  "panel_id": "F1_E",
+  "figure_number": 1,
+  "panel_label": "E",
+  "recipe": "hook_filament_bubbles",
+  "command_module": "analyses.figure_01.panel_e.scripts.plot",
+  "inputs": {
+    "cell_points": "data/processed/figure_01/F1_E/cell_points.csv",
+    "legacy_bubble_counts": "data/processed/figure_01/F1_E/legacy_bubble_counts.csv",
+    "legacy_statistics": "data/processed/figure_01/F1_E/legacy_statistics.csv"
+  },
+  "expected_rows": {
+    "cell_points": 18873,
+    "legacy_bubble_counts": 51,
+    "legacy_statistics": 1
+  },
+  "random_seed": 1337,
+  "output_dir": "build/panels/F1_E",
+  "limitations": [
+    "Starts from migrated processed per-cell tables, not archived raw microscopy segmentation outputs.",
+    "The current panel omits the legacy title, correlation annotation and cell-count footer; that current crop is encoded here.",
+    "Final multi-panel assembly and pixel-level reference comparison are not yet implemented."
+  ],
+  "bubble_size_base": 1.0,
+  "bubble_size_scale": 2.0
+}

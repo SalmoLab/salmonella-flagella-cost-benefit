@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F2_D",
+  "status": "blocked_asset",
+  "generated_at_utc": "2026-08-11T06:56:35Z",
+  "command": [
+    "blocked: intake editable Figure 2D schematic, linked artwork, genotype audit and deterministic export recipe"
+  ],
+  "inputs": [
+    {
+      "relative_path": "reference/2026-07-09/figures/Figure_2.svg",
+      "sha256": "5d0d4848c6f147f9cfd729c10c62b7c3e6f865edfaa687d29fe311fb03c14ea8",
+      "bytes": 1551061
+    }
+  ],
+  "outputs": [],
+  "software": {},
+  "parameters": {},
+  "random_seeds": {},
+  "blocker": {
+    "reason": "The assembled July figure is available, but the editable schematic, linked artwork, genotype audit and export provenance are absent.",
+    "required_assets": [
+      "Editable F2_D schematic source",
+      "Linked source artwork",
+      "Construct-to-strain and genotype-to-structure mapping",
+      "Font, licence and authoring-software metadata",
+      "Deterministic export instructions"
+    ]
+  }
+}

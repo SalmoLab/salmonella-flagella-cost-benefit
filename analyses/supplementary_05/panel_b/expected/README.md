@@ -1,0 +1,1 @@
+No frozen 9 July reference exists for this panel. Supplementary Figure 5 is new in the 12 August 2026 revision; the closest historical target is `reference/2026-07-09/figures/Figure_5.png`, panel B, which carried the same contours at main-figure size. Generated output goes in `build/panels/Supplementary_Figure_5/B/`.

@@ -1,0 +1,9 @@
+{
+  "panel_id": "F1_F",
+  "status": "blocked_asset",
+  "asset_type": "schematic",
+  "reference_artifact": "reference/2026-07-09/figures/Figure_1.svg",
+  "required_assets": ["Editable vector or original authoring file for the four synthetic-promoter constructs", "Any linked cell or flagellum artwork"],
+  "required_metadata": ["Authoring software and version", "Mapping of Ppro1/PproA/PproB/PproD to strains and expression order", "Fonts and colours", "Source and licence for external icons", "Panel dimensions and deterministic export settings"],
+  "acceptance_tests": ["Promoter order and construct labels match the July reference and strain metadata", "Editable source exports without missing links or fonts", "Deterministic export matches the frozen panel"]
+}

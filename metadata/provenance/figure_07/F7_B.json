@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F7_B",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-12T00:00:00Z",
+  "command": [
+    ".venv/bin/python",
+    "analyses/figure_07_revision/build_figure_07_revision.py",
+    "--panel",
+    "B"
+  ],
+  "backend": "Python 3.12",
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_07_revision/build_figure_07_revision.py",
+      "sha256": "cee7de2223cefc1af226d531554e3c104eca3f8c6b014c98b89fc3e4dc81789f",
+      "bytes": 46639
+    },
+    {
+      "relative_path": "data/processed/figure_07_revision/direct_pair_track_measurements.csv.gz",
+      "sha256": "e6eb9f1aabff24207d9eceeee459bdf0c57d16b2c979c9b7bbccc19141d742ff",
+      "bytes": 11599568
+    },
+    {
+      "relative_path": "data/processed/figure_07_revision/paired_experimental_unit_measurements.csv",
+      "sha256": "e593124975f362714d5b7dc99bc21ea2b9f47b92c23e9ca337ac3a3f7478d59e",
+      "bytes": 87105
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/panels/Figure_7/B/Figure_7B.pdf",
+      "sha256": "25cb70d52e1cf90435fa849e8a115d5d59c08f0461643ce40e885793ccbf81f5",
+      "bytes": 43946
+    },
+    {
+      "relative_path": "build/panels/Figure_7/B/Figure_7B.png",
+      "sha256": "e6344907f6956547d251eed42f60476eb18519174440a64adf91a9b952e4de1b",
+      "bytes": 121841
+    },
+    {
+      "relative_path": "build/panels/Figure_7/B/Figure_7B.svg",
+      "sha256": "300fa0f50a3ee45a400682f9c3c8f9bef9832dcf9e7a8b7b8f68e0b4cc4de091",
+      "bytes": 88159
+    },
+    {
+      "relative_path": "build/source_data/Figure_7/B/Figure_7B_direct_pair_trajectories.csv.gz",
+      "sha256": "deaaaa2be553d13ee2298cb731a93d3a68b928b831a8fbba7217c1188238c897",
+      "bytes": 599038
+    },
+    {
+      "relative_path": "build/source_data/Figure_7/B/Figure_7B_paired_unit_summaries.csv",
+      "sha256": "69161258359f5e46e5f78a60b5f0a7104bd697e907949eb56be8a570ab5efd9e",
+      "bytes": 11222
+    },
+    {
+      "relative_path": "build/statistics/Figure_7/B/Figure_7B_counts.csv",
+      "sha256": "929493b3afe259a91edc65554d5ad400dff82e290cde69151b06bc73adb03cef",
+      "bytes": 100
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3"
+  },
+  "random_seeds": {
+    "paired_unit_bootstrap": 20260812
+  },
+  "parameters": {
+    "bootstrap_iterations": 10000,
+    "paired_unit_statistic": "per-unit mean of ln speed, displayed in um/s, above per-unit mean of ln D_eff, displayed as log10",
+    "ratio_axis_limits": [
+      0.15384615384615385,
+      6.5
+    ],
+    "hook_axis_cap": 20,
+    "hook_count_geometry": "discrete_count, matching analyses/figure_01 panels C, D and H",
+    "contour_probability_mass": [
+      0.5,
+      0.8,
+      0.95
+    ],
+    "direct_pair_filter": "metadata keys from reciprocal-label paired-unit tables"
+  },
+  "results": {
+    "unit_counts": {
+      "agarose": 18,
+      "liquid": 18
+    },
+    "track_rows": 20178,
+    "max_geometric_mean_residual": 2.220446049250313e-16,
+    "max_speed_squared_residual": 1.1102230246251565e-16
+  },
+  "limitations": [
+    "The canonical run starts from migrated direct-pair track and paired-unit tables, not raw tracking acquisitions.",
+    "The revised panel has not yet passed visual acceptance against the July reference.",
+    "Each marker is the per-unit mean of a natural logarithm over that unit's trajectories -- ln speed on the upper row, ln D_eff on the lower one -- so a unit contributes one value regardless of how many trajectories it carries.",
+    "The annotated D ratio is the paired bootstrap estimate from the panel D decomposition table, not a test."
+  ],
+  "interpretation_limit": ""
+}

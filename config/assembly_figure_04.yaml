@@ -1,0 +1,50 @@
+figure_id: Figure_4
+status: partial_reproduction
+width_mm: 180
+height_mm: 209
+output_stem: build/figures/Figure_4/Figure_4_revision_partial
+limitations:
+- Proteomics starts from delivered protein-level output; raw MS chain is absent.
+panels:
+- label: A
+  kind: svg
+  source: build/panels/Figure_4/A/Figure_4_A.svg
+  x: 3.5
+  y: 5
+  width: 48
+  height: 55
+- label: B
+  kind: svg
+  source: build/panels/Figure_4/B/Figure_4_B.svg
+  x: 56.5
+  y: 5
+  width: 120
+  height: 55
+- label: C
+  kind: svg
+  source: build/panels/Figure_4/C/Figure_4_C.svg
+  x: 3.5
+  y: 67
+  width: 84
+  height: 65
+- label: D
+  kind: svg
+  source: build/panels/Figure_4/D/Figure_4_D.svg
+  x: 92.5
+  y: 67
+  width: 84
+  height: 65
+- label: E
+  kind: svg
+  source: build/panels/Figure_4/E/Figure_4_E.svg
+  x: 3.5
+  y: 139
+  width: 84
+  height: 65
+- label: F
+  kind: svg
+  source: build/panels/Figure_4/F/Figure_4_F.svg
+  x: 92.5
+  y: 139
+  width: 84
+  height: 65

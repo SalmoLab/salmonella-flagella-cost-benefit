@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0.0",
+  "record_type": "model_variant_comparison",
+  "record_id": "motility_turn_angle_comparison",
+  "generated_at_utc": "2026-08-13T20:24:08.093909Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/motility_turn_angle_comparison/compare_turn_angle_models.py"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/motility_turn_angle_comparison/compare_turn_angle_models.py",
+      "sha256": "82e8a377d40752c8595072a3eb46e1c5cfa4b4f3e8516d377d785ff16b72d5e8",
+      "bytes": 30082
+    },
+    {
+      "relative_path": "analyses/motility_turn_angle_comparison/calibrate_global_turn_angle.py",
+      "sha256": "c698367413549da55696facc518e098bab2c1506ebd87a8317f4ebc69451c093",
+      "bytes": 15863
+    },
+    {
+      "relative_path": "analyses/motility_parameter_calibration/calibrate.py",
+      "sha256": "c9b1bb79904fa97cf8fb30244a38c37054c2ef57c3686a50182d760650fc23a5",
+      "bytes": 12895
+    },
+    {
+      "relative_path": "analyses/figure_05_revision/build.py",
+      "sha256": "fab619f687f01060201dd5b53e8aebe7eca0244bae70d1ce015d94beae369163",
+      "bytes": 31079
+    },
+    {
+      "relative_path": "data/processed/motility_parameter_calibration/motility_summary_parameters_calibrated.csv",
+      "sha256": "797ebfbfe80747da07aa7b218785fb9e80de09861627696b9a5839d1734358db",
+      "bytes": 975,
+      "rows": 6
+    },
+    {
+      "relative_path": "data/processed/motility_turn_angle_comparison/motility_summary_parameters_global_turn_angle.csv",
+      "sha256": "10545ec490819c32c18257b69885c1e2d44bcdec3e43fb97193624ffa669f743",
+      "bytes": 1027,
+      "rows": 6
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/src/salmonella_motility_simulation/simulation.py",
+      "sha256": "4a72d6f26ef2310adc9aa2bf03bfa3450f4b506aa52e168a3dd94d832590df2b",
+      "bytes": 12624
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/data/config.yml",
+      "sha256": "4d42d5b2273c0f681c74bedf00c0ae28131675e7f8a3ba256b56e93dee777c67",
+      "bytes": 874
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/diagnostics/turn_angle_comparison/net_displacement_comparison.csv",
+      "sha256": "78fb0f0cb1dac1e655406e863af19ed3297b326647543ad6706e1552e5f2a37e",
+      "bytes": 2293,
+      "rows": 6
+    },
+    {
+      "relative_path": "build/diagnostics/turn_angle_comparison/net_displacement_paired.pdf",
+      "sha256": "6441014e99ff21dd282660488f4ecafd1e0ccdd83989201bfe0d36be58bee3cc",
+      "bytes": 31448
+    },
+    {
+      "relative_path": "build/diagnostics/turn_angle_comparison/net_displacement_paired.png",
+      "sha256": "c5b4b8ba27ec30441b845c17874f8efea7b33f963303b3792bf13566c2ce40a2",
+      "bytes": 249872
+    },
+    {
+      "relative_path": "build/diagnostics/turn_angle_comparison/parameter_comparison.csv",
+      "sha256": "f035b1e2050ee91056e6cedd7fcbd93c404905e5942a19b0a5ce5a3ac1d07ed2",
+      "bytes": 3687,
+      "rows": 12
+    },
+    {
+      "relative_path": "build/diagnostics/turn_angle_comparison/ratio_comparison.csv",
+      "sha256": "b02744227846dc9f398df726cbd24133d0b3bd168821cc3f61e41b77c720d75a",
+      "bytes": 937,
+      "rows": 4
+    },
+    {
+      "relative_path": "build/diagnostics/turn_angle_comparison/seed_summary_both_models.csv",
+      "sha256": "ac391297e91b5e63dd5849b316f5e5e2f42130d0aee1390260380ce858e95c41",
+      "bytes": 163416,
+      "rows": 1200
+    },
+    {
+      "relative_path": "build/diagnostics/turn_angle_comparison/seed_summary_current.csv",
+      "sha256": "6c589de0e480653f8fff8bdc8720f638d4af6db53ad59ab129a129f822cfe89f",
+      "bytes": 82118,
+      "rows": 600
+    },
+    {
+      "relative_path": "build/diagnostics/turn_angle_comparison/seed_summary_current.sha256",
+      "sha256": "6c5c61615f1ec59669312b56725d6e15804bccec6cc9f3d3092e0b52700282b5",
+      "bytes": 65
+    },
+    {
+      "relative_path": "build/diagnostics/turn_angle_comparison/seed_summary_global.csv",
+      "sha256": "d44744b5fbc62b96450d882949a1fd8a14b22ca66e2d14472a47bda98f2f1ae4",
+      "bytes": 81551,
+      "rows": 600
+    },
+    {
+      "relative_path": "build/diagnostics/turn_angle_comparison/seed_summary_global.sha256",
+      "sha256": "18b0c256861fcf2f7bb561dc93ff36b3c6367114c71405e972fc895117a460fe",
+      "bytes": 65
+    },
+    {
+      "relative_path": "build/diagnostics/turn_angle_comparison/single_cell_tracks_agarose.pdf",
+      "sha256": "0e997d538513f6314ac0adec498df988a62038a7d0b3bd2d1d049ebf71b7e656",
+      "bytes": 61831
+    },
+    {
+      "relative_path": "build/diagnostics/turn_angle_comparison/single_cell_tracks_agarose.png",
+      "sha256": "b95f39275dc639e2007ede13e676fac4336bd6f1add6b182d5970ff3247a6058",
+      "bytes": 164330
+    },
+    {
+      "relative_path": "build/diagnostics/turn_angle_comparison/single_cell_tracks_liquid.pdf",
+      "sha256": "3e920df354743d03b37325bc2c7419a7176540113dea3c6860eb31e11e8017d9",
+      "bytes": 57553
+    },
+    {
+      "relative_path": "build/diagnostics/turn_angle_comparison/single_cell_tracks_liquid.png",
+      "sha256": "0a141d49702dfae1192eac4b245ccaa538a15e9f63a22daee764734c727a28ef",
+      "bytes": 171029
+    },
+    {
+      "relative_path": "build/diagnostics/turn_angle_comparison/trajectories_agarose.pdf",
+      "sha256": "7ff202cf2e6d98d309052e6ebdf743c534ef9127862ce18efcb1a1c31d27df68",
+      "bytes": 3033757
+    },
+    {
+      "relative_path": "build/diagnostics/turn_angle_comparison/trajectories_agarose.png",
+      "sha256": "fa4e227435fed41a2c8608737656659b355f71279bbc4a10c671294333003a10",
+      "bytes": 1134738
+    },
+    {
+      "relative_path": "build/diagnostics/turn_angle_comparison/trajectories_liquid.pdf",
+      "sha256": "ee5ec0db06bffa2bc22feff4e898bc7f69ddc0e23ccac64ce13659bc5ed80a58",
+      "bytes": 2842537
+    },
+    {
+      "relative_path": "build/diagnostics/turn_angle_comparison/trajectories_liquid.png",
+      "sha256": "427697242020e948ccb6f7f39b44e50fb25a79e2b21d4aa8c5faeadd35bbb1cf",
+      "bytes": 1495724
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2",
+    "matplotlib": "3.11.1"
+  },
+  "parameters": {
+    "models": [
+      "current",
+      "global"
+    ],
+    "global_turn_angle_sd_rad": 1.246844120703025,
+    "anchor_mean_turn_angle_deg": 57.0,
+    "anchor_turn_count": 8058,
+    "turn_angle_diagnostics": {
+      "turn_angle_sd_rad": 1.246844120703025,
+      "turn_angle_sd_deg": 71.43890582698351,
+      "nominal_mean_abs_turn_deg": 57.00000000000001,
+      "wrapped_mean_abs_turn_deg": 56.488087313180515,
+      "fraction_wrapped": 0.01166,
+      "n_draws": 2000000,
+      "seed": 20260813
+    },
+    "dt_s": 0.0025,
+    "track_duration_s": 20.0,
+    "cells_per_seed": 26,
+    "observable": "mean net displacement per seed (um)",
+    "reference_phenotype": "PproA",
+    "bootstrap_draws": 10000,
+    "max_tau_closure_residual_s": 9.71445146547012e-17
+  },
+  "random_seeds": {
+    "population": "1000-1099",
+    "starting_positions": "population seed + 1",
+    "agarose_obstacles": "population seed + 300",
+    "bootstrap": 20260813,
+    "trajectory_figures": 1000
+  },
+  "limitations": [
+    "Both models take run speed, motile fraction and persistence time as calibrated inputs. Neither predicts them.",
+    "The two models share the seed set and therefore the starting positions, the motile mask and the obstacle field. They do not share the later random draws, because the parameters differ. The pairing removes the initial-condition variance, not all stochastic variation.",
+    "Intervals quantify stochastic model-seed variation, not biological sampling uncertainty.",
+    "Nothing written by this script is a manuscript panel."
+  ]
+}

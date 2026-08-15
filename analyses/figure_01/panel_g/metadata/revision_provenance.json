@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F1_G",
+  "status": "blocked_external",
+  "generated_at_utc": "2026-08-12T11:17:54.201271Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/figure_01/render_blocked_assets.py",
+    "--panel",
+    "G"
+  ],
+  "inputs": [],
+  "outputs": [
+    "build/source_data/Figure_1/G/F1_G_source_data.csv",
+    "build/panels/Figure_1/G/F1_G.svg",
+    "build/panels/Figure_1/G/F1_G.pdf",
+    "build/panels/Figure_1/G/F1_G.png"
+  ],
+  "parameters": {
+    "scientific_values_plotted": 0
+  },
+  "random_seeds": {},
+  "limitations": [
+    "Missing: raw representative constitutive-series microscopy field and crop metadata. This output is an explicit placeholder."
+  ]
+}

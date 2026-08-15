@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F6_A",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-12T00:00:00Z",
+  "command": [
+    ".venv/bin/python",
+    "analyses/figure_06_revision/build_figure_06_revision.py",
+    "--panel",
+    "A"
+  ],
+  "backend": "Python 3.12",
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_06_revision/build_figure_06_revision.py",
+      "sha256": "7883c68bc10c75ebe9ff18dced9d5371ad81a2fc9689abdd004fea6b16957898",
+      "bytes": 46365
+    },
+    {
+      "relative_path": "data/processed/figure_06_revision/figure_06A_ptet_motility_measurements.csv",
+      "sha256": "792d40886bd8c7b720db3a00f380a6f9f4e63d7eee0b605aa4d222f8e34bbc50",
+      "bytes": 9227
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/panels/Figure_6/A/Figure_6A.pdf",
+      "sha256": "c48e1302c2a89a085db73aef5f1a55a1a5ae336944d50c99e79bfcb2ba4a67e3",
+      "bytes": 35781
+    },
+    {
+      "relative_path": "build/panels/Figure_6/A/Figure_6A.png",
+      "sha256": "2aaf614941583a274c2b1bac2e12e3f3777d23f058c9ff1f3f8da21d4fa33269",
+      "bytes": 55394
+    },
+    {
+      "relative_path": "build/panels/Figure_6/A/Figure_6A.svg",
+      "sha256": "3a29cb2ff857a337b8f8a40d95bb958476bcf7bda2c5fbc0ce3cd602d551d1b6",
+      "bytes": 52061
+    },
+    {
+      "relative_path": "build/source_data/Figure_6/A/Figure_6A_day_level_points.csv",
+      "sha256": "25e5b4403ef3547cd47f25e1bc9b1a93065f36d53f681bfbb31a0a6bf325686f",
+      "bytes": 992
+    },
+    {
+      "relative_path": "build/source_data/Figure_6/A/Figure_6A_well_measurements.csv",
+      "sha256": "5a1d1a4dafd881bd5522a3d979e66c4dd2a9d1bfc96887b8004bc667b06e8cae",
+      "bytes": 6234
+    },
+    {
+      "relative_path": "build/statistics/Figure_6/A/Figure_6A_summary_95ci.csv",
+      "sha256": "2d1c180d0fd73253e596debdbcf348fa976af63addaf89f90a4e85bd9fee6ba5",
+      "bytes": 645
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3"
+  },
+  "parameters": {
+    "backend": "Python 3.12",
+    "scientific_values_are_in_source_data": true,
+    "stars_displayed": false
+  },
+  "random_seeds": {},
+  "results": {
+    "days": 26,
+    "conditions": 7
+  },
+  "limitations": [
+    "The canonical run starts from migrated processed measurement tables, not raw acquisitions.",
+    "The revised panel has not yet passed visual acceptance against the July reference.",
+    "The unit of analysis is the experimental day. WT was measured on two days (R1, R4) and every AnTc condition on four, so the WT interval rests on two units. Day averaging hides that asymmetry, which is why every well is drawn.",
+    "Each value is normalised to the same-day WT mean, so both WT day means are 100 % by construction and the WT confidence interval has zero width. The WT wells show the true well-to-well spread of the reference."
+  ]
+}

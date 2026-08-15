@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F5_A",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-12T11:22:37.863690Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/figure_05_revision/build.py",
+    "--all"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_05_revision/build.py",
+      "sha256": "08c4d615b560a4de2ab1794f570aa4c32511a06144e236ff11adb71f31468286",
+      "bytes": 17918
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/swimming/8500/dynamic_flag_0.005.csv",
+      "sha256": "7b6eeb0650bda6a58a9590d51757fe52ab107993439d6c106df459126333b1fa",
+      "bytes": 11914,
+      "rows": 18
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/swimming/8500/dynamic_flag_0.010.csv",
+      "sha256": "f93ea16ea209599e4ec3b195d4ffeaf1d0614d35842d0946d869da34382ff15c",
+      "bytes": 11918,
+      "rows": 18
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/swimming/8500/dynamic_flag_0.020.csv",
+      "sha256": "c7223dd00dbea9aabeedd6a663759742eab6ff83c768472a4f091f5a9ebf48e2",
+      "bytes": 12095,
+      "rows": 18
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/swimming/8500/dynamic_flag_0.030.csv",
+      "sha256": "9e1cabd7105a77fe7b0b2c1f70a879db251ac9333f1dfd8bd07662fbf306ee11",
+      "bytes": 11947,
+      "rows": 18
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/swimming/8500/dynamic_flag_0.040.csv",
+      "sha256": "ca18a673ad0b18be9733067856aa99a9d6cf5c007628f4da0b55721a6d1da817",
+      "bytes": 12053,
+      "rows": 18
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/swimming/8500/dynamic_flag_0.050.csv",
+      "sha256": "36e888f3a3adb0b4bdf0148ac9ab737a00a63c819e6a17f628cf41d383abfb1d",
+      "bytes": 11992,
+      "rows": 18
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/swimming/8500/substrate_gradient.csv",
+      "sha256": "5ed6c1d11a17128bbf5a1c0b95846a2eeea855f0eeb56b751834db8155d5a15f",
+      "bytes": 2765,
+      "rows": 86
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/panels/Figure_5/A/Figure_5_A.pdf",
+      "sha256": "2baab09de1a1dd7bb97be19d1aaea3fb4c468bb50e1de25f1a5f1e8fae8738b8",
+      "bytes": 24261
+    },
+    {
+      "relative_path": "build/panels/Figure_5/A/Figure_5_A.png",
+      "sha256": "1fc36591443683436d86b452ab82d47b196cdd8b708b3aeb2d3591c468bb6a0c",
+      "bytes": 54266
+    },
+    {
+      "relative_path": "build/panels/Figure_5/A/Figure_5_A.svg",
+      "sha256": "15eb4a907a7aff960377596892414665b008ff84c286218f1f9cf7b42115a790",
+      "bytes": 21950
+    },
+    {
+      "relative_path": "build/source_data/Figure_5/A/distance_endpoints.csv",
+      "sha256": "dc8f640142fbd537dfe978a80c45de194b7c2bec501bbf2c266a04861eed2795",
+      "bytes": 506,
+      "rows": 6
+    },
+    {
+      "relative_path": "build/source_data/Figure_5/A/glucose_gradient.csv",
+      "sha256": "23a0a2e3d093adb574d4b6e302ecb60ee0fb49a1ad5c57b84e38fa3439bbd1b8",
+      "bytes": 2471,
+      "rows": 86
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2",
+    "matplotlib": "3.11.1"
+  },
+  "parameters": {
+    "dynamic_gradient_age_h": 3,
+    "dynamic_duration_h": 8,
+    "active_model_cells_per_seed": 26,
+    "active_model_seed_range": [
+      1000,
+      1099
+    ],
+    "active_model_seed_count_per_group": 100,
+    "active_model_phenotypes": [
+      "PproA",
+      "WT",
+      "PproB"
+    ]
+  },
+  "random_seeds": {
+    "population": "1000-1099",
+    "starting_positions": "population seed + 1",
+    "agarose_obstacles": "population seed + 300"
+  },
+  "limitations": [
+    "Dynamic trajectories begin from supplied solver result tables because the exact IPOPT runtime is unavailable locally."
+  ]
+}

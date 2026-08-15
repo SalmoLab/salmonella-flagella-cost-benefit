@@ -1,0 +1,2 @@
+# S6A
+WT against PproA: swimming speed and log10 effective diffusivity, agarose and liquid. 18 paired experiments in agarose and 16 in liquid. The filled band is WT, the outline is PproA. See `../README.md` for the data source, the density grid and the limitations. Run `.venv/bin/python analyses/supplementary_05/build_supplementary_05.py --panel A`. No statistical test applies; the contours describe pooled trajectories. Status: partial reproduction.

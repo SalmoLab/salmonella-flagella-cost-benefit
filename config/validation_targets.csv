@@ -1,0 +1,16 @@
+target_id,panel_ids,metric,expected,tolerance,comparison,status,notes
+proteomics_annotated,F3_A;F3_B;F3_D;S2_A,annotated_protein_count,4548,0,exact,unresolved_discrepancy,"Delivery lacks the FASTA needed to reconcile 4548 annotated proteins with the Methods statement of 4533 entries"
+proteomics_quantified,F3_A;F3_B;F3_D;S2_A,quantified_protein_count,2751,0,exact,verified,Verified after expansion of six two-member protein groups
+proteomics_sector_assigned,F3_A;F3_B;F3_D;S2_A,sector_assigned_protein_group_count,1304,0,exact,verified,Equivalent to 1306 accessions after ambiguous-group expansion
+proteomics_assigned_mass,F3_A,assigned_protein_mass_fraction,0.70,0.02,absolute,verified,Observed 0.700494
+pprod_flagellar_mass,F3_A;S2_A,PproD_flagellar_mass_fraction,0.035,0.005,absolute,verified,Observed 0.033911
+model_penalty_rotation,F2_G;F2_H,growth_penalty_fraction_at_F0.05_rotation_on,0.084,0.001,absolute,verified,Observed 0.083917 relative to F equals zero
+model_penalty_no_rotation,F2_G;F2_H,growth_penalty_fraction_at_F0.05_rotation_off,0.074,0.001,absolute,verified,Observed 0.073626 relative to F equals zero
+experiment_penalty_rotating_flagella,F2_H,experimental_growth_penalty_fraction_WT_fliC_ON,0.13,0.01,absolute,verified,Observed 0.130148 relative to delta-flhDC
+experiment_penalty_nonrotating_flagella,F2_H,experimental_growth_penalty_fraction_motB_D33N,0.095,0.01,absolute,verified,Observed 0.095071 relative to delta-flhDC
+gradient_biomass_F0.005,F3_G,normalized_final_biomass,0.24,0.01,absolute,verified,Observed 0.235017 at flagellar mass fraction 0.005
+gradient_biomass_F0.01,F3_G,normalized_final_biomass,0.59,0.01,absolute,verified,Observed 0.586146 at flagellar mass fraction 0.01
+gradient_biomass_F0.02,F3_G,normalized_final_biomass,0.93,0.01,absolute,verified,Observed 0.931448 at flagellar mass fraction 0.02
+gradient_biomass_F0.03,F3_G,normalized_final_biomass,1.00,0.01,absolute,verified,Observed 1.0 and unique optimum at flagellar mass fraction 0.03
+gradient_biomass_F0.04,F3_G,normalized_final_biomass,0.96,0.01,absolute,verified,Observed 0.958478 at flagellar mass fraction 0.04
+gradient_biomass_F0.05,F3_G,normalized_final_biomass,0.86,0.01,absolute,verified,Observed 0.863218 at flagellar mass fraction 0.05

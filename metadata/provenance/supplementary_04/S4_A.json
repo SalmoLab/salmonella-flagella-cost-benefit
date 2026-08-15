@@ -1,0 +1,206 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "S4_A",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-15T10:03:47.655388Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/supplementary_04/build_s4.py",
+    "--panel",
+    "A"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/supplementary_04/build_s4.py",
+      "sha256": "852699c7b745cb1eb571b776b7e6e8c03fce36216f913b132d8f213a07291fae",
+      "bytes": 23574
+    },
+    {
+      "relative_path": "analyses/supplementary_04/panel_a/config/panel.json",
+      "sha256": "86c846f4a1d4bcad77981a2df8e8a7e7dab9927bb95d3c2ea361d1e1c658e7b2",
+      "bytes": 97
+    },
+    {
+      "relative_path": "analyses/supplementary_04/panel_a/scripts/reproduce.py",
+      "sha256": "a64f6f7ddc96c04752c1453ab2b886b4ce9f39d038c1e6d780ce05e31cd0b0a4",
+      "bytes": 267
+    },
+    {
+      "relative_path": "data/processed/motility_adopted_parameters/motility_summary_parameters_adopted.csv",
+      "sha256": "bb85e998da21f7ef8db3feb3cb45db0f2f72784995f68803ee4f42adac92950e",
+      "bytes": 1033,
+      "rows": 6
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/data/motility_summary_parameters.csv",
+      "sha256": "82095121e2ac8154e2d7412f566a0da48466c0abe2395aaf709512c536a768c9",
+      "bytes": 933,
+      "rows": 8
+    },
+    {
+      "relative_path": "analyses/motility_parameter_calibration/calibrate.py",
+      "sha256": "c9b1bb79904fa97cf8fb30244a38c37054c2ef57c3686a50182d760650fc23a5",
+      "bytes": 12895
+    },
+    {
+      "relative_path": "analyses/motility_turn_angle_comparison/calibrate_global_turn_angle.py",
+      "sha256": "c698367413549da55696facc518e098bab2c1506ebd87a8317f4ebc69451c093",
+      "bytes": 15863
+    },
+    {
+      "relative_path": "analyses/motility_stall_parameter_comparison/common.py",
+      "sha256": "caf0af5a8101af94fc84d41c247c550aedc4d4fe937e78060753394b75402dec",
+      "bytes": 23011
+    },
+    {
+      "relative_path": "analyses/motility_adopted_parameters/derive_adopted_parameters.py",
+      "sha256": "51ffec24b11939ae4204862e6555a61a621073657944c1353db95a057359b023",
+      "bytes": 16313
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/data/config.yml",
+      "sha256": "4d42d5b2273c0f681c74bedf00c0ae28131675e7f8a3ba256b56e93dee777c67",
+      "bytes": 874
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/UPSTREAM_SOURCE.md",
+      "sha256": "2d51c5d2d351ae734f70758cef0289ac90e80f8642d9e524f5a91f09c0160377",
+      "bytes": 1001
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/CHECKSUMS.sha256",
+      "sha256": "6ed340b82c5dc063c4096a225380fd5e785d2ac32a809eb96c745e79cde5dd20",
+      "bytes": 1171
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/src/salmonella_motility_simulation/__init__.py",
+      "sha256": "6b2419537793466e6a98f5e82a811caf24c5452ff99609cd98d3682c273f1496",
+      "bytes": 110
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/src/salmonella_motility_simulation/__main__.py",
+      "sha256": "f188bb387e95c5f28201473c3dbed19a4074f0435fbe6e70cede95c9cdf3a6a0",
+      "bytes": 7695
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/src/salmonella_motility_simulation/classes.py",
+      "sha256": "705385047c0615baa0013ab087ba6effbb64787b29354291f6a525dd75565b4c",
+      "bytes": 999
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/src/salmonella_motility_simulation/io_utils.py",
+      "sha256": "b8982510a42c50c632d3eb0e54a04605bb32e30ff6e9b7e075cf7e1c268b48a8",
+      "bytes": 7913
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/src/salmonella_motility_simulation/plotting.py",
+      "sha256": "a67a3270bddc19606b4ca300c07922f3e1a43fba2750b2e606665c620b43e6e3",
+      "bytes": 33117
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/src/salmonella_motility_simulation/simulation.py",
+      "sha256": "4a72d6f26ef2310adc9aa2bf03bfa3450f4b506aa52e168a3dd94d832590df2b",
+      "bytes": 12624
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "data/source_data/supplementary_04/S4_A_simulated_trajectories.csv.gz",
+      "sha256": "32efb82c451da2026f82864d38aac48aa5528e558d6c46b14527fa16353f7760",
+      "bytes": 4740766,
+      "rows": 208026
+    },
+    {
+      "relative_path": "data/source_data/supplementary_04/S4_A_obstacles.csv",
+      "sha256": "a188826230513c99d13f2e692d6812a755e696aeab097bac92f04ec4203acc85",
+      "bytes": 57,
+      "rows": 0
+    },
+    {
+      "relative_path": "build/panels/Supplementary_Figure_4/A/S4_A.png",
+      "sha256": "f83410bd22c76dac183031320e51b01584e147c733dce8a4c4b2004c8377922a",
+      "bytes": 232494
+    },
+    {
+      "relative_path": "build/panels/Supplementary_Figure_4/A/S4_A.svg",
+      "sha256": "e843451dc1845ce6dc3be8a6b896b4f646a2dc73bffdce445e1593ac6111d095",
+      "bytes": 898552
+    },
+    {
+      "relative_path": "build/panels/Supplementary_Figure_4/A/S4_A.pdf",
+      "sha256": "5a406f2ac7042c950e1b6fddbd285c6cb50097a0d03484852d97ac7d1c13045c",
+      "bytes": 363666
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pyyaml": "6.0.3",
+    "upstream_commit": "96ca0e741c8c4990b1cfa59b2daafee59d74cb7b"
+  },
+  "parameters": {
+    "model": "collaborator single-cell run/reorientation/non-motile simulation",
+    "phenotype": "PproA",
+    "medium": "liquid",
+    "box_width_um": 148.0,
+    "box_height_um": 96.0,
+    "dt_s": 0.0025,
+    "track_duration_s": 20.0,
+    "n_cells": 26,
+    "base_seed": 17,
+    "declared_config_dt_s": 0.05,
+    "obstacle_config": {
+      "count": 58,
+      "radius_range_um": [
+        2.5,
+        5.2
+      ],
+      "clearance_um": 1.7
+    },
+    "noise_config": {
+      "run_translational_scale": 0.12,
+      "reorientation_diffusion_scale": 0.4,
+      "stall_slide_fraction": 0.28,
+      "stall_rotational_diffusion_scale": 1.8,
+      "stall_translational_scale": 0.2
+    },
+    "motility_parameters": {
+      "phenotype": "PproA",
+      "medium": "liquid",
+      "color": "#D55E00",
+      "motile_fraction": 0.6347863067702042,
+      "run_speed_um_s": 19.865600506888896,
+      "rotational_diffusion_rad2_s": 6.1472956960945435,
+      "reorientation_rate_s": 6.212276806230704,
+      "turn_angle_sd_rad": 1.246844120703025,
+      "passive_diffusion_um2_s": 0.35,
+      "stall_probability": 0.0,
+      "stall_mean_duration_s": 0.05
+    },
+    "scale_bar_um": 20.0
+  },
+  "random_seeds": {
+    "panel_seed": 24,
+    "starting_position_seed": 25,
+    "obstacle_seed": null
+  },
+  "limitations": [
+    "The model illustrates the experimental findings. It does not predict them and is not a mechanistically complete or fitted biophysical model.",
+    "Run speed, motile fraction and persistence time are calibrated model inputs, so these maps do not predict the measured speed or diffusivity ordering.",
+    "The turning parameters were calibrated in this repository against our paired-unit measurements. They were not supplied by the collaborator.",
+    "The delivered table already set run speed and motile fraction from these same measurements; only the turning parameters were uncalibrated.",
+    "The turn width is one global value, 1.2468 rad, for all six rows. It matches the 57 deg mean turn angle of Taute et al. 2015 (n = 8058 turns, E. coli AW405) through sigma = radians(57) / sqrt(2 / pi). Taute et al. measured in three dimensions and in E. coli; this simulator is two-dimensional and the strains are S. Typhimurium. The mapping matches the mean turn magnitude only. A zero-mean Gaussian cannot reproduce the measured forward-skewed turn-angle shape.",
+    "The agarose stall probability is a per-contact-event probability: it is drawn once, on the step where a cell first overlaps an obstacle it was not already touching. It falls with mean flagella number as N^-0.704, normalised so its mean over the three strains is unchanged. The exponent sets the ratio between the least and the most flagellated strain to the 1.7 +/- 0.2 stall-frequency ratio of Grognot et al. 2023 (Vibrio alginolyticus, 0.25 % agar). That study varied a second flagellar system, not the flagella count, so the mapping onto our hook numbers is an assumption. Only the ratio is anchored.",
+    "The mean stall duration is one nominal value, 0.949 s, in all three agarose rows. Grognot et al. found the duration effect significant only at 0.16 % agar, not at the 0.25 % that matches our condition.",
+    "The spatial search pattern, obstacle trapping and the stall duty cycle remain model outputs that no measurement supplies.",
+    "Reorientation is instantaneous. The persistence relation the turning parameters are fitted through carries no duration term, so a non-advancing reorientation dwell would simulate a different model from the fitted one. The heading kick is applied at the transition and the cell keeps swimming, so no track shows a stationary reorientation pause.",
+    "These maps keep the published 148 x 96 um domain with reflecting walls, because a small field is what makes individual tracks legible. They show a spatial pattern and report no number. Figure 5D and 5E measure, so they run in a box enlarged twelvefold in each direction, where the walls no longer compress the strain ratios. The reflecting walls of these maps shorten the faster strains more than the slower ones; the maps must not be read as a quantitative comparison of spread.",
+    "The maps integrate at dt = 0.0025 s, not at the dt = 0.05 s declared in the upstream config.yml. Figure 5D and 5E use the same refined step, so both figures depict the same simulation. Under the corrected dynamics a 100-seed convergence check accepts every step it tests, from 0.000625 s to 0.05 s: the largest group deviation is 4.0 %, and 2.0 % at the step used here. The upstream config file is immutable provenance and was not edited; the builder overrides the value. See analyses/figure_05_revision/README.md.",
+    "Contour path length is not plotted anywhere, because it does not converge under time-step refinement. Figure 5D and 5E report net displacement instead. These maps show a spatial pattern, not a scalar, so the rejection does not change what they draw.",
+    "The delivered parameters are experimentally informed summaries; raw trajectory-to-parameter fitting inputs were not included.",
+    "WT_slow is present in the collaborator package but excluded because it is not a current manuscript panel.",
+    "The frozen 9 July visual remains historical; this panel intentionally reflects the updated 12 August model source."
+  ]
+}

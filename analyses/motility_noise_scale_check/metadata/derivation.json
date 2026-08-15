@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "record_type": "model_diagnostic",
+  "record_id": "motility_noise_scale_check",
+  "generated_at_utc": "2026-08-14T19:57:00.624946Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/motility_noise_scale_check/measure_noise_scale_sensitivity.py"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/motility_noise_scale_check/measure_noise_scale_sensitivity.py",
+      "sha256": "d624869ee900e38462bfc3d78ba15445a62b1a35fe99ad545da80e9a3fc6cddc",
+      "bytes": 14847
+    },
+    {
+      "relative_path": "data/processed/motility_adopted_parameters/motility_summary_parameters_adopted.csv",
+      "sha256": "bb85e998da21f7ef8db3feb3cb45db0f2f72784995f68803ee4f42adac92950e",
+      "bytes": 1033,
+      "rows": 6
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/data/config.yml",
+      "sha256": "4d42d5b2273c0f681c74bedf00c0ae28131675e7f8a3ba256b56e93dee777c67",
+      "bytes": 874
+    },
+    {
+      "relative_path": "models/motility_simulation/corrected/src/salmonella_motility_corrected/simulation.py",
+      "sha256": "2b0a0e060a27d763d024d7f9e14d4f188bc64070c7b3de1d1461a35a36726a7b",
+      "bytes": 14857
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/diagnostics/noise_scale_check/noise_scale_runs.csv",
+      "sha256": "3296c4527efaf3a560574817d8c4ab1f7eb275640f91000a80570d74b38bf75b",
+      "bytes": 104024,
+      "rows": 1200
+    },
+    {
+      "relative_path": "build/diagnostics/noise_scale_check/noise_scale_comparison.csv",
+      "sha256": "8c3444f9a7237b763b28dd07a6d7adcc9cd141b36d22003b85fc26581e0607dd",
+      "bytes": 2072,
+      "rows": 6
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2"
+  },
+  "parameters": {
+    "variants": {
+      "current": [
+        0.12,
+        0.2
+      ],
+      "ordered": [
+        1.0,
+        1.0
+      ]
+    },
+    "seeds": [
+      1000,
+      1099
+    ],
+    "n_seeds": 100,
+    "dt_s": 0.0025,
+    "box_scale": 12,
+    "bootstrap_draws": 10000,
+    "interval": "paired percentile bootstrap over seed pairs",
+    "largest_net_displacement_change": 0.03529990371252645,
+    "largest_diffusivity_change": 0.062390535899516264
+  },
+  "random_seeds": {
+    "population": "1000-1099",
+    "starting_positions": "population seed + 1",
+    "agarose_obstacles": "population seed + 300",
+    "bootstrap": 20260814
+  },
+  "findings": [
+    "The four noise constants have no source. This diagnostic measures what the inverted translational-noise ordering costs, by comparing the shipped scales against the minimal physically ordered alternative in which every state diffuses at the full passive rate.",
+    "Net displacement, the observable Figure 5D and 5E plot, is insensitive: the largest change over the six groups is 3.5%, and no agarose interval excludes zero.",
+    "The effective diffusivity in agarose is sensitive: the largest change is 6.2%. Larger translational noise drives cells into obstacles more often, so contact events and stall occupancy both rise and the lost duty cycle outweighs the added diffusivity.",
+    "In liquid the change matches the analytic prediction, an added translational diffusivity of D_t * (1.00 - 0.12) = 0.308 um^2/s, because a motile cell there runs the whole time.",
+    "The constants are declared in Supplementary Table X and kept. The ordered alternative has no source either, so changing them would alter a calibrated model on no evidence."
+  ],
+  "limitations": [
+    "The ordered alternative is a test, not a proposal. Setting every scale to 1.00 is the weakest change that removes the inversion; it is not a measured value.",
+    "The non-motile translational scale has no config key, because it is the passive rate itself. Only the running and stalled scales are varied here.",
+    "Intervals quantify stochastic model-seed variation, not biological sampling uncertainty."
+  ]
+}

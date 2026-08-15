@@ -1,0 +1,9 @@
+{
+  "panel_id": "F1_G",
+  "status": "blocked_asset",
+  "asset_type": "microscopy",
+  "reference_artifact": "reference/2026-07-09/figures/Figure_1.svg",
+  "required_assets": ["Original WT, Ppro1, PproA, PproB and PproD fields", "Unmodified phase-contrast and hook-fluorescence channels", "Processing scripts, Fiji macros or project files"],
+  "required_metadata": ["Microscope, objective and pixel calibration", "Exposure and acquisition settings", "Field-of-view and cell selection identifiers", "Registration, background, contrast, crop and overlay operations", "Scale-bar source and dimensions"],
+  "acceptance_tests": ["Each displayed crop traces to one raw field by checksum", "Channel registration and global adjustments are replayable", "Scale bar is generated from calibration metadata", "Re-export matches the frozen panel"]
+}

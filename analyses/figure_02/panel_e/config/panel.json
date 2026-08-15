@@ -1,0 +1,19 @@
+{
+  "panel_id": "F2_E",
+  "panel_dir": "panel_e",
+  "analysis_dir": "analyses/figure_02",
+  "entry_script": "analyses/figure_02/panel_e/scripts/plot.py",
+  "input_table": "data/processed/figure_02/F2_E/per_curve.csv",
+  "value_column": "mu_from_growth_rate_k",
+  "reference_strain": "TH5861",
+  "strain_order": ["TH5861", "EM16223", "EM4208", "EM4209", "EM16224", "EM16587"],
+  "labels": {"TH5861": "WT (fliC-ON)", "EM16223": "ΔflhDC", "EM4208": "ΔflgE", "EM4209": "ΔflgKL", "EM16224": "motB (D33N)", "EM16587": "ΔflgM flhAΔc"},
+  "colors": {"TH5861": "#999999", "EM16223": "#56b4e9", "EM4208": "#d55e00", "EM4209": "#009e73", "EM16224": "#cc79a7", "EM16587": "#f0e442"},
+  "bootstrap_seed": 20260709,
+  "bootstrap_draws": 20000,
+  "figure_size_inches": [4.0, 2.8],
+  "x_axis_label": "",
+  "x_label_rotation": 45,
+  "y_limits": [0.92, 1.18],
+  "display_metric": "growth_rate_relative_to_same_day_TH5861"
+}

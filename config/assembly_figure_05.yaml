@@ -1,0 +1,44 @@
+figure_id: Figure_5
+status: partial_reproduction
+width_mm: 180
+height_mm: 136
+output_stem: build/figures/Figure_5/Figure_5_revision_partial
+limitations:
+- Dynamic model between 0% and 1% flagellar allocation is recorded but not drawn;
+  every step solves, and the solutions scatter across local optima.
+panels:
+- label: A
+  kind: svg
+  source: build/panels/Figure_5/A/Figure_5_A.svg
+  x: 3.5
+  y: 5
+  width: 55
+  height: 57
+- label: B
+  kind: svg
+  source: build/panels/Figure_5/B/Figure_5_B.svg
+  x: 62.5
+  y: 5
+  width: 55
+  height: 57
+- label: C
+  kind: svg
+  source: build/panels/Figure_5/C/Figure_5_C.svg
+  x: 121.5
+  y: 5
+  width: 55
+  height: 57
+- label: D
+  kind: svg
+  source: build/panels/Figure_5/D/Figure_5_D.svg
+  x: 3.5
+  y: 69
+  width: 84
+  height: 60
+- label: E
+  kind: svg
+  source: build/panels/Figure_5/E/Figure_5_E.svg
+  x: 92.5
+  y: 69
+  width: 84
+  height: 60

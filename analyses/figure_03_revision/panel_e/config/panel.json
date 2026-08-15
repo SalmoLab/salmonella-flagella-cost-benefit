@@ -1,0 +1,10 @@
+{
+  "panel_id": "F3_E",
+  "figure_number": 3,
+  "panel_label": "E",
+  "entry_script": "analyses/figure_03_revision/panel_e/scripts/reproduce.py",
+  "experimental_input": "data/processed/figure_02/F2_E/per_curve.csv",
+  "model_input_glob": "data/external/cell_economy_results/rotation/steady_state_flag_*.csv",
+  "experimental_reference": "EM16223",
+  "comparisons": {"Rotating flagella": "TH5861", "Non-rotating flagella": "EM16224"}
+}

@@ -1,0 +1,68 @@
+{
+  "panel_id": "F1_H",
+  "figure_number": 1,
+  "panel_label": "H",
+  "recipe": "discrete_count",
+  "command_module": "analyses.figure_01.panel_h.scripts.plot",
+  "inputs": {
+    "histogram_counts": "data/processed/figure_01/F1_H/histogram_counts.csv",
+    "replicate_means": "data/processed/figure_01/F1_H/replicate_means.csv",
+    "legacy_statistics": "data/processed/figure_01/F1_H/legacy_statistics.csv"
+  },
+  "expected_rows": {
+    "histogram_counts": 162,
+    "replicate_means": 15,
+    "legacy_statistics": 5
+  },
+  "category_column": "strain_id",
+  "value_column": "hook_count",
+  "frequency_column": "count_cells",
+  "replicate_mean_column": "hook_count_replicate_mean",
+  "reference": "TH9677",
+  "order": [
+    "TH9677",
+    "EM9662",
+    "EM9661",
+    "EM9660",
+    "EM8513"
+  ],
+  "labels": {
+    "TH9677": "WT (S171)",
+    "EM9662": "Ppro1-flhDC",
+    "EM9661": "PproA-flhDC",
+    "EM9660": "PproB-flhDC",
+    "EM8513": "PproD-flhDC"
+  },
+  "x_label": "",
+  "y_label": "Hook count (per cell)",
+  "output_dir": "build/panels/F1_H",
+  "limitations": [
+    "Starts from the migrated histogram-frequency table rather than the archived Excel workbook.",
+    "The current Figure 1H mapping is recovered from legacy Figure 2E.",
+    "Final multi-panel assembly and pixel-level reference comparison are not yet implemented."
+  ],
+  "color_keys": {
+    "TH9677": [
+      "strain",
+      "TH9677"
+    ],
+    "EM9662": [
+      "strain",
+      "EM9662"
+    ],
+    "EM9661": [
+      "strain",
+      "EM9661"
+    ],
+    "EM9660": [
+      "strain",
+      "EM9660"
+    ],
+    "EM8513": [
+      "strain",
+      "EM8513"
+    ]
+  },
+  "tick_rotation": 0,
+  "annotation_headroom": 5.4
+}

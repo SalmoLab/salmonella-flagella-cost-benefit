@@ -1,0 +1,15 @@
+figure_id: Supplementary_Figure_2
+status: partial_reproduction
+width_mm: 180
+height_mm: 119
+output_stem: build/figures/Supplementary_Figure_2/Supplementary_Figure_2_revision_partial
+limitations:
+- Raw MS, FASTA and Spectronaut settings were not supplied.
+panels:
+- label: A
+  kind: svg
+  source: build/panels/Supplementary_Figure_2/A/S2_A.svg
+  x: 3.5
+  y: 5
+  width: 173
+  height: 107

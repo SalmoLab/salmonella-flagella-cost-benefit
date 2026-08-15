@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F6_C",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-12T00:00:00Z",
+  "command": [
+    ".venv/bin/python",
+    "analyses/figure_06_revision/build_figure_06_revision.py",
+    "--panel",
+    "C"
+  ],
+  "backend": "Python 3.12",
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_06_revision/build_figure_06_revision.py",
+      "sha256": "7883c68bc10c75ebe9ff18dced9d5371ad81a2fc9689abdd004fea6b16957898",
+      "bytes": 46365
+    },
+    {
+      "relative_path": "data/processed/figure_06_revision/figure_06C_hook_histogram_counts.csv",
+      "sha256": "18ecf2cddd647bc161071d39691aa856dc349be209be915133d6ea6b16b3d7a2",
+      "bytes": 1451
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/panels/Figure_6/C/Figure_6C.pdf",
+      "sha256": "3d52e40bcecea277496ea4471e01743198966c9646dcb6d9142fb324a7c035ef",
+      "bytes": 27148
+    },
+    {
+      "relative_path": "build/panels/Figure_6/C/Figure_6C.png",
+      "sha256": "1c1c24c3ae8d63bc61acc201d05edeec63111a3493160f463f235a9432eb39ed",
+      "bytes": 44602
+    },
+    {
+      "relative_path": "build/panels/Figure_6/C/Figure_6C.svg",
+      "sha256": "f4bf224029c7beab104adf2dc56736011386f96ed521c97a911ed04628428cb7",
+      "bytes": 31124
+    },
+    {
+      "relative_path": "build/source_data/Figure_6/C/Figure_6C_cell_points.csv",
+      "sha256": "13e7b34eef011f8bc0f58e75a275911f0550aadbf02a854f3ae7c97cb4419b4c",
+      "bytes": 33649
+    },
+    {
+      "relative_path": "build/statistics/Figure_6/C/Figure_6C_numeric_audit.csv",
+      "sha256": "6874a84b366e034b387fac3c1ad6ab08472f25c1df72c6d9d34e112bf805604d",
+      "bytes": 169
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3"
+  },
+  "parameters": {
+    "backend": "Python 3.12",
+    "scientific_values_are_in_source_data": true,
+    "stars_displayed": false
+  },
+  "random_seeds": {},
+  "results": {
+    "cells": 771,
+    "means": {
+      "Center": 0.4396887159533074,
+      "Middle": 2.657587548638132,
+      "Out": 3.922178988326848
+    }
+  },
+  "limitations": [
+    "The canonical run starts from migrated processed measurement tables, not raw acquisitions.",
+    "The revised panel has not yet passed visual acceptance against the July reference.",
+    "The panel pools 257 cells per position from one soft-agar plate; there is no replicate layer, so the drawn mean is descriptive and supports no inference between plate positions."
+  ]
+}

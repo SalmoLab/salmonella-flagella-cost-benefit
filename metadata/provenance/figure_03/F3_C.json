@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F3_C",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-15T09:02:57.563218Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "-m",
+    "analyses.figure_03_revision.panel_c.scripts.plot"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_03_revision/panel_c/config/config.json",
+      "sha256": "423f109033ef7463e7efacaf6dfcc732cc8f24be76f00642b08d9dbb4105098d",
+      "bytes": 1310
+    },
+    {
+      "relative_path": "analyses/figure_02/panel_c/scripts/plot.py",
+      "sha256": "e2f2f26888340373b2f58d3bdec9fe525944c6c8e0ebe455dacbfa69f227c075",
+      "bytes": 21505
+    },
+    {
+      "relative_path": "analyses/figure_03_revision/panel_c/scripts/plot.py",
+      "sha256": "99818cbda28ae647b4f20889d2674cf9922783d05e9501e8554d7ed43935fbc4",
+      "bytes": 754
+    },
+    {
+      "relative_path": "src/flagella_repro/theme.py",
+      "sha256": "d3e93c1eed74fd0b647748e61326d019047f015627fb50377c8b3f1f2cb1cb41",
+      "bytes": 11960
+    },
+    {
+      "relative_path": "config/palette.yaml",
+      "sha256": "1db43aaa3edd5b6f19a03cfcace6efdba38ccb13ac69260539b61e287eb424b7",
+      "bytes": 2704
+    },
+    {
+      "relative_path": "data/processed/figure_02/F2_F/cell_points.parquet",
+      "sha256": "8de33e97405588478f355a4acdff02b6dce2cc770530a81c4f11b985c4196ea4",
+      "bytes": 1341860,
+      "rows": 110983
+    },
+    {
+      "relative_path": "data/processed/figure_02/F2_F/replicate_means.csv",
+      "sha256": "375f0f651ee82667b8fa14e6e7a8282a46560441366a23ed2cce5cdb0cebaa1e",
+      "bytes": 404,
+      "rows": 12
+    },
+    {
+      "relative_path": "data/source_data/figure_02/F2_F.csv.gz",
+      "sha256": "ab8265d695c8d2880ea54fc8fe8c3771dfdbf303b4f992ab19388238094e39d3",
+      "bytes": 1140690,
+      "rows": 110983
+    },
+    {
+      "relative_path": "analyses/figure_02/panel_f/metadata/migration_inventory.json",
+      "sha256": "ca836762fcd38b3a37a08ce864dc744901521be12ca1e5b9bb1b73d9de43f08b",
+      "bytes": 2026
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "data/source_data/figure_02/F2_F.csv.gz",
+      "sha256": "ab8265d695c8d2880ea54fc8fe8c3771dfdbf303b4f992ab19388238094e39d3",
+      "bytes": 1140690,
+      "rows": 110983
+    },
+    {
+      "relative_path": "build/source_data/Figure_3/C/F3_C_source_data.csv.gz",
+      "sha256": "a2245640d4631aa5eeb9e2c13f505a9bab1282bf0d38f9f9bf1efa429e346cb9",
+      "bytes": 2365278,
+      "rows": 110983
+    },
+    {
+      "relative_path": "build/statistics/Figure_3/C/F3_C_statistics.csv",
+      "sha256": "8e97277fe141ade1ebab941fbc4f86fde6b4c3d321b6ca5c112031f8815b676d",
+      "bytes": 1193,
+      "rows": 5
+    },
+    {
+      "relative_path": "build/panels/Figure_3/C/summary.csv",
+      "sha256": "5f4ebc36db39570849ad63ff03f81ef4497bf5ba6bf4e1844f0b5e09aa84695a",
+      "bytes": 266,
+      "rows": 6
+    },
+    {
+      "relative_path": "build/panels/Figure_3/C/F3_C.svg",
+      "sha256": "ce8f0da34c752bd4adb6cb24938c31afc32d538bf9443a07f041b562539447d6",
+      "bytes": 47648
+    },
+    {
+      "relative_path": "build/panels/Figure_3/C/F3_C.pdf",
+      "sha256": "aaf0d13f3851134a409bfab5a47380da9ea05eb1434c57548380854f1577201d",
+      "bytes": 35838
+    },
+    {
+      "relative_path": "build/panels/Figure_3/C/F3_C.png",
+      "sha256": "075f00f8d0fa9f897abef7c0098597a5371fb65e362c6474714c25e9ea87881d",
+      "bytes": 83392
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "matplotlib": "3.11.1",
+    "pandas": "2.3.3",
+    "pyarrow": "22.0.0",
+    "seaborn": "0.13.2"
+  },
+  "parameters": {
+    "value_column": "growth_rate_per_h",
+    "filters": {
+      "_subset": [
+        "all_cells"
+      ],
+      "_window_start_min": [
+        200
+      ],
+      "_window_end_min": [
+        800
+      ]
+    },
+    "biological_unit": "independent experiment/replicate",
+    "cell_points_role": "descriptive distribution",
+    "normalization_reference": "TH5861",
+    "normalization": "each observation divided by the reference-strain mean from the same independent replicate",
+    "display_y_limits": [
+      0.7,
+      1.35
+    ],
+    "display_clipping_only": true,
+    "inferential_test": "paired two-sided t-test on independent replicate means",
+    "migration_command": [
+      ".venv/bin/python3.12",
+      "-m",
+      "not_available_for_revision_alias",
+      "--write"
+    ]
+  },
+  "random_seeds": {
+    "jitter": null,
+    "bootstrap": null
+  },
+  "limitations": [
+    "The workflow starts from an archived processed per-cell table; raw microscopy, mother-machine tracking files, and image-to-cell extraction are absent.",
+    "The compact table is a checksum-backed extraction because the legacy CSV exceeds the collection's no-LFS 100 MB policy.",
+    "Final multi-panel assembly and pixel-level comparison to the current manuscript export are not yet implemented."
+  ]
+}

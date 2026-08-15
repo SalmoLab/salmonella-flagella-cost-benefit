@@ -1,0 +1,43 @@
+figure_id: Figure_3
+status: partial_reproduction
+width_mm: 180
+height_mm: 132
+output_stem: build/figures/Figure_3/Figure_3_revision_partial
+limitations:
+- Panel A is an explicit missing editable-schematic placeholder.
+panels:
+- label: A
+  kind: svg
+  source: build/panels/Figure_3/A/F3_A.svg
+  x: 3.5
+  y: 5
+  width: 55
+  height: 55
+- label: B
+  kind: svg
+  source: build/panels/Figure_3/B/F3_B.svg
+  x: 62.5
+  y: 5
+  width: 55
+  height: 55
+- label: C
+  kind: svg
+  source: build/panels/Figure_3/C/F3_C.svg
+  x: 121.5
+  y: 5
+  width: 55
+  height: 55
+- label: D
+  kind: svg
+  source: build/panels/Figure_3/D/F3_D.svg
+  x: 3.5
+  y: 67
+  width: 84
+  height: 58
+- label: E
+  kind: svg
+  source: build/panels/Figure_3/E/F3_E.svg
+  x: 92.5
+  y: 67
+  width: 84
+  height: 58

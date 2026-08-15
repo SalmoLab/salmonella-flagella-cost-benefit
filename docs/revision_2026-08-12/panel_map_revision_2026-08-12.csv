@@ -1,0 +1,61 @@
+panel_id,figure_id,panel_label,title,legacy_panel_ids,status
+F1_A,Figure1,A,flhDC locus and Ptet control schematic,F1_A,needs_asset_migration
+F1_B,Figure1,B,Representative Ptet hook and filament microscopy,F1_B,needs_asset_migration
+F1_C,Figure1,C,Ptet hook number across AnTc,F1_C,ready_migration
+F1_D,Figure1,D,Ptet filament number across AnTc,F1_D,ready_migration
+F1_E,Figure1,E,Hook-filament correlation in Ptet,F1_E,ready_migration
+F1_F,Figure1,F,Synthetic Ppro promoter-series schematic,F1_F,needs_asset_migration
+F1_G,Figure1,G,Representative Ppro hook microscopy,F1_G,needs_asset_migration
+F1_H,Figure1,H,Ppro hook number across promoter series,F1_H,ready_migration
+F2_A,Figure2,A,Same-day-WT-normalized Ptet population growth,F2_A,ready_migration
+F2_B,Figure2,B,Same-day-WT-normalized Ppro population growth,F2_B,ready_migration
+F2_C,Figure2,C,Ppro single-cell growth distributions,F2_C,ready_migration
+F3_A,Figure3,A,Flagellar assembly-mutant schematic,F2_D,needs_asset_migration
+F3_B,Figure3,B,Assembly-mutant population growth,F2_E,ready_migration
+F3_C,Figure3,C,Assembly-mutant single-cell growth,F2_F,ready_migration
+F3_D,Figure3,D,Modeled growth versus flagellar mass and rotation,F2_G,ready_migration
+F3_E,Figure3,E,Experimental and modeled growth-penalty comparison,F2_H,ready_migration
+F4_A,Figure4,A,Cell-economy model schematic,F3_C:schematic,ready_migration
+F4_B,Figure4,B,Experimental sector changes with model overlay,F3_A;F3_C,ready_migration
+F4_C,Figure4,C,Protein-level sector composition,F3_B,ready_migration
+F4_D,Figure4,D,Measured sector composition across strains,F3_A:composition,ready_migration
+F4_E,Figure4,E,Modeled sector allocation across flagellar fraction,F3_C:quantitative,ready_migration
+F4_F,Figure4,F,Growth versus ribosomal and flagellar allocation,F3_D,ready_migration
+F5_A,Figure5,A,Gradient migration and substrate access,F3_E,ready_migration
+F5_B,Figure5,B,Growth trajectories across flagellar allocation,F3_F,ready_migration
+F5_C,Figure5,C,Final biomass optimum by flagellar fraction,F3_G,ready_migration
+F5_D,Figure5,D,Active-particle simulated net displacement in liquid,S5:liquid,ready_migration
+F5_E,Figure5,E,Active-particle simulated net displacement in agarose,S5:agarose,ready_migration
+F6_A,Figure6,A,Ptet soft-agar motility,F4_A,ready_migration
+F6_B,Figure6,B,Ppro soft-agar motility,F4_B,ready_migration
+F6_C,Figure6,C,Radial halo sampling and WT hook counts,F4_C,ready_migration
+F6_D,Figure6,D,Structured-medium competition design,F4_D,ready_migration
+F6_E,Figure6,E,Competition-region microscopy and hook distributions,F4_E,ready_migration
+F7_A,Figure7,A,WT versus PproA paired-unit effective diffusivity,F5_A,ready_migration
+F7_B,Figure7,B,WT versus PproB paired-unit effective diffusivity,F5_B,ready_migration
+F7_C,Figure7,C,PproA versus PproB paired-unit effective diffusivity,F5_C,ready_migration
+F7_D,Figure7,D,Effective-diffusivity speed and persistence decomposition,new:A4,ready_migration
+F7_E,Figure7,E,WT versus PproA hook distributions,F5_D,ready_migration
+F7_F,Figure7,F,WT versus PproB hook distributions,F5_E,ready_migration
+F7_G,Figure7,G,PproA versus PproB hook distributions,F5_F,ready_migration
+S1_A,Supplementary1,A,Ppro single-cell growth supporting distribution A,Figure2/Figure2B_growth-rate_Ppro-single-cell,ready_migration
+S1_B,Supplementary1,B,Ppro single-cell growth supporting distribution B,Figure2/Figure2B_growth-rate_Ppro-single-cell,ready_migration
+S2_A,Supplementary2,A,Protein-level promoter-series proteomics,,ready_migration
+S3_A,Supplementary3,A,WT versus PproA median speed,Figure5/Figure5A_motility-competition_agarose-liquid,ready_migration
+S3_B,Supplementary3,B,WT versus PproB median speed,Figure5/Figure5A_motility-competition_agarose-liquid,ready_migration
+S3_C,Supplementary3,C,PproA versus PproB median speed,Figure5/Figure5A_motility-competition_agarose-liquid,ready_migration
+S3_D,Supplementary3,D,WT versus PproA swimming fraction,Figure5/Figure5A_motility-competition_agarose-liquid,ready_migration
+S3_E,Supplementary3,E,WT versus PproB swimming fraction,Figure5/Figure5A_motility-competition_agarose-liquid,ready_migration
+S3_F,Supplementary3,F,PproA versus PproB swimming fraction,Figure5/Figure5A_motility-competition_agarose-liquid,ready_migration
+S3_G,Supplementary3,G,WT versus PproA directional persistence,Figure5/Figure5A_motility-competition_agarose-liquid,ready_migration
+S3_H,Supplementary3,H,WT versus PproB directional persistence,Figure5/Figure5A_motility-competition_agarose-liquid,ready_migration
+S3_I,Supplementary3,I,PproA versus PproB directional persistence,Figure5/Figure5A_motility-competition_agarose-liquid,ready_migration
+S4_A,Supplementary4,A,Simulated PproA liquid tracks,simulations/motility_analysis_and_simulations.py,ready_migration
+S4_B,Supplementary4,B,Simulated WT liquid tracks,simulations/motility_analysis_and_simulations.py,ready_migration
+S4_C,Supplementary4,C,Simulated PproB liquid tracks,simulations/motility_analysis_and_simulations.py,ready_migration
+S4_D,Supplementary4,D,Simulated PproA agarose tracks,simulations/motility_analysis_and_simulations.py,ready_migration
+S4_E,Supplementary4,E,Simulated WT agarose tracks,simulations/motility_analysis_and_simulations.py,ready_migration
+S4_F,Supplementary4,F,Simulated PproB agarose tracks,simulations/motility_analysis_and_simulations.py,ready_migration
+S5_A,Supplementary5,A,WT versus PproA speed and effective-diffusivity probability contours,F5_A,ready_migration
+S5_B,Supplementary5,B,WT versus PproB speed and effective-diffusivity probability contours,F5_B,ready_migration
+S5_C,Supplementary5,C,PproA versus PproB speed and effective-diffusivity probability contours,F5_C,ready_migration

@@ -1,0 +1,21 @@
+{
+  "panel_id": "S1_B",
+  "legacy_source": "manuscript_plots_final/Figure2/Figure2B_growth-rate_Ppro_single-cell/data/underlying_violin_points_per_cell.csv",
+  "columns": ["cell_id", "strain", "replicate", "source_file", "_subset", "_window_start_min", "_window_end_min", "growth_norm"],
+  "filters": {"_subset": ["mother_only", "non_mother"], "_window_start_min": [180], "_window_end_min": [480]},
+  "sort_by": ["_subset", "strain", "replicate", "source_file", "cell_id"],
+  "value_column": "growth_norm",
+  "replicate_groups": ["_subset", "_window_start_min", "_window_end_min", "strain", "replicate"],
+  "expected_rows": 65967,
+  "processed_parquet": "data/processed/supplementary_01/S1_B/cell_points.parquet",
+  "replicate_means_csv": "data/processed/supplementary_01/S1_B/replicate_means.csv",
+  "source_data_csv_gz": "data/source_data/supplementary_01/S1_B.csv.gz",
+  "migration_inventory": "analyses/supplementary_01/panel_b/metadata/migration_inventory.json",
+  "strain_order": ["EM9662", "EM9661", "EM9660", "EM8513"],
+  "strain_labels": ["Ppro1-flhDC", "PproA-flhDC", "PproB-flhDC", "PproD-flhDC"],
+  "subset_order": ["mother_only", "non_mother"],
+  "subset_titles": ["Mother-only", "Non-mother"],
+  "window_label": "180–480 min",
+  "y_limits": [0.69, 1.17],
+  "y_label": "Normalized growth rate"
+}

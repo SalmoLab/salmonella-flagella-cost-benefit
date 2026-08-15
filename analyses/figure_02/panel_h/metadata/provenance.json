@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F2_H",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-12T09:30:42.188392Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/collaborator_science/build_panels.py",
+    "--panel",
+    "F2_H"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/collaborator_science/build_panels.py",
+      "sha256": "8fea9b4ef898c4a34312920335bd07be0ee5d9e111b717f91e355a80ff681f9d",
+      "bytes": 22241
+    },
+    {
+      "relative_path": "analyses/figure_02/panel_h/config/panel.json",
+      "sha256": "c6d071542618aaee49aaaeff03cacaccd914fc1609798941f2a8a6f864bb1d92",
+      "bytes": 142
+    },
+    {
+      "relative_path": "analyses/figure_02/panel_h/scripts/reproduce.py",
+      "sha256": "247818b898c091e3c6e21652d30e149d54f40ebeead29406ef5b9462456be93d",
+      "bytes": 179
+    },
+    {
+      "relative_path": "models/cell_economy/upstream/UPSTREAM_SOURCE.md",
+      "sha256": "8ffe37555f1ad6af635cf38261b7add8aae4cb4afb21573e42f3a8c2f3c1db3e",
+      "bytes": 1055
+    },
+    {
+      "relative_path": "data/external/promoter_series_proteomics/population_growth_mutants.csv",
+      "sha256": "3fe37009a0129028a627aa497c1c517fe04a431177ee38dd49c806e0221c07dd",
+      "bytes": 38661
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.00_ATP.csv",
+      "sha256": "97aae0d0941c2228ca4daba8cd7853a746f5282dcf6483a5bef33e8ac320b2f2",
+      "bytes": 6707
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.05_ATP.csv",
+      "sha256": "08ca216bd3bf33a2b74398f9febe5e8ef4a9d8ddfa6f643c359fb94285bf5c35",
+      "bytes": 6851
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.05_no_ATP.csv",
+      "sha256": "ae5d10f2f1c23167601822cfe1e27055288731e5ea2d92e8f0b1d22123cc0d80",
+      "bytes": 6732
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "data/source_data/superseded_2026-07/f2_h/F2_H_source_data.csv",
+      "sha256": "91b6eb69c34efc895ed8b4f15727bf116a93b9801bc8bd95203def3666200d5c",
+      "bytes": 407,
+      "rows": 6
+    },
+    {
+      "relative_path": "build/panels/F2_H/F2_H.png",
+      "sha256": "170bf821b4995084b240888de707097926031fd4cfa0defc4e363ad14b09f8aa",
+      "bytes": 56801
+    },
+    {
+      "relative_path": "build/panels/F2_H/F2_H.svg",
+      "sha256": "72a219602b06e735472f0308c7bc4dd104c1e211e49f52dcdaa812537e3eef11",
+      "bytes": 18190
+    },
+    {
+      "relative_path": "build/panels/F2_H/F2_H.pdf",
+      "sha256": "93c3c984f3b95338ee1223754b81a8923fe1e5c2d9e677f12beb250dbe8dcdfa",
+      "bytes": 19764
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2",
+    "matplotlib": "3.11.1",
+    "cell_economy_commit": "c5e534de7e2102d330356ecb6e78f6346f3cc14a"
+  },
+  "parameters": {
+    "backend": "Python 3.12",
+    "source_delivery": "2026-08-12",
+    "panel": "F2_H"
+  },
+  "random_seeds": {},
+  "limitations": [
+    "Proteomics panels reproduce from the delivered protein-level export; raw MS files, FASTA and Spectronaut settings were not supplied.",
+    "Model panels reproduce from fixed collaborator result tables. A local GEKKO 1.3.2 solve was attempted: solver 3 was unavailable and the APOPT fallback did not find a solution.",
+    "The collaborator parameter-sampling log does not record a random seed."
+  ]
+}

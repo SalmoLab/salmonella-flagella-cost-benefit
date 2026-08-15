@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F4_D",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-15T09:26:30.380075Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/figure_04_revision/panel_d/scripts/reproduce.py"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_04_revision/build.py",
+      "sha256": "e75f82bb58e69cc6d776f04661b1d627d148254eaf628fa1e5a2d11d72f3b162",
+      "bytes": 44440
+    },
+    {
+      "relative_path": "analyses/figure_04_revision/panel_d/scripts/reproduce.py",
+      "sha256": "3ac75f5a9b304e95f3d02f70534e3d40acf0906d24fccd9303e89f7e9978defe",
+      "bytes": 289
+    },
+    {
+      "relative_path": "analyses/figure_04_revision/panel_d/config/panel.json",
+      "sha256": "29e970fffd186351a7803028b34dfaca67f0024643dab308a9062e4913ad3c52",
+      "bytes": 143
+    },
+    {
+      "relative_path": "data/external/promoter_series_proteomics/sector_mass_fractions.tsv",
+      "sha256": "333a94fffe36510855dc75b6f6710585ec267f5bef51e9d6f215d76627e9d7a7",
+      "bytes": 22004
+    },
+    {
+      "relative_path": "data/external/promoter_series_proteomics/protein_massfrac_annotated.csv",
+      "sha256": "89bc1046b89852c2ac3fa70d6c675edb2b4d255d87651dbab6b760d1d2878008",
+      "bytes": 27892466,
+      "rows": 66024
+    },
+    {
+      "relative_path": "analyses/figure_04_revision/config/protein_sector_overrides.csv",
+      "sha256": "3b966b06bca45ec8ffd19c129a01392e6044bf3a72e9b173520f2a835480fa79",
+      "bytes": 1144,
+      "rows": 2
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/panels/Figure_4/D/Figure_4_D.pdf",
+      "sha256": "77e12415d97ebf2c2582f3323e98dc74e3cd02a97bddf340ca9761060bace495",
+      "bytes": 21994
+    },
+    {
+      "relative_path": "build/panels/Figure_4/D/Figure_4_D.png",
+      "sha256": "b50eb4ac3916c9002cde19ff344163815ff363ff83f5fdc5e1b60f842318306f",
+      "bytes": 33110
+    },
+    {
+      "relative_path": "build/panels/Figure_4/D/Figure_4_D.svg",
+      "sha256": "bf1c76182caacf33fdf7236df0dc3ce9a798b2781b285fe5ea303280d0aadabf",
+      "bytes": 23168
+    },
+    {
+      "relative_path": "build/source_data/Figure_4/D/measured_sector_composition.csv",
+      "sha256": "3a3c7669d6255c71c239ad8402d98571b74f4042d3626102d93ecfd4a33e1086",
+      "bytes": 1672,
+      "rows": 48
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2",
+    "matplotlib": "3.11.1"
+  },
+  "parameters": {
+    "overlay_reference": "delta from experimental \u0394flhDC and model 0%",
+    "protein_label_relative_threshold": 0.15,
+    "protein_label_absolute_floor": 0.0006,
+    "protein_label_abundance_leader_rank": 3,
+    "sector_overrides": {
+      "P0A2E3": "Fla to Oth",
+      "P0A2C5": "Fla to Tra"
+    },
+    "a1_inferential_unit": "six condition means"
+  },
+  "random_seeds": {},
+  "limitations": [
+    "Proteomics begins from the collaborator protein-level export rather than raw MS files.",
+    "Sector assignment follows the delivered KEGG mapping except for the proteins listed in analyses/figure_04_revision/config/protein_sector_overrides.csv, which records one reason per protein."
+  ]
+}

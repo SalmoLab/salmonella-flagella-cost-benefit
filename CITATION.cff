@@ -1,0 +1,145 @@
+# Citation metadata for this collection.
+#
+# This file and `.zenodo.json` describe the same release. Keep the title, the
+# author list, the version and the licence identical in both.
+#
+# The licence is decided. Marc Erhardt chose it on 15 August 2026.
+# `GPL-3.0-only` covers the collection's own code, which is what this software
+# record describes. It replaces the MIT licence chosen earlier on the same day.
+# It does not cover the vendored trees under `models/*/upstream/` (they keep
+# their own licences), or the documentation, figures and data deposit
+# (CC-BY-4.0). CFF 1.2.0 holds one identifier per record, so `LICENSES.md`
+# carries the per-directory map and is the authority.
+#
+# PLACEHOLDERS — resolve before the release is published:
+#   * repository-code / url — set 15 August 2026.
+#   * version — must equal the git tag and the version in `.zenodo.json`
+#     and `pyproject.toml`.
+#   * date-released — add the real release date (see the commented key below).
+#   * ORCIDs — only Michael Jahn's ORCID could be verified inside this
+#     repository. Every other author has no `orcid` key. Do not guess one:
+#     CFF requires the exact form `https://orcid.org/0000-0000-0000-0000`, and
+#     a wrong identifier points at a different person.
+#   * identifiers / preferred-citation — add the Zenodo DOI and the manuscript
+#     citation once they exist. Templates are at the end of this file.
+
+cff-version: 1.2.0
+message: >-
+  If you use this collection, please cite both the associated manuscript and
+  this archived software release.
+title: >-
+  Reproducible analyses and figures for "The cost-benefit trade-off of
+  peritrichous flagellation in bacteria"
+abstract: >-
+  This collection rebuilds every figure of the flagellar-number cost-benefit
+  manuscript from registered input tables with recorded provenance. It covers
+  the 12 August 2026 revision: seven main figures, five supplementary figures
+  and 60 panels. Each panel has one canonical producer script, one output
+  directory and one provenance document that names its inputs, its software and
+  its random seeds. Reproduction is partial by design and the collection records
+  the limits of each panel in machine-readable form.
+type: software
+version: 1.0.0
+# date-released: YYYY-MM-DD   # uncomment and set on the day of the release
+license: GPL-3.0-only
+repository-code: https://github.com/SalmoLab/salmonella-flagella-cost-benefit
+url: https://github.com/SalmoLab/salmonella-flagella-cost-benefit
+
+authors:
+  - family-names: Giralt-Zúñiga
+    given-names: María José
+    affiliation: >-
+      Max Planck Unit for the Science of Pathogens, Berlin, Germany;
+      Institute of Biology/Molecular Microbiology, Humboldt-Universität zu
+      Berlin, Berlin, Germany
+  - family-names: Jahn
+    given-names: Michael
+    affiliation: Max Planck Unit for the Science of Pathogens, Berlin, Germany
+    orcid: https://orcid.org/0000-0002-3913-153X
+  - family-names: Franklin
+    given-names: Joshua L.
+    affiliation: >-
+      Department of Microbiology and Molecular Genetics, Michigan State
+      University, East Lansing, MI, USA
+  - family-names: Alagesan
+    given-names: Kathirvel
+    affiliation: Max Planck Unit for the Science of Pathogens, Berlin, Germany
+  - family-names: Kondrot
+    given-names: Florian
+    affiliation: Max Planck Unit for the Science of Pathogens, Berlin, Germany
+  - family-names: Kaganovitch
+    given-names: Eugen
+    affiliation: >-
+      Institute of Biology/Molecular Microbiology, Humboldt-Universität zu
+      Berlin, Berlin, Germany
+  - family-names: Hallenga
+    given-names: Lasse
+    affiliation: >-
+      Institute of Biology/Molecular Microbiology, Humboldt-Universität zu
+      Berlin, Berlin, Germany
+  - family-names: Derado
+    given-names: Sarya
+    affiliation: >-
+      Institute of Biology/Molecular Microbiology, Humboldt-Universität zu
+      Berlin, Berlin, Germany
+  - family-names: Hughes
+    given-names: Kelly T.
+    affiliation: >-
+      School of Biological Sciences, University of Utah, Salt Lake City, Utah,
+      USA
+  - family-names: Popp
+    given-names: Philipp F.
+    affiliation: >-
+      Institute of Biology/Molecular Microbiology, Humboldt-Universität zu
+      Berlin, Berlin, Germany
+  - family-names: Charpentier
+    given-names: Emmanuelle
+    affiliation: Max Planck Unit for the Science of Pathogens, Berlin, Germany
+  - family-names: Dufour
+    given-names: Yann S.
+    affiliation: >-
+      Department of Microbiology and Molecular Genetics, Michigan State
+      University, East Lansing, MI, USA
+  - family-names: Erhardt
+    given-names: Marc
+    email: marc.erhardt@hu-berlin.de
+    affiliation: >-
+      Max Planck Unit for the Science of Pathogens, Berlin, Germany;
+      Institute of Biology/Molecular Microbiology, Humboldt-Universität zu
+      Berlin, Berlin, Germany
+
+keywords:
+  - flagella
+  - bacterial motility
+  - Salmonella enterica
+  - proteome allocation
+  - growth trade-off
+  - cost-benefit trade-off
+  - reproducible research
+  - figure reproduction
+  - Snakemake
+
+# --------------------------------------------------------------------------
+# Templates. Paste them above this block and fill the values in.
+#
+# Add the Zenodo DOI after the first release is minted:
+#
+# identifiers:
+#   - type: doi
+#     value: 10.5281/zenodo.XXXXXXX
+#     description: Concept DOI. It always resolves to the newest version.
+#   - type: doi
+#     value: 10.5281/zenodo.YYYYYYY
+#     description: DOI of version 1.0.0.
+#
+# Add the manuscript once it has a journal, a year and a DOI:
+#
+# preferred-citation:
+#   type: article
+#   title: >-
+#     The cost-benefit trade-off of peritrichous flagellation in bacteria
+#   authors: []          # repeat the author list above
+#   journal: FILL-IN
+#   year: FILL-IN
+#   doi: FILL-IN
+# --------------------------------------------------------------------------

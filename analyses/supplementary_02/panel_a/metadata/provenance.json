@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "S2_A",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-15T09:44:03.365623Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/collaborator_science/build_panels.py",
+    "--panel",
+    "S2_A"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/collaborator_science/build_panels.py",
+      "sha256": "29e23b6bc137c54cd677a4c279e4106c5721f3ff87a38ac826cde1d62efcf350",
+      "bytes": 26378
+    },
+    {
+      "relative_path": "analyses/supplementary_02/panel_a/config/panel.json",
+      "sha256": "30e117b511b57551af8ee9b447fd7273afdfba27e9e643d5a2bf37c3f2a298e5",
+      "bytes": 142
+    },
+    {
+      "relative_path": "analyses/supplementary_02/panel_a/scripts/reproduce.py",
+      "sha256": "c84899f65fd3562269ee2d3245d23eeaff9446bc860cbffb51e6d6ad528920fa",
+      "bytes": 179
+    },
+    {
+      "relative_path": "models/cell_economy/upstream/UPSTREAM_SOURCE.md",
+      "sha256": "8ffe37555f1ad6af635cf38261b7add8aae4cb4afb21573e42f3a8c2f3c1db3e",
+      "bytes": 1055
+    },
+    {
+      "relative_path": "data/external/promoter_series_proteomics/protein_massfrac_annotated.csv",
+      "sha256": "89bc1046b89852c2ac3fa70d6c675edb2b4d255d87651dbab6b760d1d2878008",
+      "bytes": 27892466
+    },
+    {
+      "relative_path": "analyses/figure_04_revision/config/protein_sector_overrides.csv",
+      "sha256": "3b966b06bca45ec8ffd19c129a01392e6044bf3a72e9b173520f2a835480fa79",
+      "bytes": 1144
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "data/source_data/s2_a/S2_A_source_data.csv",
+      "sha256": "2a011a039369913f2a409dca4c39f31d322824dbb232df3bc673c16fa01caaf3",
+      "bytes": 15911,
+      "rows": 360
+    },
+    {
+      "relative_path": "build/panels/Supplementary_Figure_2/A/S2_A.svg",
+      "sha256": "a37687c37be01fa89f1763ac94ff077bb1db47d33202234bbbca56c5262042a6",
+      "bytes": 239076
+    },
+    {
+      "relative_path": "build/panels/Supplementary_Figure_2/A/S2_A.pdf",
+      "sha256": "e2ba3b65a4dae28421b8384b6213a4cb9987b27e25b0558638bb453650103d98",
+      "bytes": 97292
+    },
+    {
+      "relative_path": "build/panels/Supplementary_Figure_2/A/S2_A.png",
+      "sha256": "d5cbaaaf1418ad182e9856df4078a3d88a6fa646dcf13f616ba4785e6b83ed32",
+      "bytes": 259199
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2",
+    "matplotlib": "3.11.1",
+    "cell_economy_commit": "c5e534de7e2102d330356ecb6e78f6346f3cc14a"
+  },
+  "parameters": {
+    "backend": "Python 3.12",
+    "source_delivery": "2026-08-12",
+    "panel": "S2_A"
+  },
+  "random_seeds": {},
+  "limitations": [
+    "Proteomics panels reproduce from the delivered protein-level export; raw MS files, FASTA and Spectronaut settings were not supplied.",
+    "Model panels reproduce from fixed collaborator result tables. A local GEKKO 1.3.2 solve was attempted: solver 3 was unavailable and the APOPT fallback did not find a solution.",
+    "The collaborator parameter-sampling log does not record a random seed."
+  ]
+}

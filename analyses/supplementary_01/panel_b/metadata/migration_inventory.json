@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "S1_B",
+  "migration_scope": "legacy processed single-cell table to current-panel subset",
+  "legacy_input": {
+    "relative_to_workspace": "manuscript_plots_final/Figure2/Figure2B_growth-rate_Ppro_single-cell/data/underlying_violin_points_per_cell.csv",
+    "sha256": "6f4b48f0380ec2482f50febefb42423caf0aa101a86c228b835baf52c304101d",
+    "bytes": 133835554,
+    "rows": 385802
+  },
+  "selection": {
+    "filters": {
+      "_subset": [
+        "mother_only",
+        "non_mother"
+      ],
+      "_window_start_min": [
+        180
+      ],
+      "_window_end_min": [
+        480
+      ]
+    },
+    "columns": [
+      "cell_id",
+      "strain",
+      "replicate",
+      "source_file",
+      "_subset",
+      "_window_start_min",
+      "_window_end_min",
+      "growth_norm"
+    ],
+    "sort_by": [
+      "_subset",
+      "strain",
+      "replicate",
+      "source_file",
+      "cell_id"
+    ],
+    "expected_rows": 65967,
+    "chunk_size": 50000
+  },
+  "outputs": [
+    {
+      "relative_path": "data/processed/supplementary_01/S1_B/cell_points.parquet",
+      "sha256": "327b60f9acf259c4ace9d88044dfc0cc7d51a993a5e6c730243d83e9800531a8",
+      "bytes": 853460,
+      "rows": 65967
+    },
+    {
+      "relative_path": "data/processed/supplementary_01/S1_B/replicate_means.csv",
+      "sha256": "f1d531b271ac21e1d576b391841230bca980ee085e4841cf3410c0f266377aec",
+      "bytes": 868,
+      "rows": 16
+    },
+    {
+      "relative_path": "data/source_data/supplementary_01/S1_B.csv.gz",
+      "sha256": "43994ba65d573677305fbf66a38205b6553575b9aa25b049161947d774305228",
+      "bytes": 681827,
+      "rows": 65967
+    }
+  ],
+  "raw_tracking_lineage": {
+    "status": "absent",
+    "detail": "The archived bundle contains a processed per-cell table, but no original mother-machine tracking files or raw image-to-cell extraction workflow."
+  },
+  "large_file_policy": "The legacy CSV remains read-only outside this collection because it exceeds 100 MB. The collection stores a checksum-addressed current-panel extraction."
+}

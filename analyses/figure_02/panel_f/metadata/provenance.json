@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F2_F",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-12T09:30:40.852146Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "-m",
+    "analyses.figure_02.panel_f.scripts.plot"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_02/panel_f/config/config.json",
+      "sha256": "677ebaba7a7ab466507af5906164fa4f83a2d6348c65de2b1a55874b999ad03a",
+      "bytes": 1263
+    },
+    {
+      "relative_path": "analyses/figure_02/panel_c/scripts/plot.py",
+      "sha256": "542369e0ed5186ab6e5cbd499822fcfeb9152f5d844ed52316fd0c527ff4b1bf",
+      "bytes": 9862
+    },
+    {
+      "relative_path": "analyses/figure_02/panel_f/scripts/plot.py",
+      "sha256": "852b23cd994d050d09b2e013db8373974872154d9c4df508e3bdef5422684ed3",
+      "bytes": 188
+    },
+    {
+      "relative_path": "data/processed/figure_02/F2_F/cell_points.parquet",
+      "sha256": "8de33e97405588478f355a4acdff02b6dce2cc770530a81c4f11b985c4196ea4",
+      "bytes": 1341860,
+      "rows": 110983
+    },
+    {
+      "relative_path": "data/processed/figure_02/F2_F/replicate_means.csv",
+      "sha256": "375f0f651ee82667b8fa14e6e7a8282a46560441366a23ed2cce5cdb0cebaa1e",
+      "bytes": 404,
+      "rows": 12
+    },
+    {
+      "relative_path": "data/source_data/figure_02/F2_F.csv.gz",
+      "sha256": "ab8265d695c8d2880ea54fc8fe8c3771dfdbf303b4f992ab19388238094e39d3",
+      "bytes": 1140690,
+      "rows": 110983
+    },
+    {
+      "relative_path": "analyses/figure_02/panel_f/metadata/migration_inventory.json",
+      "sha256": "ca836762fcd38b3a37a08ce864dc744901521be12ca1e5b9bb1b73d9de43f08b",
+      "bytes": 2026
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "data/source_data/figure_02/F2_F.csv.gz",
+      "sha256": "ab8265d695c8d2880ea54fc8fe8c3771dfdbf303b4f992ab19388238094e39d3",
+      "bytes": 1140690,
+      "rows": 110983
+    },
+    {
+      "relative_path": "build/panels/F2_F/summary.csv",
+      "sha256": "7377a3f2d8ddb90233156a3a66ccbb1a47478c327acb0a9a68ad1ac7fe203010",
+      "bytes": 274,
+      "rows": 6
+    },
+    {
+      "relative_path": "build/panels/F2_F/F2_F.svg",
+      "sha256": "391e1db1c5e5715d002f44e294d62df7ed3543ddaa7b3b6a1ccbe9e2ec1888af",
+      "bytes": 45206
+    },
+    {
+      "relative_path": "build/panels/F2_F/F2_F.pdf",
+      "sha256": "5d939f3c8cdc476a1616155f415da9e2987e9cd0c87ea7a4f20aca78380bea58",
+      "bytes": 33264
+    },
+    {
+      "relative_path": "build/panels/F2_F/F2_F.png",
+      "sha256": "a2eaf9b6915ed4ab94037a2250ae8ea7eb9daf405600ce504e57d0fe82e12516",
+      "bytes": 164827
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "matplotlib": "3.11.1",
+    "pandas": "2.3.3",
+    "pyarrow": "22.0.0",
+    "seaborn": "0.13.2"
+  },
+  "parameters": {
+    "value_column": "growth_rate_per_h",
+    "filters": {
+      "_subset": [
+        "all_cells"
+      ],
+      "_window_start_min": [
+        200
+      ],
+      "_window_end_min": [
+        800
+      ]
+    },
+    "biological_unit": "independent experiment/replicate",
+    "cell_points_role": "descriptive distribution",
+    "display_y_limits": [
+      1.25,
+      2.25
+    ],
+    "display_clipping_only": true,
+    "inferential_test": null,
+    "migration_command": [
+      ".venv/bin/python3.12",
+      "-m",
+      "analyses.figure_02.panel_f.scripts.migrate",
+      "--write"
+    ]
+  },
+  "random_seeds": {
+    "jitter": null,
+    "bootstrap": null
+  },
+  "limitations": [
+    "The workflow starts from an archived processed per-cell table; raw microscopy, mother-machine tracking files, and the image-to-cell extraction workflow are absent.",
+    "The compact table is a checksum-backed extraction because the legacy CSV exceeds the collection's no-LFS 100 MB policy.",
+    "Final multi-panel assembly and pixel-level comparison to the current manuscript export are not yet implemented."
+  ]
+}

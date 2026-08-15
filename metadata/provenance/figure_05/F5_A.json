@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F5_A",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-15T09:03:15.950456Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/figure_05_revision/panel_a/scripts/reproduce.py"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_05_revision/build.py",
+      "sha256": "59d1f903db24c761e13e20a4d543cb2fbc8331562c7e600de30cb8555550e382",
+      "bytes": 46905
+    },
+    {
+      "relative_path": "analyses/figure_05_revision/panel_a/scripts/reproduce.py",
+      "sha256": "126d65b5015a1d31c5e4ec445d6afaec824a9ee14904750f0331133901a81086",
+      "bytes": 289
+    },
+    {
+      "relative_path": "analyses/figure_05_revision/panel_a/config/panel.json",
+      "sha256": "59cae80cca74e174a3a25a7ea8c5fcfc06791fe3d0e1aefb38702483f6514a39",
+      "bytes": 143
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/swimming/8500/dynamic_flag_0.005.csv",
+      "sha256": "7b6eeb0650bda6a58a9590d51757fe52ab107993439d6c106df459126333b1fa",
+      "bytes": 11914,
+      "rows": 18
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/swimming/8500/dynamic_flag_0.010.csv",
+      "sha256": "f93ea16ea209599e4ec3b195d4ffeaf1d0614d35842d0946d869da34382ff15c",
+      "bytes": 11918,
+      "rows": 18
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/swimming/8500/dynamic_flag_0.020.csv",
+      "sha256": "c7223dd00dbea9aabeedd6a663759742eab6ff83c768472a4f091f5a9ebf48e2",
+      "bytes": 12095,
+      "rows": 18
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/swimming/8500/dynamic_flag_0.030.csv",
+      "sha256": "9e1cabd7105a77fe7b0b2c1f70a879db251ac9333f1dfd8bd07662fbf306ee11",
+      "bytes": 11947,
+      "rows": 18
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/swimming/8500/dynamic_flag_0.040.csv",
+      "sha256": "ca18a673ad0b18be9733067856aa99a9d6cf5c007628f4da0b55721a6d1da817",
+      "bytes": 12053,
+      "rows": 18
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/swimming/8500/dynamic_flag_0.050.csv",
+      "sha256": "36e888f3a3adb0b4bdf0148ac9ab737a00a63c819e6a17f628cf41d383abfb1d",
+      "bytes": 11992,
+      "rows": 18
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/swimming/8500/substrate_gradient.csv",
+      "sha256": "5ed6c1d11a17128bbf5a1c0b95846a2eeea855f0eeb56b751834db8155d5a15f",
+      "bytes": 2765,
+      "rows": 86
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/panels/Figure_5/A/Figure_5_A.pdf",
+      "sha256": "dc71c15424f44cf191ea249c4c28fa325b471613397a9e76564fe9ed78d325fb",
+      "bytes": 26036
+    },
+    {
+      "relative_path": "build/panels/Figure_5/A/Figure_5_A.png",
+      "sha256": "966669fc14274534bea4dc72e23c3ea4a77a909a8dd8f744ea227c9281211503",
+      "bytes": 57596
+    },
+    {
+      "relative_path": "build/panels/Figure_5/A/Figure_5_A.svg",
+      "sha256": "84bb966446763a7ffbab9c3d75bea6d5f0838b6b38777ef05ec81108b95de04e",
+      "bytes": 23611
+    },
+    {
+      "relative_path": "build/source_data/Figure_5/A/distance_endpoints.csv",
+      "sha256": "dc8f640142fbd537dfe978a80c45de194b7c2bec501bbf2c266a04861eed2795",
+      "bytes": 506,
+      "rows": 6
+    },
+    {
+      "relative_path": "build/source_data/Figure_5/A/glucose_gradient.csv",
+      "sha256": "23a0a2e3d093adb574d4b6e302ecb60ee0fb49a1ad5c57b84e38fa3439bbd1b8",
+      "bytes": 2471,
+      "rows": 86
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2",
+    "matplotlib": "3.11.1"
+  },
+  "parameters": {
+    "dynamic_gradient_age_h": 3,
+    "dynamic_duration_h": 8,
+    "active_model_cells_per_seed": 26,
+    "active_model_seed_range": [
+      1000,
+      1099
+    ],
+    "active_model_seed_count_per_group": 100,
+    "active_model_phenotypes": [
+      "PproA",
+      "WT",
+      "PproB"
+    ],
+    "active_model_observable": "mean net displacement per seed (um)",
+    "active_model_dt_s": 0.0025,
+    "active_model_config_dt_s": 0.05,
+    "active_model_dt_tolerance": 0.05,
+    "active_model_box_scale": 12,
+    "active_model_noise_scales": {
+      "run_translational_scale": 0.12,
+      "reorientation_diffusion_scale": 0.4,
+      "stall_slide_fraction": 0.28,
+      "stall_rotational_diffusion_scale": 1.8,
+      "stall_translational_scale": 0.2
+    }
+  },
+  "random_seeds": {
+    "population": "1000-1099",
+    "starting_positions": "population seed + 1",
+    "agarose_obstacles": "population seed + 300"
+  },
+  "limitations": [
+    "Dynamic trajectories begin from supplied solver result tables because the exact IPOPT runtime is unavailable locally."
+  ]
+}

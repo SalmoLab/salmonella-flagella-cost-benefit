@@ -1,0 +1,8 @@
+{
+  "panel_id": "F3_A",
+  "figure_number": 3,
+  "panel_label": "A",
+  "status": "blocked_asset",
+  "missing_artifact": "editable assembly-mutant schematic",
+  "entry_script": "analyses/figure_03_revision/panel_a/scripts/reproduce.py"
+}

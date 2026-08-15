@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F5_D",
+  "status": "reproduced",
+  "generated_at_utc": "2026-08-14T20:02:14.700474Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/figure_05_revision/panel_d/scripts/reproduce.py"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_05_revision/build.py",
+      "sha256": "59d1f903db24c761e13e20a4d543cb2fbc8331562c7e600de30cb8555550e382",
+      "bytes": 46905
+    },
+    {
+      "relative_path": "analyses/figure_05_revision/panel_d/scripts/reproduce.py",
+      "sha256": "de04f88528c2df6275709a95e002205af112d0e5ee3797f16e0906e5081cb5fd",
+      "bytes": 357
+    },
+    {
+      "relative_path": "analyses/figure_05_revision/panel_d/config/panel.json",
+      "sha256": "55bfabe3f430bac94adcd2c3e5786904c51eebe9612f9debe1116907a826fba8",
+      "bytes": 183
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/data/config.yml",
+      "sha256": "4d42d5b2273c0f681c74bedf00c0ae28131675e7f8a3ba256b56e93dee777c67",
+      "bytes": 874
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/data/motility_summary_parameters.csv",
+      "sha256": "82095121e2ac8154e2d7412f566a0da48466c0abe2395aaf709512c536a768c9",
+      "bytes": 933,
+      "rows": 8
+    },
+    {
+      "relative_path": "data/processed/motility_adopted_parameters/motility_summary_parameters_adopted.csv",
+      "sha256": "bb85e998da21f7ef8db3feb3cb45db0f2f72784995f68803ee4f42adac92950e",
+      "bytes": 1033,
+      "rows": 6
+    },
+    {
+      "relative_path": "analyses/motility_parameter_calibration/calibrate.py",
+      "sha256": "c9b1bb79904fa97cf8fb30244a38c37054c2ef57c3686a50182d760650fc23a5",
+      "bytes": 12895
+    },
+    {
+      "relative_path": "analyses/motility_turn_angle_comparison/calibrate_global_turn_angle.py",
+      "sha256": "c698367413549da55696facc518e098bab2c1506ebd87a8317f4ebc69451c093",
+      "bytes": 15863
+    },
+    {
+      "relative_path": "analyses/motility_stall_parameter_comparison/common.py",
+      "sha256": "caf0af5a8101af94fc84d41c247c550aedc4d4fe937e78060753394b75402dec",
+      "bytes": 23011
+    },
+    {
+      "relative_path": "analyses/motility_adopted_parameters/derive_adopted_parameters.py",
+      "sha256": "51ffec24b11939ae4204862e6555a61a621073657944c1353db95a057359b023",
+      "bytes": 16313
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/src/salmonella_motility_simulation/simulation.py",
+      "sha256": "4a72d6f26ef2310adc9aa2bf03bfa3450f4b506aa52e168a3dd94d832590df2b",
+      "bytes": 12624
+    },
+    {
+      "relative_path": "models/motility_simulation/corrected/src/salmonella_motility_corrected/simulation.py",
+      "sha256": "2b0a0e060a27d763d024d7f9e14d4f188bc64070c7b3de1d1461a35a36726a7b",
+      "bytes": 14857
+    },
+    {
+      "relative_path": "models/motility_simulation/corrected/src/salmonella_motility_corrected/obstacles.py",
+      "sha256": "477a6724d9f9d5c86474141e53ea1d92b0eb3a2dae85a9118d1e58c842f45aa2",
+      "bytes": 9999
+    },
+    {
+      "relative_path": "models/motility_simulation/corrected/src/salmonella_motility_corrected/classes.py",
+      "sha256": "62af750f6e885664ddbaea8aeeb2eedad1bcaec565583937d126e7e67a3b5fd7",
+      "bytes": 1456
+    },
+    {
+      "relative_path": "models/motility_simulation/corrected/src/salmonella_motility_corrected/io.py",
+      "sha256": "ebbbac90d4c2c906a73d4643b88d581de2128e55e2d0aea141b704431aae981a",
+      "bytes": 3268
+    },
+    {
+      "relative_path": "analyses/figure_05_revision/timestep_convergence.py",
+      "sha256": "2d3c099bc620856a4e1b17b5959ce07e68656e47e2e419e60b9d28a72ad25ac3",
+      "bytes": 10744
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/panels/Figure_5/D/Figure_5_D.pdf",
+      "sha256": "540f3e4b09ea99941d8650aa9dc8d3e0c192a915cb39ef559947bc202f3dab19",
+      "bytes": 28952
+    },
+    {
+      "relative_path": "build/panels/Figure_5/D/Figure_5_D.png",
+      "sha256": "93b91fdff3ff65eb194b365052cc2a5349e1215fe33f8db769b87d8e766f0bc8",
+      "bytes": 102625
+    },
+    {
+      "relative_path": "build/panels/Figure_5/D/Figure_5_D.svg",
+      "sha256": "0ee02fd60415c0f04341f1223422815b37f646b3f386c05ad126ee1d7d71fdef",
+      "bytes": 60413
+    },
+    {
+      "relative_path": "build/source_data/Figure_5/D/liquid_seed_predictions.csv",
+      "sha256": "04b10aaea7c4b9211f648f54978422b8b26d451bf4ea73c7b3bc459663a5b7aa",
+      "bytes": 44913,
+      "rows": 300
+    },
+    {
+      "relative_path": "build/source_data/Figure_5/D/liquid_summary.csv",
+      "sha256": "e63d414195d48ccfc9b92f5ec7aa13631246e4436c9427df7f5014e1ab038c91",
+      "bytes": 510,
+      "rows": 3
+    },
+    {
+      "relative_path": "build/statistics/Figure_5/D/liquid_simulation_interval.csv",
+      "sha256": "e63d414195d48ccfc9b92f5ec7aa13631246e4436c9427df7f5014e1ab038c91",
+      "bytes": 510,
+      "rows": 3
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2",
+    "matplotlib": "3.11.1"
+  },
+  "parameters": {
+    "dynamic_gradient_age_h": 3,
+    "dynamic_duration_h": 8,
+    "active_model_cells_per_seed": 26,
+    "active_model_seed_range": [
+      1000,
+      1099
+    ],
+    "active_model_seed_count_per_group": 100,
+    "active_model_phenotypes": [
+      "PproA",
+      "WT",
+      "PproB"
+    ],
+    "active_model_observable": "mean net displacement per seed (um)",
+    "active_model_dt_s": 0.0025,
+    "active_model_config_dt_s": 0.05,
+    "active_model_dt_tolerance": 0.05,
+    "active_model_box_scale": 12,
+    "active_model_noise_scales": {
+      "run_translational_scale": 0.12,
+      "reorientation_diffusion_scale": 0.4,
+      "stall_slide_fraction": 0.28,
+      "stall_rotational_diffusion_scale": 1.8,
+      "stall_translational_scale": 0.2
+    }
+  },
+  "random_seeds": {
+    "population": "1000-1099",
+    "starting_positions": "population seed + 1",
+    "agarose_obstacles": "population seed + 300"
+  },
+  "limitations": [
+    "Run speed, motile fraction and persistence time are calibrated model inputs, so the panel does not predict the measured speed or diffusivity ordering.",
+    "The turning parameters were calibrated in this repository against our paired-unit measurements. They were not supplied by the collaborator.",
+    "The delivered table already set run speed and motile fraction from these same measurements; only the turning parameters were uncalibrated.",
+    "The turn width is one global value, 1.2468 rad, for all six rows. It matches the 57 deg mean turn angle of Taute et al. 2015 (n = 8058 turns, E. coli AW405) through sigma = radians(57) / sqrt(2 / pi). Taute et al. measured in three dimensions and in E. coli; this simulator is two-dimensional and the strains are S. Typhimurium. The mapping matches the mean turn magnitude only. A zero-mean Gaussian cannot reproduce the measured forward-skewed turn-angle shape.",
+    "The agarose stall probability is a per-contact-event probability: it is drawn once, on the step where a cell first overlaps an obstacle it was not already touching. That is the same kind of quantity Grognot et al. measured, a stall frequency per contact. It falls with mean flagella number as N^-0.704, normalised so its mean over the three strains is unchanged. The exponent sets the ratio between the least and the most flagellated strain to the 1.7 +/- 0.2 stall-frequency ratio of Grognot et al. 2023 (Vibrio alginolyticus, 0.25 % agar). That study varied a second flagellar system, not the flagella count, so the mapping onto our hook numbers is an assumption. Only the ratio is anchored; the absolute probability has no source.",
+    "Reorientation is instantaneous. The persistence relation the turning parameters are fitted through, tau = 1 / (D_theta + lambda * (1 - exp(-sigma^2 / 2))), carries no duration term, so a non-advancing reorientation dwell would simulate a different model from the fitted one. reorientation_duration_s is therefore not a parameter of the model and does not appear in Supplementary Table X. The measured tumble duration of E. coli, 0.19 s, cannot simply be substituted: it would put cells in a non-swimming state 49 % to 71 % of the time. A model with a real tumble duration needs the persistence relation refitted with a duration term.",
+    "The mean stall duration is one nominal value, 0.949 s, in all three agarose rows. Grognot et al. found the duration effect significant only at 0.16 % agar, not at the 0.25 % that matches our condition, so a per-strain duration is not supported. Published gel trapping times are longer and power-law distributed; the model draws an exponential.",
+    "Net displacement, obstacle trapping, the stall duty cycle and the spatial search pattern remain model outputs that no measurement supplies.",
+    "The measured agarose persistence time is derived as 2 * D_eff / v^2, so it already contains the mesh. The model then adds obstacles and stalls on top of it, which remove a further 17 % to 22 % of the effective diffusivity. The mesh is therefore counted twice in agarose, once in the calibrated persistence time and once in the simulated geometry. The panel is not an independent prediction of agarose spreading.",
+    "The corrected model reproduces 87 % to 90 % of the measured effective diffusivity in liquid and 69 % to 76 % in agarose, against 60 % to 61 % and 37 % to 39 % before the correction. Ratios compare the simulated value with the lag-corrected measured value. Against the model's own implied diffusivity the corrected liquid runs reach 98 % to 100 %, so in the obstacle-free case the simulation now matches the calibration it was fitted through. Agarose reaches 78 % to 83 % of implied, and the remaining gap is the double-counted mesh. Motile cells are ballistic 100 % of the time in liquid and 86 % to 90 % in agarose; the reorient state is never occupied. build/diagnostics/effective_diffusivity_check/effective_diffusivity_comparison.csv holds the comparison.",
+    "Contour path length was rejected as the plotted observable because it does not converge under time-step refinement. A trajectory with a diffusive component has an infinite arc length in the continuum limit, so the path length grows without a limit as the step shrinks, and the ratio between two phenotypes drifts across 1. Net displacement, the straight-line distance from the start to the end of a track, converges and is reported instead.",
+    "The panels integrate at dt = 0.0025 s, not at the dt = 0.05 s declared in the upstream config.yml. A 100-seed convergence test accepts every step whose group mean net displacement stays within 5% of the mean of the two finest steps tested, 0.00125 s and 0.000625 s. Under the corrected dynamics every step tested passes: the largest deviation over the six groups is 2.2 % at 0.000625 s and 0.00125 s, 2.0 % at 0.0025 s, 3.2 % at 0.005 s, 3.9 % at 0.01 s and 4.0 % at 0.05 s. The panels keep the fine step because it is cheap and leaves no doubt, not because a coarser one fails. The upstream config file is immutable provenance and was not edited; the builder overrides the value. build/diagnostics/Figure_5/timestep_convergence.csv holds the check.",
+    "Net displacement no longer depends on the time step. The upstream model drew against the stall probability at every step of obstacle overlap, so a finer step made more stall draws per contact and stall occupancy grew without limit. The corrected model draws once per contact event, which removes that dependence: the PproB agarose group mean moves by 0.3 % between the two finest steps tested, and the PproB/PproA ratio stays between 3.29 and 3.50 across the whole ladder from 0.000625 s to 0.05 s with no trend in the step.",
+    "Intervals quantify stochastic model-seed variation, not biological sampling uncertainty.",
+    "The delivered-parameter run is retained as a diagnostic under build/diagnostics and is not a manuscript panel."
+  ]
+}

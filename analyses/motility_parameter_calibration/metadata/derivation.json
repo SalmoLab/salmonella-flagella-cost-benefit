@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0.0",
+  "record_type": "derived_parameter_calibration",
+  "record_id": "motility_parameter_calibration",
+  "generated_at_utc": "2026-08-12T20:34:05.227473Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/motility_parameter_calibration/calibrate.py"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/motility_parameter_calibration/calibrate.py",
+      "sha256": "c9b1bb79904fa97cf8fb30244a38c37054c2ef57c3686a50182d760650fc23a5",
+      "bytes": 12895
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/data/motility_summary_parameters.csv",
+      "sha256": "82095121e2ac8154e2d7412f566a0da48466c0abe2395aaf709512c536a768c9",
+      "bytes": 933,
+      "rows": 8
+    },
+    {
+      "relative_path": "data/processed/figure_07_revision/paired_experimental_unit_measurements.csv",
+      "sha256": "e593124975f362714d5b7dc99bc21ea2b9f47b92c23e9ca337ac3a3f7478d59e",
+      "bytes": 87105,
+      "rows": 208
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "data/processed/motility_parameter_calibration/motility_summary_parameters_calibrated.csv",
+      "sha256": "797ebfbfe80747da07aa7b218785fb9e80de09861627696b9a5839d1734358db",
+      "bytes": 975,
+      "rows": 6
+    },
+    {
+      "relative_path": "data/processed/motility_parameter_calibration/motility_summary_parameters_calibrated.sha256",
+      "sha256": "641af79ab46210196290726da424daad46a76e9c5256eefe64d820810d87bac6",
+      "bytes": 109
+    },
+    {
+      "relative_path": "data/processed/motility_parameter_calibration/calibration_audit.csv",
+      "sha256": "7771657ac10e23dc724066167d6e5f364042c3369d16eb72b1ce12693ff2498b",
+      "bytes": 929,
+      "rows": 6
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2"
+  },
+  "parameters": {
+    "persistence_relation": "tau = 1 / (D_r + lambda * (1 - exp(-sigma^2 / 2)))",
+    "measured_statistic": "mean over paired experimental units, per medium",
+    "measured_columns": [
+      "speed_med_<phenotype>",
+      "tau_<phenotype>",
+      "swim_frac_<phenotype>"
+    ],
+    "calibrated_columns": [
+      "rotational_diffusion_rad2_s",
+      "reorientation_rate_s"
+    ],
+    "columns_taken_from_measurement": [
+      "run_speed_um_s",
+      "motile_fraction"
+    ],
+    "columns_kept_as_delivered": [
+      "turn_angle_sd_rad",
+      "reorientation_duration_s",
+      "passive_diffusion_um2_s",
+      "stall_probability",
+      "stall_mean_duration_s"
+    ],
+    "excluded_phenotypes": [
+      "WT_slow"
+    ],
+    "self_check_atol": 1e-05,
+    "tau_closure_atol": 1e-12,
+    "tau_closure_residual_s": 2.7755575615628914e-17,
+    "turning_scale_factor_range": [
+      0.798167647804458,
+      6.162376441554783
+    ]
+  },
+  "random_seeds": {},
+  "findings": [
+    "The delivered table's run_speed_um_s and motile_fraction were already calibrated to these same paired-unit measurements; they agree to CSV round-trip accuracy and are unchanged by this step.",
+    "The turning parameters were not calibrated. The delivered rows give a model persistence time between 0.80x and 6.16x the measured one, worst for PproB in agarose. That asymmetry is why this calibration exists."
+  ],
+  "limitations": [
+    "The turning parameters were calibrated in this repository. They were not supplied by the collaborator.",
+    "Calibration sets the persistence time to the measured mean. It does not fit the two reorientation rates separately, because the measurement constrains only their combination through tau.",
+    "Run speed, motile fraction and persistence time are now model inputs, so the simulation cannot be read as predicting them."
+  ]
+}

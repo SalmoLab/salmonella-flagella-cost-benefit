@@ -1,0 +1,64 @@
+figure_id: Figure_1
+status: partial_reproduction
+width_mm: 180
+height_mm: 212
+output_stem: build/figures/Figure_1/Figure_1_revision_partial
+limitations:
+- Panels A, B, F and G are explicit missing-asset placeholders.
+panels:
+- label: A
+  kind: svg
+  source: build/panels/Figure_1/A/F1_A.svg
+  x: 3.5
+  y: 5
+  width: 54
+  height: 59
+- label: B
+  kind: svg
+  source: build/panels/Figure_1/B/F1_B.svg
+  x: 62.5
+  y: 5
+  width: 55
+  height: 59
+- label: C
+  kind: svg
+  source: build/panels/Figure_1/C/F1_C.svg
+  x: 122.5
+  y: 5
+  width: 54
+  height: 59
+- label: D
+  kind: svg
+  source: build/panels/Figure_1/D/F1_D.svg
+  x: 3.5
+  y: 71
+  width: 54
+  height: 59
+- label: E
+  kind: svg
+  source: build/panels/Figure_1/E/F1_E.svg
+  x: 62.5
+  y: 71
+  width: 55
+  height: 59
+- label: F
+  kind: svg
+  source: build/panels/Figure_1/F/F1_F.svg
+  x: 122.5
+  y: 71
+  width: 54
+  height: 59
+- label: G
+  kind: svg
+  source: build/panels/Figure_1/G/F1_G.svg
+  x: 3.5
+  y: 137
+  width: 84
+  height: 68
+- label: H
+  kind: svg
+  source: build/panels/Figure_1/H/F1_H.svg
+  x: 92.5
+  y: 137
+  width: 84
+  height: 68

@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0.0",
+  "record_type": "derived_parameter_calibration",
+  "record_id": "motility_adopted_parameters",
+  "generated_at_utc": "2026-08-14T06:50:30.954723Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/motility_adopted_parameters/derive_adopted_parameters.py"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/motility_adopted_parameters/derive_adopted_parameters.py",
+      "sha256": "51ffec24b11939ae4204862e6555a61a621073657944c1353db95a057359b023",
+      "bytes": 16313
+    },
+    {
+      "relative_path": "analyses/motility_turn_angle_comparison/calibrate_global_turn_angle.py",
+      "sha256": "c698367413549da55696facc518e098bab2c1506ebd87a8317f4ebc69451c093",
+      "bytes": 15863
+    },
+    {
+      "relative_path": "analyses/motility_stall_parameter_comparison/common.py",
+      "sha256": "caf0af5a8101af94fc84d41c247c550aedc4d4fe937e78060753394b75402dec",
+      "bytes": 23011
+    },
+    {
+      "relative_path": "data/processed/motility_turn_angle_comparison/motility_summary_parameters_global_turn_angle.csv",
+      "sha256": "10545ec490819c32c18257b69885c1e2d44bcdec3e43fb97193624ffa669f743",
+      "bytes": 1027,
+      "rows": 6
+    },
+    {
+      "relative_path": "data/processed/figure_07_revision/hook_count_per_cell.csv",
+      "sha256": "dcc9d66eda5612d1b46e831a59884f9ba0a61ba77b1f734b9b907a0608bd2603",
+      "bytes": 12104232,
+      "rows": 29789
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "data/processed/motility_adopted_parameters/motility_summary_parameters_adopted.csv",
+      "sha256": "bb85e998da21f7ef8db3feb3cb45db0f2f72784995f68803ee4f42adac92950e",
+      "bytes": 1033,
+      "rows": 6
+    },
+    {
+      "relative_path": "data/processed/motility_adopted_parameters/motility_summary_parameters_adopted.sha256",
+      "sha256": "f887c9689aac501442335fa2cdcd2cddef49d4da689562f3dcf85eba39071390",
+      "bytes": 106
+    },
+    {
+      "relative_path": "data/processed/motility_adopted_parameters/adopted_stall_parameter_audit.csv",
+      "sha256": "a7ee70608c91b0252193de6999a5ad29f3c8cf2cd77163855a724539355ed518",
+      "bytes": 392,
+      "rows": 3
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2"
+  },
+  "parameters": {
+    "adopted_variant": "G_grognot_probability",
+    "global_turn_angle_sd_rad": 1.246844120703025,
+    "global_turn_angle_sd_deg": 71.43890582698351,
+    "turn_angle_anchor": "Taute KM, Gude S, Tans SJ, Shimizu TS (2015) Nat Commun 6:8776, doi:10.1038/ncomms9776, PMID 26522289; mean turn angle 57 deg over 8058 turns",
+    "stall_probability_exponent": 0.7037375337749607,
+    "stall_probability_relation": "p_s = p_mean * N_s^-a / mean_s(N_s^-a)",
+    "stall_frequency_ratio_anchor": 1.7,
+    "stall_frequency_ratio_anchor_sd": 0.2,
+    "stall_anchor_source": "Grognot M, Nam JW, Elson LE, Taute KM (2023) Proc Natl Acad Sci USA 120:e2301873120, doi:10.1073/pnas.2301873120, PMID 37579142",
+    "mean_hooks_per_cell": {
+      "PproA": 2.0851417570878543,
+      "WT": 2.665851201611743,
+      "PproB": 4.432001402032948
+    },
+    "adopted_stall_parameters": {
+      "PproA": {
+        "mean_hooks": 2.0851417570878543,
+        "stall_probability": 0.20989866977393812,
+        "stall_mean_duration_s": 0.9489216666666667
+      },
+      "WT": {
+        "mean_hooks": 2.665851201611743,
+        "stall_probability": 0.17657152447668664,
+        "stall_mean_duration_s": 0.9489216666666667
+      },
+      "PproB": {
+        "mean_hooks": 4.432001402032948,
+        "stall_probability": 0.12346980574937536,
+        "stall_mean_duration_s": 0.9489216666666667
+      }
+    }
+  },
+  "random_seeds": {},
+  "findings": [
+    "One table now carries both adopted decisions. Every manuscript panel that runs the active-particle simulation reads this file through adopted_parameter_table_path().",
+    "The stall probability falls as N^-0.704, so the least flagellated strain stalls 1.7 times more often per contact than the most flagellated one. The mean over the three strains is unchanged against the turn-angle stage, so the adoption redistributes the effect rather than enlarging it.",
+    "The stall mean duration is one global value in the three agarose rows. Grognot et al. found the duration effect significant only at 0.16 % agar, not at the 0.25 % that matches our condition."
+  ],
+  "limitations": [
+    "Grognot et al. varied a second flagellar system in Vibrio alginolyticus, not the flagella count in Salmonella. Mapping the 1.7 ratio onto our mean hook numbers is an assumption made here, not a measurement. It fixes the ratio between the extreme strains; the power-law form is a choice.",
+    "The absolute stall probability has no source. Only the ratio between strains is anchored. The absolute stall duration also has no source; it stays at the mean of the three delivered values and is reported as nominal.",
+    "The model draws an exponential stall duration. Published gel trapping times are power-law distributed, so an anchored mean would fix the mean and nothing else.",
+    "The persistence calibration sets the model persistence time to the measured mean, so the two turning rates remain fitted quantities with no independent physical meaning."
+  ]
+}

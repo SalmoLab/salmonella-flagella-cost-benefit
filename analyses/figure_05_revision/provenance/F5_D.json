@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F5_D",
+  "status": "reproduced",
+  "generated_at_utc": "2026-08-12T11:22:37.866928Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/figure_05_revision/build.py",
+    "--all"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_05_revision/build.py",
+      "sha256": "08c4d615b560a4de2ab1794f570aa4c32511a06144e236ff11adb71f31468286",
+      "bytes": 17918
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/data/config.yml",
+      "sha256": "4d42d5b2273c0f681c74bedf00c0ae28131675e7f8a3ba256b56e93dee777c67",
+      "bytes": 874
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/data/motility_summary_parameters.csv",
+      "sha256": "82095121e2ac8154e2d7412f566a0da48466c0abe2395aaf709512c536a768c9",
+      "bytes": 933,
+      "rows": 8
+    },
+    {
+      "relative_path": "models/motility_simulation/upstream/src/salmonella_motility_simulation/simulation.py",
+      "sha256": "4a72d6f26ef2310adc9aa2bf03bfa3450f4b506aa52e168a3dd94d832590df2b",
+      "bytes": 12624
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/panels/Figure_5/D/Figure_5_D.pdf",
+      "sha256": "7d0a03e192436929027b1da78112a875eaed35d405b20a8b1137ba68bba521b0",
+      "bytes": 23702
+    },
+    {
+      "relative_path": "build/panels/Figure_5/D/Figure_5_D.png",
+      "sha256": "d1d5c0e04fd4404b8880021a7974680b52be375f4d3d1dcf1af84dcf15fb4a2e",
+      "bytes": 60596
+    },
+    {
+      "relative_path": "build/panels/Figure_5/D/Figure_5_D.svg",
+      "sha256": "35bbf15b3b9c3bb54e6a2747e92cd8a12e63c17b0c59c388ab0ebc96f970cfa3",
+      "bytes": 43569
+    },
+    {
+      "relative_path": "build/source_data/Figure_5/D/liquid_seed_predictions.csv",
+      "sha256": "9f184da589c95dc585485ce7a4744574ca3c5dd38bf495190819bbb7649421e0",
+      "bytes": 35449,
+      "rows": 300
+    },
+    {
+      "relative_path": "build/source_data/Figure_5/D/liquid_summary.csv",
+      "sha256": "d61149cc9248ca31505a10c4f0fd597c8d7913aa922dd632a7b4a96e6afaf11b",
+      "bytes": 364,
+      "rows": 3
+    },
+    {
+      "relative_path": "build/statistics/Figure_5/D/liquid_simulation_interval.csv",
+      "sha256": "d61149cc9248ca31505a10c4f0fd597c8d7913aa922dd632a7b4a96e6afaf11b",
+      "bytes": 364,
+      "rows": 3
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2",
+    "matplotlib": "3.11.1"
+  },
+  "parameters": {
+    "dynamic_gradient_age_h": 3,
+    "dynamic_duration_h": 8,
+    "active_model_cells_per_seed": 26,
+    "active_model_seed_range": [
+      1000,
+      1099
+    ],
+    "active_model_seed_count_per_group": 100,
+    "active_model_phenotypes": [
+      "PproA",
+      "WT",
+      "PproB"
+    ]
+  },
+  "random_seeds": {
+    "population": "1000-1099",
+    "starting_positions": "population seed + 1",
+    "agarose_obstacles": "population seed + 300"
+  },
+  "limitations": [
+    "Intervals quantify stochastic model-seed variation, not biological sampling uncertainty."
+  ]
+}

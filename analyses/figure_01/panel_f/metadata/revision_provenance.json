@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F1_F",
+  "status": "blocked_external",
+  "generated_at_utc": "2026-08-12T11:17:54.125391Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/figure_01/render_blocked_assets.py",
+    "--panel",
+    "F"
+  ],
+  "inputs": [],
+  "outputs": [
+    "build/source_data/Figure_1/F/F1_F_source_data.csv",
+    "build/panels/Figure_1/F/F1_F.svg",
+    "build/panels/Figure_1/F/F1_F.pdf",
+    "build/panels/Figure_1/F/F1_F.png"
+  ],
+  "parameters": {
+    "scientific_values_plotted": 0
+  },
+  "random_seeds": {},
+  "limitations": [
+    "Missing: editable constitutive-promoter schematic. This output is an explicit placeholder."
+  ]
+}

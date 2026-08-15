@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F4_C",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-12T19:48:39.976993Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/figure_04_revision/panel_c/scripts/reproduce.py"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_04_revision/build.py",
+      "sha256": "4cd03d8e5bfe7603d2d40a896dffea15337ab8945f220739b5d2daa76c4d2cc8",
+      "bytes": 32545
+    },
+    {
+      "relative_path": "analyses/figure_04_revision/panel_c/scripts/reproduce.py",
+      "sha256": "65381dfe87dd2d6603ea1b28a2896e92d494e606e664d1f95f4f4cdcde6141ab",
+      "bytes": 289
+    },
+    {
+      "relative_path": "analyses/figure_04_revision/panel_c/config/panel.json",
+      "sha256": "6d0de49d5f3553c2cf3ede13093423b9419c06c6c555effd6fde328881f0b571",
+      "bytes": 143
+    },
+    {
+      "relative_path": "data/external/promoter_series_proteomics/protein_massfrac_annotated.csv",
+      "sha256": "89bc1046b89852c2ac3fa70d6c675edb2b4d255d87651dbab6b760d1d2878008",
+      "bytes": 27892466,
+      "rows": 66024
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/panels/Figure_4/C/Figure_4_C.pdf",
+      "sha256": "451eb61421698aba513501aaa6e07ffc66fc158b437dfaad79c5ce4a9f186320",
+      "bytes": 34193
+    },
+    {
+      "relative_path": "build/panels/Figure_4/C/Figure_4_C.png",
+      "sha256": "505d1d64c9c4530e533f6d58ce52a3723d1f108b0950fcadb3b8b15baf648c0c",
+      "bytes": 73354
+    },
+    {
+      "relative_path": "build/panels/Figure_4/C/Figure_4_C.svg",
+      "sha256": "f4caefdd2959c4c90770ef2a07459b76d049f4bfb5fb837f2b73d010e06a2880",
+      "bytes": 170567
+    },
+    {
+      "relative_path": "build/source_data/Figure_4/C/label_audit.csv",
+      "sha256": "d06b014816c49a99efa01abe6ac57873c33d6e49b8e796c848efee6664e72933",
+      "bytes": 5030,
+      "rows": 80
+    },
+    {
+      "relative_path": "build/source_data/Figure_4/C/top10_proteins.csv",
+      "sha256": "97df11b1de443463bf073a4c9c9cc3899ac39e2719699208c615d5096d12fbc4",
+      "bytes": 32305,
+      "rows": 480
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2",
+    "matplotlib": "3.11.1"
+  },
+  "parameters": {
+    "overlay_reference": "delta from experimental \u0394flhDC and model 0%",
+    "protein_label_threshold": 0.15,
+    "a1_inferential_unit": "six condition means"
+  },
+  "random_seeds": {},
+  "limitations": [
+    "Proteomics begins from the collaborator protein-level export rather than raw MS files."
+  ]
+}

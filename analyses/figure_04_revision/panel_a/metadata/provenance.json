@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F4_A",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-15T09:26:30.279336Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/figure_04_revision/panel_a/scripts/reproduce.py"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_04_revision/build.py",
+      "sha256": "e75f82bb58e69cc6d776f04661b1d627d148254eaf628fa1e5a2d11d72f3b162",
+      "bytes": 44440
+    },
+    {
+      "relative_path": "analyses/figure_04_revision/panel_a/scripts/reproduce.py",
+      "sha256": "1f283a4d919a4681051d60c807170aa87c93600a18b3e7326946cd453aa53b85",
+      "bytes": 289
+    },
+    {
+      "relative_path": "analyses/figure_04_revision/panel_a/config/panel.json",
+      "sha256": "d4095925de25d8ff8940be44e76187edaaf7aa457e239dbaf0d54fd76f6e0e63",
+      "bytes": 143
+    },
+    {
+      "relative_path": "assets/schematics/salmonella_model.svg",
+      "sha256": "996e3be8ca7df8bb87c03857fb38e7815f7f8f0ce641fccd47b93673186319f4",
+      "bytes": 101678
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/panels/Figure_4/A/Figure_4_A.svg",
+      "sha256": "996e3be8ca7df8bb87c03857fb38e7815f7f8f0ce641fccd47b93673186319f4",
+      "bytes": 101678
+    },
+    {
+      "relative_path": "build/source_data/Figure_4/A/schematic_asset.csv",
+      "sha256": "93398179953ad7261ae38b9775fbddb2d926562ad148e88dd0d160d08763185a",
+      "bytes": 280,
+      "rows": 1
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "numpy": "2.5.2",
+    "matplotlib": "3.11.1"
+  },
+  "parameters": {
+    "overlay_reference": "delta from experimental \u0394flhDC and model 0%",
+    "protein_label_relative_threshold": 0.15,
+    "protein_label_absolute_floor": 0.0006,
+    "protein_label_abundance_leader_rank": 3,
+    "sector_overrides": {
+      "P0A2E3": "Fla to Oth",
+      "P0A2C5": "Fla to Tra"
+    },
+    "a1_inferential_unit": "six condition means"
+  },
+  "random_seeds": {},
+  "limitations": [
+    "Exact editable collaborator SVG is preserved; local Cairo preview export is unavailable.",
+    "Schematic text prints at 2.65-4.54 pt, below the 6 pt floor. The asset declares 7, 9 and 12 px in a 360x240 pt viewBox and its artwork fills 335x230 pt of it. The 48x55 mm slot scales the asset by 0.133, which is set by width. A 6 pt body text needs a slot about 64 mm wide. Enlarging the slot or editing collaborator content are both outside this panel."
+  ]
+}

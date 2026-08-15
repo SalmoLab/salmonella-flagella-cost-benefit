@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F7_F",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-12T00:00:00Z",
+  "command": [
+    ".venv/bin/python",
+    "analyses/figure_07_revision/build_figure_07_revision.py",
+    "--panel",
+    "F"
+  ],
+  "backend": "Python 3.12",
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_07_revision/build_figure_07_revision.py",
+      "sha256": "cee7de2223cefc1af226d531554e3c104eca3f8c6b014c98b89fc3e4dc81789f",
+      "bytes": 46639
+    },
+    {
+      "relative_path": "data/processed/figure_07_revision/hook_count_per_cell.csv",
+      "sha256": "dcc9d66eda5612d1b46e831a59884f9ba0a61ba77b1f734b9b907a0608bd2603",
+      "bytes": 12104232
+    },
+    {
+      "relative_path": "data/processed/figure_07_revision/hook_count_repeat_means.csv",
+      "sha256": "eb5667dfa7ba725850ef169e5f90167a05787de4e82d6a047674a038c8b465bd",
+      "bytes": 2709
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/panels/Figure_7/F/Figure_7F.pdf",
+      "sha256": "28c4fa2f2c85dc5ca006fa1ca61f28a6c6744196dfab18dd7dea9e762094e53e",
+      "bytes": 28387
+    },
+    {
+      "relative_path": "build/panels/Figure_7/F/Figure_7F.png",
+      "sha256": "73598b8ffb3b3b20724653d4f583acb23930af0fa763d4a79e5ca40dfdbd846e",
+      "bytes": 54779
+    },
+    {
+      "relative_path": "build/panels/Figure_7/F/Figure_7F.svg",
+      "sha256": "a5bce464c817aeb48cfa9b9883cc683fa8fcbc1ea175009fba9ee0a096297de8",
+      "bytes": 28868
+    },
+    {
+      "relative_path": "build/source_data/Figure_7/F/Figure_7F_cell_points.csv",
+      "sha256": "b78b5990fdfc58a6acb2c0368de5978a257b2244fb617b1221c9c446743d1e29",
+      "bytes": 636657
+    },
+    {
+      "relative_path": "build/source_data/Figure_7/F/Figure_7F_day_repeat_means.csv",
+      "sha256": "e8cac38da77ec5969dd9932330c9bb12dc2bed4691cdc75e3e19bd22a5d0caaf",
+      "bytes": 953
+    },
+    {
+      "relative_path": "build/statistics/Figure_7/F/Figure_7F_numeric_audit.csv",
+      "sha256": "9cbf8d08cfd665d9e4540bc5c86b13b0cc0aaf06388b59a8f123718fd32042b0",
+      "bytes": 257
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3"
+  },
+  "random_seeds": {},
+  "parameters": {
+    "bootstrap_iterations": 10000,
+    "paired_unit_statistic": "per-unit mean of ln speed, displayed in um/s, above per-unit mean of ln D_eff, displayed as log10",
+    "ratio_axis_limits": [
+      0.15384615384615385,
+      6.5
+    ],
+    "hook_axis_cap": 20,
+    "hook_count_geometry": "discrete_count, matching analyses/figure_01 panels C, D and H",
+    "contour_probability_mass": [
+      0.5,
+      0.8,
+      0.95
+    ],
+    "direct_pair_filter": "metadata keys from reciprocal-label paired-unit tables"
+  },
+  "results": {
+    "cell_counts": {
+      "PproB": 4918,
+      "WT": 4018
+    },
+    "repeat_counts": {
+      "PproB": 6,
+      "WT": 6
+    },
+    "cells_above_axis_cap": 11
+  },
+  "limitations": [
+    "The canonical run starts from migrated direct-pair track and paired-unit tables, not raw tracking acquisitions.",
+    "The revised panel has not yet passed visual acceptance against the July reference.",
+    "The hook axis is clipped at 20 hooks per cell; the panel key names the cells above the clip and the numeric audit counts them.",
+    "The inferential unit is the independent day replicate; the six replicate means and their mean are the plotted summary, not the per-cell frequencies."
+  ],
+  "interpretation_limit": ""
+}

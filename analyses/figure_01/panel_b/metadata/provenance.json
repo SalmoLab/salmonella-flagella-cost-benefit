@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F1_B",
+  "status": "blocked_asset",
+  "generated_at_utc": "2026-08-12T21:05:42.507679Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/figure_01/render_blocked_assets.py",
+    "--panel",
+    "B"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_01/panel_b/config/asset_intake.json",
+      "sha256": "cba5ab650ed56414f06af1e75f01582a37153df29b53ea2982d32b6371fe2361",
+      "bytes": 843
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/source_data/Figure_1/B/F1_B_source_data.csv",
+      "sha256": "ba69c4f76581f8197e4910679af6a9e56c497b21b0b4e884d6fcf72eba3904d1",
+      "bytes": 145
+    },
+    {
+      "relative_path": "build/panels/Figure_1/B/F1_B.svg",
+      "sha256": "814b3831327261353076baf3e64719e90dbecbdea6d74b2fcb4a2c75e2858f63",
+      "bytes": 2998
+    },
+    {
+      "relative_path": "build/panels/Figure_1/B/F1_B.pdf",
+      "sha256": "74d866883bc0b62fa68fe4637f65c2de43a4b4314736a86a1850ebdf2f7ab014",
+      "bytes": 19355
+    },
+    {
+      "relative_path": "build/panels/Figure_1/B/F1_B.png",
+      "sha256": "2e2cafa3c3b3f55a6b10280ccf3daea8f7b59a8abfb5846dc921da90a0815eed",
+      "bytes": 41243
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "matplotlib": "3.11.1"
+  },
+  "parameters": {
+    "scientific_values_plotted": 0
+  },
+  "random_seeds": {},
+  "limitations": [
+    "Missing: raw representative hook-label microscopy field and crop metadata. This output is an explicit placeholder."
+  ],
+  "blocker": {
+    "reason": "raw representative hook-label microscopy field and crop metadata",
+    "required_assets": [
+      "raw representative hook-label microscopy field and crop metadata"
+    ]
+  }
+}

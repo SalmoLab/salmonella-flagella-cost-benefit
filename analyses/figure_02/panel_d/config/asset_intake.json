@@ -1,0 +1,25 @@
+{
+  "panel_id": "F2_D",
+  "status": "blocked_asset",
+  "asset_type": "schematic",
+  "reference_artifact": "reference/2026-07-09/figures/Figure_2.svg",
+  "required_assets": [
+    "Editable source for the complete Figure 2D assembly-mutant schematic",
+    "All linked vector and raster artwork",
+    "Construct-to-strain and genotype-to-depicted-structure mapping",
+    "Font files or documented licensed font substitutes"
+  ],
+  "required_metadata": [
+    "Authoring software and exact version",
+    "Canvas dimensions, colour profile and export settings",
+    "Element placement, labels, line weights and transparency settings",
+    "Licence and attribution for reused biological artwork",
+    "Scientific review of each mutant depiction"
+  ],
+  "acceptance_tests": [
+    "Every placed element resolves to an included checksum-addressed source",
+    "All five structural states agree with the audited genotype mapping",
+    "SVG preserves editable text and vector artwork",
+    "Deterministic exports match the frozen July panel within approved visual tolerance"
+  ]
+}

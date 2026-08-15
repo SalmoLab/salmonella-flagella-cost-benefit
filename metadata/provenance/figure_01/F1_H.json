@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F1_H",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-15T11:45:14.685671Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "-m",
+    "analyses.figure_01.panel_h.scripts.plot"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_01/panel_h/config/config.json",
+      "sha256": "1eb1576f16080181b6ffacfbea21d10ee014cb6dc276cab11a8dd2363f5640d9",
+      "bytes": 1682
+    },
+    {
+      "relative_path": "analyses/figure_01/plotting.py",
+      "sha256": "fee4d8f83fc291e6ccd03293afcb88e6c154ee44aaf385cab4cb9bb1d286d54c",
+      "bytes": 29304
+    },
+    {
+      "relative_path": "analyses/figure_01/panel_h/scripts/plot.py",
+      "sha256": "a73aee31ff37f5af272109b76a38245ac1063fb07c07b24beeb681305d1971d5",
+      "bytes": 150
+    },
+    {
+      "relative_path": "src/flagella_repro/theme.py",
+      "sha256": "d3e93c1eed74fd0b647748e61326d019047f015627fb50377c8b3f1f2cb1cb41",
+      "bytes": 11960
+    },
+    {
+      "relative_path": "config/palette.yaml",
+      "sha256": "1db43aaa3edd5b6f19a03cfcace6efdba38ccb13ac69260539b61e287eb424b7",
+      "bytes": 2704
+    },
+    {
+      "relative_path": "data/processed/figure_01/F1_H/histogram_counts.csv",
+      "sha256": "e38ac3b3ae5b064ed1d71620df2498237f7a0d3e50d3eb9a9333058e45e9c58b",
+      "bytes": 6455,
+      "rows": 162
+    },
+    {
+      "relative_path": "data/processed/figure_01/F1_H/replicate_means.csv",
+      "sha256": "e01461b3cb644574f1fdbf9e1862abf472ea5636a0349ef8b0b33f1ecf735407",
+      "bytes": 1133,
+      "rows": 15
+    },
+    {
+      "relative_path": "data/processed/figure_01/F1_H/legacy_statistics.csv",
+      "sha256": "255494b37f809edac20ed8c4dc6b6e44499de7796304c5ee893534f6e79ae280",
+      "bytes": 1681,
+      "rows": 5
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/source_data/Figure_1/H/F1_H_distribution.csv",
+      "sha256": "e38ac3b3ae5b064ed1d71620df2498237f7a0d3e50d3eb9a9333058e45e9c58b",
+      "bytes": 6455,
+      "rows": 162
+    },
+    {
+      "relative_path": "build/source_data/Figure_1/H/F1_H_replicate_means.csv",
+      "sha256": "6ad8eeb8ea75d90afbb58f1b55d9b5f50a5c13404bf573062005bacb011345c3",
+      "bytes": 1084,
+      "rows": 15
+    },
+    {
+      "relative_path": "build/statistics/Figure_1/H/F1_H_statistics.csv",
+      "sha256": "6f69e2ea25c0f0ded8fc13cb480d8da273dc7a7b6830729ef13d7eded8460a4f",
+      "bytes": 1865,
+      "rows": 5
+    },
+    {
+      "relative_path": "build/panels/Figure_1/H/F1_H.svg",
+      "sha256": "45c8a747275f952855d0ddef9c1e9770a381d1179bf881fae9b61113a0654cc4",
+      "bytes": 47271
+    },
+    {
+      "relative_path": "build/panels/Figure_1/H/F1_H.pdf",
+      "sha256": "5b5120ad0bd1517227d3046bc7de6fa633cfd9d6e65c99a07e1b70721896b2d3",
+      "bytes": 32831
+    },
+    {
+      "relative_path": "build/panels/Figure_1/H/F1_H.png",
+      "sha256": "0afaba7b4baac83ce35aaa250c6efced55dc005c4476acf96c0b6eed70f95651",
+      "bytes": 81535
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "scipy": "1.18.0",
+    "seaborn": "0.13.2"
+  },
+  "parameters": {
+    "recipe": "discrete_count",
+    "current_panel_labels": true,
+    "reproduction_scope": "migrated processed tables to standalone panel"
+  },
+  "random_seeds": {
+    "bootstrap": null
+  },
+  "limitations": [
+    "Starts from the migrated histogram-frequency table rather than the archived Excel workbook.",
+    "The current Figure 1H mapping is recovered from legacy Figure 2E.",
+    "Final multi-panel assembly and pixel-level reference comparison are not yet implemented."
+  ]
+}

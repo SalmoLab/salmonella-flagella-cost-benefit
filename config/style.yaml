@@ -1,0 +1,8 @@
+backend: python
+font_family: Arial
+fallback_fonts: [Helvetica, DejaVu Sans, sans-serif]
+svg_fonttype: none
+pdf_fonttype: 42
+figure_background: white
+panel_label_weight: bold
+raster_policy: microscopy_only

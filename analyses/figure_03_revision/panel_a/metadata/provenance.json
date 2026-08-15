@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F3_A",
+  "status": "blocked_asset",
+  "generated_at_utc": "2026-08-14T19:52:33.079196Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "-m",
+    "analyses.figure_03_revision.panel_a.scripts.reproduce"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_03_revision/panel_a/config/panel.json",
+      "sha256": "44983f4ff93d92aaec8557747fdeb47cc19675bea3e563a457151059db0e418e",
+      "bytes": 236
+    },
+    {
+      "relative_path": "analyses/figure_03_revision/panel_a/scripts/reproduce.py",
+      "sha256": "67bbed34aeef7859619233e4f83cac38284a7df39e0ea68d6c160e1dbda6924e",
+      "bytes": 115
+    },
+    {
+      "relative_path": "src/flagella_repro/theme.py",
+      "sha256": "d3e93c1eed74fd0b647748e61326d019047f015627fb50377c8b3f1f2cb1cb41",
+      "bytes": 11960
+    },
+    {
+      "relative_path": "config/palette.yaml",
+      "sha256": "1db43aaa3edd5b6f19a03cfcace6efdba38ccb13ac69260539b61e287eb424b7",
+      "bytes": 2704
+    },
+    {
+      "relative_path": "analyses/figure_03_revision/scripts/build_revision.py",
+      "sha256": "ae9c701eeb7f5820f5706da94667be657989a93887b2926d76b31c6a3e59929c",
+      "bytes": 20387
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/source_data/Figure_3/A/F3_A_source_data.csv",
+      "sha256": "65a1c623dd2ee7e980c1ae6bcd94fb57817ec75877218a5ab739ce7e7006ec57",
+      "bytes": 115,
+      "rows": 1
+    },
+    {
+      "relative_path": "build/panels/Figure_3/A/F3_A.svg",
+      "sha256": "ef9fb15a7b06f1e85ed6c5046ec71442533cc6c78a64046261e098d768325dc4",
+      "bytes": 3320
+    },
+    {
+      "relative_path": "build/panels/Figure_3/A/F3_A.pdf",
+      "sha256": "b9192dbbc490479c9b246a535ec88ad31b8befa78d2e1e39ea62227896aea171",
+      "bytes": 18680
+    },
+    {
+      "relative_path": "build/panels/Figure_3/A/F3_A.png",
+      "sha256": "bd014772ca2069a3d18009a55d04c94ea08ef60aacf420ee3fd9e4f7429f19d7",
+      "bytes": 28728
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3"
+  },
+  "parameters": {
+    "backend": "Python 3.12",
+    "scientific_values_are_in_source_data": true,
+    "stars_displayed": false
+  },
+  "random_seeds": {},
+  "limitations": [
+    "The cell-economy curves use fixed collaborator result tables because the exact local GEKKO solve remains unavailable.",
+    "F3_A is deliberately marked blocked and contains no inferred scientific content."
+  ],
+  "blocker": {
+    "reason": "Editable assembly-mutant schematic source was not supplied.",
+    "required_assets": [
+      "editable assembly-mutant schematic and export recipe"
+    ]
+  }
+}

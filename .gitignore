@@ -1,0 +1,28 @@
+# Python environment and caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.snakemake/
+
+# macOS
+.DS_Store
+*" 2".*
+* 2/
+
+# Agent scratch and git worktrees. Two stray gitlinks under .claude/worktrees/
+# were tracked by mistake; this rule stops them coming back. Removing the
+# existing index entries needs `git rm --cached` as well.
+.claude/
+
+# Regenerable build outputs (163 MB). Every figure, panel, statistic and
+# Source Data table here is reproduced by `make reproduce-available`.
+build/
+
+# Large static inputs and frozen baselines, versioned outside git.
+# These are NOT regenerable; they are backed up separately and are read-only
+# for the build. Track them with git-lfs or a data repository if needed.
+data/
+reference/
+archive/

@@ -1,0 +1,12 @@
+# Superseded canonical analysis directories after the 12 August repartition.
+# Each entry declares a panel ID that a live directory also declares. The
+# exclusion picks the live one and keeps reproduction from seeing two.
+#
+# analyses/figure_03, figure_04 and figure_05 were listed here until they were
+# deleted on 15 August. Their replacements are figure_03_revision,
+# figure_04_revision and figure_05_revision.
+analyses/figure_02/panel_d
+analyses/figure_02/panel_e
+analyses/figure_02/panel_f
+analyses/figure_02/panel_g
+analyses/figure_02/panel_h

@@ -1,0 +1,57 @@
+figure_id: Figure_7
+status: partial_reproduction
+width_mm: 180
+height_mm: 222
+output_stem: build/figures/Figure_7/Figure_7_revision_partial
+limitations:
+- Raw trajectory-to-summary and fluorescence-assignment chains remain partial.
+panels:
+- label: A
+  kind: svg
+  source: build/panels/Figure_7/A/Figure_7A.svg
+  x: 3.5
+  y: 5
+  width: 55
+  height: 84
+- label: B
+  kind: svg
+  source: build/panels/Figure_7/B/Figure_7B.svg
+  x: 62.5
+  y: 5
+  width: 55
+  height: 84
+- label: C
+  kind: svg
+  source: build/panels/Figure_7/C/Figure_7C.svg
+  x: 121.5
+  y: 5
+  width: 55
+  height: 84
+- label: D
+  kind: svg
+  source: build/panels/Figure_7/D/Figure_7D.svg
+  x: 3.5
+  y: 96
+  width: 173
+  height: 56
+- label: E
+  kind: svg
+  source: build/panels/Figure_7/E/Figure_7E.svg
+  x: 3.5
+  y: 159
+  width: 55
+  height: 56
+- label: F
+  kind: svg
+  source: build/panels/Figure_7/F/Figure_7F.svg
+  x: 62.5
+  y: 159
+  width: 55
+  height: 56
+- label: G
+  kind: svg
+  source: build/panels/Figure_7/G/Figure_7G.svg
+  x: 121.5
+  y: 159
+  width: 55
+  height: 56

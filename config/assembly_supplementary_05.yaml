@@ -1,0 +1,30 @@
+figure_id: Supplementary_Figure_5
+status: partial_reproduction
+width_mm: 180
+height_mm: 194
+output_stem: build/figures/Supplementary_Figure_5/Supplementary_Figure_5_revision_partial
+limitations:
+- Contours pool trajectories; the paired experiment stays the inferential unit.
+- Raw trajectory processing lineage remains partial.
+panels:
+- label: A
+  kind: svg
+  source: build/panels/Supplementary_Figure_5/A/S5_A.svg
+  x: 3.5
+  y: 5
+  width: 173
+  height: 60
+- label: B
+  kind: svg
+  source: build/panels/Supplementary_Figure_5/B/S5_B.svg
+  x: 3.5
+  y: 68
+  width: 173
+  height: 60
+- label: C
+  kind: svg
+  source: build/panels/Supplementary_Figure_5/C/S5_C.svg
+  x: 3.5
+  y: 131
+  width: 173
+  height: 60

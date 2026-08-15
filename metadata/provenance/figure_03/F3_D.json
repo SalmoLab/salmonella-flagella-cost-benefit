@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F3_D",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-15T09:02:58.732437Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "-m",
+    "analyses.figure_03_revision.panel_d.scripts.reproduce"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_03_revision/panel_d/config/panel.json",
+      "sha256": "3e98e4fe34c204309d44787ff54f88c502dc3369943ee17f8391f02672b8af09",
+      "bytes": 324
+    },
+    {
+      "relative_path": "analyses/figure_03_revision/panel_d/scripts/reproduce.py",
+      "sha256": "44e4b550a3b864b557c5d52e333aedf22e94d5f6937463dca4242f5fe89cf9ed",
+      "bytes": 115
+    },
+    {
+      "relative_path": "src/flagella_repro/theme.py",
+      "sha256": "d3e93c1eed74fd0b647748e61326d019047f015627fb50377c8b3f1f2cb1cb41",
+      "bytes": 11960
+    },
+    {
+      "relative_path": "config/palette.yaml",
+      "sha256": "1db43aaa3edd5b6f19a03cfcace6efdba38ccb13ac69260539b61e287eb424b7",
+      "bytes": 2704
+    },
+    {
+      "relative_path": "analyses/figure_03_revision/scripts/build_revision.py",
+      "sha256": "ae9c701eeb7f5820f5706da94667be657989a93887b2926d76b31c6a3e59929c",
+      "bytes": 20387
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.00_ATP.csv",
+      "sha256": "97aae0d0941c2228ca4daba8cd7853a746f5282dcf6483a5bef33e8ac320b2f2",
+      "bytes": 6707
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.00_no_ATP.csv",
+      "sha256": "ebc04806c9d0b5821fcf80b82163fe573927753392cde8716be01a0920388ba3",
+      "bytes": 6604
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.01_ATP.csv",
+      "sha256": "90d3a630a37ca8ade4fdf9ace46aa5cabc6a5f11bd592e031976ac052d8e3a05",
+      "bytes": 6817
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.01_no_ATP.csv",
+      "sha256": "29703d5a93abb4e493824976f32bd02901030d8be5da46341f717a858be841c5",
+      "bytes": 6674
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.02_ATP.csv",
+      "sha256": "bd126d22fc0a5d1dc361f78950330ba34b6bcc6bcf78cb94643a6b6174b1b499",
+      "bytes": 6834
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.02_no_ATP.csv",
+      "sha256": "83af4f2db81dce18ea18bd6adbfd2e3abbe9af68b27874714f569abb19b67100",
+      "bytes": 6657
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.03_ATP.csv",
+      "sha256": "6da90314af1e6c619fc8335f568fe23c704900662b45b8c99e8a3f3892e93860",
+      "bytes": 6807
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.03_no_ATP.csv",
+      "sha256": "e36b3e280a89a7c140c9ee03b9657adf1f1479821c75cde59c02ac6572c8272b",
+      "bytes": 6710
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.04_ATP.csv",
+      "sha256": "3bd557e702c9c400293ed693b15e1fd2edcb2dfe7a7572ffa033a3d3f4f706c9",
+      "bytes": 6854
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.04_no_ATP.csv",
+      "sha256": "910ecc8df4f3cf809a3f0b4ef6b35898d137c4d77a150947fe14f0853266bbae",
+      "bytes": 6747
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.05_ATP.csv",
+      "sha256": "08ca216bd3bf33a2b74398f9febe5e8ef4a9d8ddfa6f643c359fb94285bf5c35",
+      "bytes": 6851
+    },
+    {
+      "relative_path": "data/external/cell_economy_results/rotation/steady_state_flag_0.05_no_ATP.csv",
+      "sha256": "ae5d10f2f1c23167601822cfe1e27055288731e5ea2d92e8f0b1d22123cc0d80",
+      "bytes": 6732
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/source_data/Figure_3/D/F3_D_source_data.csv",
+      "sha256": "e504211c1f998f5eabd47882d4343ddd5b95ba8d3a4ecaf5641417993efb5c30",
+      "bytes": 404,
+      "rows": 12
+    },
+    {
+      "relative_path": "build/statistics/Figure_3/D/F3_D_statistics.csv",
+      "sha256": "48c1c89717e23327053a4e33279ecc385e8c52758caf88cc576cc304bba9e705",
+      "bytes": 311,
+      "rows": 2
+    },
+    {
+      "relative_path": "build/panels/Figure_3/D/F3_D.svg",
+      "sha256": "bcd83a9ae5ef709858b0c37e8f0aeac5d98d49db7577650ee878e916aa661d9a",
+      "bytes": 14994
+    },
+    {
+      "relative_path": "build/panels/Figure_3/D/F3_D.pdf",
+      "sha256": "ff5ae5e920aa541ee9b2d7a1bfcebab45b0064cb89823a4c65e97d55a9a96326",
+      "bytes": 22508
+    },
+    {
+      "relative_path": "build/panels/Figure_3/D/F3_D.png",
+      "sha256": "5dec5cd709568152df09bb555602f8d11b6f67e08f3af54a890289f56954b0f1",
+      "bytes": 60641
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3"
+  },
+  "parameters": {
+    "backend": "Python 3.12",
+    "scientific_values_are_in_source_data": true,
+    "stars_displayed": false
+  },
+  "random_seeds": {},
+  "limitations": [
+    "The cell-economy curves use fixed collaborator result tables because the exact local GEKKO solve remains unavailable.",
+    "No limitation beyond the declared upstream input limitations."
+  ]
+}

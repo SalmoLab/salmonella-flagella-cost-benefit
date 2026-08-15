@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F1_A",
+  "status": "blocked_asset",
+  "generated_at_utc": "2026-08-12T21:05:40.427277Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/figure_01/render_blocked_assets.py",
+    "--panel",
+    "A"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_01/panel_a/config/asset_intake.json",
+      "sha256": "33fd8d42b09eb920f8164098056eb3c6a397dee1769d105db7239c98d028cfe2",
+      "bytes": 765
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/source_data/Figure_1/A/F1_A_source_data.csv",
+      "sha256": "fb81bac6547793e46fba80c35dd24d7a7736d8267c7c177126b88438a0b4210f",
+      "bytes": 119
+    },
+    {
+      "relative_path": "build/panels/Figure_1/A/F1_A.svg",
+      "sha256": "39533142abbd6ffb31165a793d2cbed265746225809ef893b17f306c263231a7",
+      "bytes": 2793
+    },
+    {
+      "relative_path": "build/panels/Figure_1/A/F1_A.pdf",
+      "sha256": "48c6e3ef09f046d93e7f801d03b3530af76db405e4a1190675678c9df32f4579",
+      "bytes": 18254
+    },
+    {
+      "relative_path": "build/panels/Figure_1/A/F1_A.png",
+      "sha256": "62353aa0f5b5992c6b482073d50cc6fe11ab883e47ee9ac8ed1a735f38ef9722",
+      "bytes": 32397
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "matplotlib": "3.11.1"
+  },
+  "parameters": {
+    "scientific_values_plotted": 0
+  },
+  "random_seeds": {},
+  "limitations": [
+    "Missing: editable experimental-system schematic. This output is an explicit placeholder."
+  ],
+  "blocker": {
+    "reason": "editable experimental-system schematic",
+    "required_assets": [
+      "editable experimental-system schematic"
+    ]
+  }
+}

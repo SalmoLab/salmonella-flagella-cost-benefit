@@ -1,0 +1,265 @@
+{
+  "schema_version": "1.0.0",
+  "figure_id": "Figure_6_revision",
+  "generated_at_utc": "2026-08-12T00:00:00Z",
+  "command": [
+    ".venv/bin/python",
+    "analyses/figure_06_revision/build_figure_06_revision.py"
+  ],
+  "backend": "Python 3.12",
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_06_revision/build_figure_06_revision.py",
+      "sha256": "7883c68bc10c75ebe9ff18dced9d5371ad81a2fc9689abdd004fea6b16957898",
+      "bytes": 46365
+    },
+    {
+      "relative_path": "data/processed/figure_06_revision/figure_06A_ptet_motility_measurements.csv",
+      "sha256": "792d40886bd8c7b720db3a00f380a6f9f4e63d7eee0b605aa4d222f8e34bbc50",
+      "bytes": 9227
+    },
+    {
+      "relative_path": "data/processed/figure_06_revision/figure_06B_ppro_motility_measurements.csv",
+      "sha256": "698161ef215086cc60fa61c18cb09122f0606c725a15d201027a11d291f07cf8",
+      "bytes": 1872
+    },
+    {
+      "relative_path": "data/processed/figure_06_revision/figure_06C_hook_histogram_counts.csv",
+      "sha256": "18ecf2cddd647bc161071d39691aa856dc349be209be915133d6ea6b16b3d7a2",
+      "bytes": 1451
+    },
+    {
+      "relative_path": "data/processed/figure_06_revision/figure_06E_competition_per_cell.csv",
+      "sha256": "0d823a3905b8259a0cd2888c46b5219bdfd63c9ab967a84c84c51244206b7b31",
+      "bytes": 1096086
+    },
+    {
+      "relative_path": "assets/schematics/competition_design/competition_scheme_source.pptx",
+      "sha256": "fc70af99e68f06eba7a122121987f1024cdb34188bf6cb232ca79321409d56a9",
+      "bytes": 450609
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3"
+  },
+  "parameters": {
+    "backend": "Python 3.12",
+    "scientific_values_are_in_source_data": true,
+    "stars_displayed": false
+  },
+  "random_seeds": {},
+  "results": {
+    "A": {
+      "days": 26,
+      "conditions": 7
+    },
+    "B": {
+      "points": 30,
+      "pairs_per_comparison": 6
+    },
+    "C": {
+      "cells": 771,
+      "means": {
+        "Center": 0.4396887159533074,
+        "Middle": 2.657587548638132,
+        "Out": 3.922178988326848
+      }
+    },
+    "D": {
+      "source_sha256": "fc70af99e68f06eba7a122121987f1024cdb34188bf6cb232ca79321409d56a9",
+      "text_runs": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "P",
+        "proA",
+        "-",
+        "fhlDC",
+        "P",
+        "proB",
+        "-",
+        "fhlDC"
+      ]
+    },
+    "E": {
+      "assigned_cells": 8581,
+      "r1_pproa_fraction": 0.9117708117085322,
+      "r4_pprob_mean_hooks": 5.810344827586207,
+      "rois_per_region": {
+        "1": 18,
+        "2": 13,
+        "3": 13,
+        "4": 12
+      },
+      "strain_share_per_region": {
+        "1_PproA": 0.9097,
+        "1_PproB": 0.0903,
+        "2_PproA": 0.7746,
+        "2_PproB": 0.2254,
+        "3_PproA": 0.2088,
+        "3_PproB": 0.7912,
+        "4_PproA": 0.0,
+        "4_PproB": 1.0
+      },
+      "displayed_interval": "mean +/- 1 SD across imaging fields (ROIs) of one competition experiment"
+    }
+  },
+  "outputs": [
+    {
+      "relative_path": "build/panels/Figure_6/A/Figure_6A.pdf",
+      "sha256": "c48e1302c2a89a085db73aef5f1a55a1a5ae336944d50c99e79bfcb2ba4a67e3",
+      "bytes": 35781
+    },
+    {
+      "relative_path": "build/panels/Figure_6/A/Figure_6A.png",
+      "sha256": "2aaf614941583a274c2b1bac2e12e3f3777d23f058c9ff1f3f8da21d4fa33269",
+      "bytes": 55394
+    },
+    {
+      "relative_path": "build/panels/Figure_6/A/Figure_6A.svg",
+      "sha256": "3a29cb2ff857a337b8f8a40d95bb958476bcf7bda2c5fbc0ce3cd602d551d1b6",
+      "bytes": 52061
+    },
+    {
+      "relative_path": "build/panels/Figure_6/B/Figure_6B.pdf",
+      "sha256": "3d3d1f77bf3293db18816eca6eb0d8607aac7d55bdba95bbc75b70df4cd49fc6",
+      "bytes": 24847
+    },
+    {
+      "relative_path": "build/panels/Figure_6/B/Figure_6B.png",
+      "sha256": "05a69e2fe2b9eed6537d6491ae8f1fe153e9821d2cd03e173a37d1fb65d6f1a4",
+      "bytes": 45927
+    },
+    {
+      "relative_path": "build/panels/Figure_6/B/Figure_6B.svg",
+      "sha256": "6833d19b2586284597edf686be798cb2f936dd4c9d39a8641f28af162c7c3764",
+      "bytes": 20189
+    },
+    {
+      "relative_path": "build/panels/Figure_6/C/Figure_6C.pdf",
+      "sha256": "3d52e40bcecea277496ea4471e01743198966c9646dcb6d9142fb324a7c035ef",
+      "bytes": 27148
+    },
+    {
+      "relative_path": "build/panels/Figure_6/C/Figure_6C.png",
+      "sha256": "1c1c24c3ae8d63bc61acc201d05edeec63111a3493160f463f235a9432eb39ed",
+      "bytes": 44602
+    },
+    {
+      "relative_path": "build/panels/Figure_6/C/Figure_6C.svg",
+      "sha256": "f4bf224029c7beab104adf2dc56736011386f96ed521c97a911ed04628428cb7",
+      "bytes": 31124
+    },
+    {
+      "relative_path": "build/panels/Figure_6/D/Figure_6D.pdf",
+      "sha256": "a4ed88c408bf2cd10acdf0ee8b56dbc00033d453115727aac5429d2f2389caed",
+      "bytes": 24627
+    },
+    {
+      "relative_path": "build/panels/Figure_6/D/Figure_6D.png",
+      "sha256": "aaab0a09b29e1b556fba1bc4eec252532630a2570bb6a3cc431ed7820203ea03",
+      "bytes": 93033
+    },
+    {
+      "relative_path": "build/panels/Figure_6/D/Figure_6D.svg",
+      "sha256": "28885c0c2aade3b50d4c308ef928f5bd1cf4e70e5e6886150f2b2e0da55a4e5a",
+      "bytes": 18206
+    },
+    {
+      "relative_path": "build/panels/Figure_6/E/Figure_6E.pdf",
+      "sha256": "b0c917a3accb46fc0b306b5d73bda128f902d4a64b80db34f0514ef625488c35",
+      "bytes": 34451
+    },
+    {
+      "relative_path": "build/panels/Figure_6/E/Figure_6E.png",
+      "sha256": "73030b8b9ef445e72a2518eaf6523e11e75fc9ea72b10b67d77343bb05d22dbb",
+      "bytes": 90195
+    },
+    {
+      "relative_path": "build/panels/Figure_6/E/Figure_6E.svg",
+      "sha256": "e31a724409c45cb4e95d36229ccb96597d5e5f04b7c1bdc6133639e52f3b4bb8",
+      "bytes": 83809
+    },
+    {
+      "relative_path": "build/source_data/Figure_6/A/Figure_6A_day_level_points.csv",
+      "sha256": "25e5b4403ef3547cd47f25e1bc9b1a93065f36d53f681bfbb31a0a6bf325686f",
+      "bytes": 992
+    },
+    {
+      "relative_path": "build/source_data/Figure_6/A/Figure_6A_well_measurements.csv",
+      "sha256": "5a1d1a4dafd881bd5522a3d979e66c4dd2a9d1bfc96887b8004bc667b06e8cae",
+      "bytes": 6234
+    },
+    {
+      "relative_path": "build/source_data/Figure_6/B/Figure_6B_replicate_points.csv",
+      "sha256": "e7e7eafd506e50543590c1f2fbcfb9647dec9b2c0d8bc3746136042aaf695680",
+      "bytes": 1875
+    },
+    {
+      "relative_path": "build/source_data/Figure_6/C/Figure_6C_cell_points.csv",
+      "sha256": "13e7b34eef011f8bc0f58e75a275911f0550aadbf02a854f3ae7c97cb4419b4c",
+      "bytes": 33649
+    },
+    {
+      "relative_path": "build/source_data/Figure_6/D/Figure_6D_schematic_elements.csv",
+      "sha256": "78cab419f6b0dbffa68257a0a0dd202cc47e965a47dd064944a3983e5af06fe9",
+      "bytes": 388
+    },
+    {
+      "relative_path": "build/source_data/Figure_6/E/Figure_6E_assigned_cell_points.csv",
+      "sha256": "14ceedad8f043a2054565faaf713834ba8f4cbc2d22da559b0a49b89970015f2",
+      "bytes": 504895
+    },
+    {
+      "relative_path": "build/source_data/Figure_6/E/Figure_6E_roi_fraction_mean_sd.csv",
+      "sha256": "43ebeb048ba712d11595e8c1a066addc84da88f468ff0958a5d8266a86b9576e",
+      "bytes": 11316
+    },
+    {
+      "relative_path": "build/source_data/Figure_6/E/Figure_6E_roi_hook_fractions.csv",
+      "sha256": "283a2e747033392186b9de3edd7b85be538631f5a7359762dfbf7eb45162c6fa",
+      "bytes": 45756
+    },
+    {
+      "relative_path": "build/statistics/Figure_6/A/Figure_6A_summary_95ci.csv",
+      "sha256": "2d1c180d0fd73253e596debdbcf348fa976af63addaf89f90a4e85bd9fee6ba5",
+      "bytes": 645
+    },
+    {
+      "relative_path": "build/statistics/Figure_6/B/Figure_6B_paired_statistics.csv",
+      "sha256": "82638ef2c8b5cdb0f03199235f880c9e2bed9b7bd3dc24134080a848bb155854",
+      "bytes": 514
+    },
+    {
+      "relative_path": "build/statistics/Figure_6/B/Figure_6B_summary_95ci.csv",
+      "sha256": "86dc2c4fcecd635c1a13d34e52180bb49e2e89e06d3bd89564411948c79c3f40",
+      "bytes": 449
+    },
+    {
+      "relative_path": "build/statistics/Figure_6/C/Figure_6C_numeric_audit.csv",
+      "sha256": "6874a84b366e034b387fac3c1ad6ab08472f25c1df72c6d9d34e112bf805604d",
+      "bytes": 169
+    },
+    {
+      "relative_path": "build/statistics/Figure_6/E/Figure_6E_numeric_audit.csv",
+      "sha256": "e9e1cb106bb7e34540b6e2a672ab3914c975f7efefcb62c3d0af575fa8f81f3c",
+      "bytes": 425
+    },
+    {
+      "relative_path": "build/statistics/Figure_6/E/Figure_6E_region_composition.csv",
+      "sha256": "209ada711f83a406b791c776001c5228bd52db6e93e12190cc7143fa00be7274",
+      "bytes": 253
+    }
+  ],
+  "limitations": [
+    "Panel E microscopy placeholders are intentional: raw calibrated fields and crop metadata have not been supplied; scale not inferred.",
+    "Panel E ROI identities are retained, but biological-repeat identities are not present in the migrated table.",
+    "The competition experiment has no biological replication: it is one experiment. Panel E ROIs are imaging fields inside a plate region, so the plotted mean and standard deviation describe field-to-field variation only.",
+    "Panel C pools cells from one soft-agar plate, so its discrete-count display carries no replicate layer and stays descriptive.",
+    "Panels A and B share the independent experiment as their unit of analysis. Panel A has two experimental days for WT and four for every AnTc condition, an asymmetry that day means alone do not show."
+  ]
+}

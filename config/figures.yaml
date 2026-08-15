@@ -1,0 +1,99 @@
+reference_release: 2026-08-12-revision
+backend: python
+figures:
+- id: Figure1
+  reference_source_id: Figure1
+  panels:
+  - F1_A
+  - F1_B
+  - F1_C
+  - F1_D
+  - F1_E
+  - F1_F
+  - F1_G
+  - F1_H
+- id: Figure2
+  reference_source_id: Figure2
+  panels:
+  - F2_A
+  - F2_B
+  - F2_C
+- id: Figure3
+  reference_source_id: Figure2
+  panels:
+  - F3_A
+  - F3_B
+  - F3_C
+  - F3_D
+  - F3_E
+- id: Figure4
+  reference_source_id: Figure3
+  panels:
+  - F4_A
+  - F4_B
+  - F4_C
+  - F4_D
+  - F4_E
+  - F4_F
+- id: Figure5
+  reference_source_id: Figure3
+  panels:
+  - F5_A
+  - F5_B
+  - F5_C
+  - F5_D
+  - F5_E
+- id: Figure6
+  reference_source_id: Figure4
+  panels:
+  - F6_A
+  - F6_B
+  - F6_C
+  - F6_D
+  - F6_E
+- id: Figure7
+  reference_source_id: Figure5
+  panels:
+  - F7_A
+  - F7_B
+  - F7_C
+  - F7_D
+  - F7_E
+  - F7_F
+  - F7_G
+- id: Supplementary1
+  reference_source_id: Supplementary1
+  panels:
+  - S1_A
+  - S1_B
+- id: Supplementary2
+  reference_source_id: Supplementary2
+  panels:
+  - S2_A
+- id: Supplementary3
+  reference_source_id: Supplementary4
+  panels:
+  - S3_A
+  - S3_B
+  - S3_C
+  - S3_D
+  - S3_E
+  - S3_F
+  - S3_G
+  - S3_H
+  - S3_I
+- id: Supplementary4
+  reference_source_id: Supplementary5
+  panels:
+  - S4_A
+  - S4_B
+  - S4_C
+  - S4_D
+  - S4_E
+  - S4_F
+- id: Supplementary5
+  reference_source_id: Figure5
+  panels:
+  - S5_A
+  - S5_B
+  - S5_C

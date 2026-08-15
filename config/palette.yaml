@@ -1,0 +1,80 @@
+version: 1
+neutral:
+  text: "#1A1A1A"
+  grid: "#D9DEE3"
+  technical: "#B9C3CD"
+  reference: "#7F7F7F"
+  background: "#FFFFFF"
+  # One ink for every summary mark: mean bar, mean +/- CI diamond, model line.
+  # Five different near-blacks previously filled this one role.
+  summary: "#1A1A1A"
+  # The swatch a key uses when it stands for a concept rather than a strain,
+  # for example "cell distribution" or "cell-count frequency".  A strain colour
+  # must never be borrowed for a generic concept.
+  key_swatch: "#9AA4AD"
+
+# Flagellar allocation is the third ordered variable in the manuscript, beside
+# inducer concentration and promoter strength.  It needs a ramp that is neither
+# the blue inducer ramp nor the red promoter ramp.  This one is viridis-derived
+# and colourblind-safe.
+allocation:
+  "0.005": "#E7E4B0"
+  "0.01": "#A9DB9C"
+  "0.02": "#5BC4A0"
+  "0.03": "#2BA098"
+  "0.04": "#2A7290"
+  "0.05": "#2C3F73"
+
+# Ordered light-to-dark ramps.  The ordering, rather than hue alone, carries
+# inducer/promoter strength throughout the manuscript.
+antc:
+  "0": "#DCEAF5"
+  "0.25": "#B7D4EA"
+  "0.5": "#8CBBDD"
+  "1": "#5D99C7"
+  "2": "#3277AA"
+  "4": "#0B4F82"
+
+promoter:
+  Ppro1: "#FEE0D2"
+  PproA: "#FC9272"
+  PproB: "#DE2D26"
+  PproD: "#8C1515"
+
+mutants:
+  WT: "#7F7F7F"
+  delta_flhDC: "#0072B2"
+  delta_flgE: "#D55E00"
+  delta_flgKL: "#009E73"
+  motB_D33N: "#CC79A7"
+  delta_flgM_flhA_delta_c: "#E6A700"
+
+# Collaborator allocation-sector palette, retained verbatim.
+sectors:
+  Oth: "#B3B3B3"
+  Rib: "#A6761D"
+  Cbn: "#E6AB02"
+  Aab: "#7570B3"
+  Etc: "#66A61E"
+  Lpb: "#1B9E77"
+  Fla: "#E7298A"
+  Tra: "#DF9359"
+
+strain_styles:
+  TH9677: {label: "WT (S171)", color: "#7F7F7F", marker: "o"}
+  TH5861: {label: "WT (fliC-ON)", color: "#7F7F7F", marker: "o"}
+  0EM8242: {label: "0 ng/mL", color: "#DCEAF5", marker: "o"}
+  025EM8242: {label: "0.25 ng/mL", color: "#B7D4EA", marker: "o"}
+  05EM8242: {label: "0.5 ng/mL", color: "#8CBBDD", marker: "o"}
+  1EM8242: {label: "1 ng/mL", color: "#5D99C7", marker: "o"}
+  2EM8242: {label: "2 ng/mL", color: "#3277AA", marker: "o"}
+  4EM8242: {label: "4 ng/mL", color: "#0B4F82", marker: "o"}
+  EM9662: {label: "Ppro1-flhDC", color: "#FEE0D2", marker: "o"}
+  EM9661: {label: "PproA-flhDC", color: "#FC9272", marker: "o"}
+  EM9660: {label: "PproB-flhDC", color: "#DE2D26", marker: "o"}
+  EM8513: {label: "PproD-flhDC", color: "#8C1515", marker: "o"}
+  EM16223: {label: "ΔflhDC", color: "#0072B2", marker: "o"}
+  EM4208: {label: "ΔflgE", color: "#D55E00", marker: "s"}
+  EM4209: {label: "ΔflgKL", color: "#009E73", marker: "^"}
+  EM16224: {label: "motB (D33N)", color: "#CC79A7", marker: "D"}
+  EM16587: {label: "ΔflgM flhAΔc", color: "#E6A700", marker: "P"}

@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "S3_H",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-15T10:03:14.263581Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/supplementary_03/build_s3.py",
+    "--panel",
+    "H"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/supplementary_03/build_s3.py",
+      "sha256": "abdc453b3cd34e05ae6539565b271c034d5553d956576535498ba96247398a78",
+      "bytes": 27848
+    },
+    {
+      "relative_path": "analyses/supplementary_03/panel_h/config/panel.json",
+      "sha256": "068916bbf6554a409c7e03cc68734b1d5c959f845dda82bbf2fc367145648722",
+      "bytes": 77
+    },
+    {
+      "relative_path": "analyses/supplementary_03/panel_h/scripts/reproduce.py",
+      "sha256": "40fa871038ab1607fcef71a38331fd2c827ae764342beb3e0f73bbe9814ccffb",
+      "bytes": 267
+    },
+    {
+      "relative_path": "data/processed/supplementary_03/motility_competition_paired_measurements.csv",
+      "sha256": "e593124975f362714d5b7dc99bc21ea2b9f47b92c23e9ca337ac3a3f7478d59e",
+      "bytes": 87105,
+      "rows": 208
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "data/source_data/supplementary_03/S3_H_paired_points.csv",
+      "sha256": "c959b2c2546f2af98e48106ab8ee3edff9e8b86a6da3641de899e94600583e75",
+      "bytes": 3848,
+      "rows": 36
+    },
+    {
+      "relative_path": "data/source_data/supplementary_03/S3_H_paired_effect.csv",
+      "sha256": "318f8dd7420438d06fc7394f719e50435ed614d3ea56287cf516a226e9fad490",
+      "bytes": 250,
+      "rows": 2
+    },
+    {
+      "relative_path": "build/statistics/Supplementary_Figure_3/H/S3_H_paired_effect_statistics.csv",
+      "sha256": "318f8dd7420438d06fc7394f719e50435ed614d3ea56287cf516a226e9fad490",
+      "bytes": 250,
+      "rows": 2
+    },
+    {
+      "relative_path": "build/panels/Supplementary_Figure_3/H/S3_H.png",
+      "sha256": "47639fa92a6b9055e1ea94ac095d6aec972f4a478db5982a6f3dc6b7b4706e07",
+      "bytes": 58226
+    },
+    {
+      "relative_path": "build/panels/Supplementary_Figure_3/H/S3_H.svg",
+      "sha256": "2b0d4f68235dde697d71bb16ed3a58a01de1e3a0056ca3ff7d325461fe3e95e4",
+      "bytes": 48847
+    },
+    {
+      "relative_path": "build/panels/Supplementary_Figure_3/H/S3_H.pdf",
+      "sha256": "963d539055d7a0868132461b7642168d50834f4da0e9006c98d998bf51f57c10",
+      "bytes": 29685
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "pandas": "2.3.3",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2"
+  },
+  "parameters": {
+    "layout": "one metric and one strain pair per panel, the two media side by side",
+    "center": "one paired block-level value per strain",
+    "line": "paired metadata_key within medium",
+    "unit_of_analysis": "paired experimental unit (one metadata_key, one medium)",
+    "violin": "kernel density of the plotted unit values, on the plotted scale",
+    "plotted_quantity": "log10 of the metric",
+    "log_scale": true,
+    "summary_mark": "diamond at the group mean of the plotted quantity; the second strain's bar is the paired 95 % interval anchored at the first strain's mean",
+    "shared_axis": "the three panels of a metric row share one y range",
+    "effect": "ratio",
+    "effect_estimator": "mean paired log contrast, back-transformed",
+    "interval": "percentile bootstrap over paired experimental units, 95 %",
+    "bootstrap_iterations": 10000,
+    "n_paired_units": {
+      "agarose": 18,
+      "liquid": 18
+    },
+    "statistical_test": "none in plotted panel",
+    "multiplicity_correction": "not applicable"
+  },
+  "random_seeds": {
+    "paired_effect_bootstrap": [
+      20260812,
+      7
+    ]
+  },
+  "limitations": [
+    "Starts from the legacy-derived block-level table rather than raw trajectories.",
+    "The annotated effect is a paired estimate with a bootstrap interval, not a test.",
+    "Final manuscript assembly and visual acceptance remain separate."
+  ]
+}

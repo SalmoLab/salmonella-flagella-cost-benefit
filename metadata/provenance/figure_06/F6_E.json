@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F6_E",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-12T00:00:00Z",
+  "command": [
+    ".venv/bin/python",
+    "analyses/figure_06_revision/build_figure_06_revision.py",
+    "--panel",
+    "E"
+  ],
+  "backend": "Python 3.12",
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_06_revision/build_figure_06_revision.py",
+      "sha256": "7883c68bc10c75ebe9ff18dced9d5371ad81a2fc9689abdd004fea6b16957898",
+      "bytes": 46365
+    },
+    {
+      "relative_path": "data/processed/figure_06_revision/figure_06E_competition_per_cell.csv",
+      "sha256": "0d823a3905b8259a0cd2888c46b5219bdfd63c9ab967a84c84c51244206b7b31",
+      "bytes": 1096086
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/panels/Figure_6/E/Figure_6E.pdf",
+      "sha256": "b0c917a3accb46fc0b306b5d73bda128f902d4a64b80db34f0514ef625488c35",
+      "bytes": 34451
+    },
+    {
+      "relative_path": "build/panels/Figure_6/E/Figure_6E.png",
+      "sha256": "73030b8b9ef445e72a2518eaf6523e11e75fc9ea72b10b67d77343bb05d22dbb",
+      "bytes": 90195
+    },
+    {
+      "relative_path": "build/panels/Figure_6/E/Figure_6E.svg",
+      "sha256": "e31a724409c45cb4e95d36229ccb96597d5e5f04b7c1bdc6133639e52f3b4bb8",
+      "bytes": 83809
+    },
+    {
+      "relative_path": "build/source_data/Figure_6/E/Figure_6E_assigned_cell_points.csv",
+      "sha256": "14ceedad8f043a2054565faaf713834ba8f4cbc2d22da559b0a49b89970015f2",
+      "bytes": 504895
+    },
+    {
+      "relative_path": "build/source_data/Figure_6/E/Figure_6E_roi_fraction_mean_sd.csv",
+      "sha256": "43ebeb048ba712d11595e8c1a066addc84da88f468ff0958a5d8266a86b9576e",
+      "bytes": 11316
+    },
+    {
+      "relative_path": "build/source_data/Figure_6/E/Figure_6E_roi_hook_fractions.csv",
+      "sha256": "283a2e747033392186b9de3edd7b85be538631f5a7359762dfbf7eb45162c6fa",
+      "bytes": 45756
+    },
+    {
+      "relative_path": "build/statistics/Figure_6/E/Figure_6E_numeric_audit.csv",
+      "sha256": "e9e1cb106bb7e34540b6e2a672ab3914c975f7efefcb62c3d0af575fa8f81f3c",
+      "bytes": 425
+    },
+    {
+      "relative_path": "build/statistics/Figure_6/E/Figure_6E_region_composition.csv",
+      "sha256": "209ada711f83a406b791c776001c5228bd52db6e93e12190cc7143fa00be7274",
+      "bytes": 253
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3"
+  },
+  "parameters": {
+    "backend": "Python 3.12",
+    "scientific_values_are_in_source_data": true,
+    "stars_displayed": false
+  },
+  "random_seeds": {},
+  "results": {
+    "assigned_cells": 8581,
+    "r1_pproa_fraction": 0.9117708117085322,
+    "r4_pprob_mean_hooks": 5.810344827586207,
+    "rois_per_region": {
+      "1": 18,
+      "2": 13,
+      "3": 13,
+      "4": 12
+    },
+    "strain_share_per_region": {
+      "1_PproA": 0.9097,
+      "1_PproB": 0.0903,
+      "2_PproA": 0.7746,
+      "2_PproB": 0.2254,
+      "3_PproA": 0.2088,
+      "3_PproB": 0.7912,
+      "4_PproA": 0.0,
+      "4_PproB": 1.0
+    },
+    "displayed_interval": "mean +/- 1 SD across imaging fields (ROIs) of one competition experiment"
+  },
+  "limitations": [
+    "The canonical run starts from migrated processed measurement tables, not raw acquisitions.",
+    "The revised panel has not yet passed visual acceptance against the July reference.",
+    "ROI identities are retained, but biological-repeat identities are not present in the migrated table; the display is descriptive.",
+    "The competition experiment has no biological replication: it is one experiment. The ROIs are imaging fields inside a plate region (18, 13, 13, 12 fields for regions 1 to 4), so the plotted mean and standard deviation describe field-to-field variation, not biological error."
+  ]
+}

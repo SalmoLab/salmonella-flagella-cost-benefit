@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F1_A",
+  "status": "blocked_external",
+  "generated_at_utc": "2026-08-12T11:17:54.022260Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "analyses/figure_01/render_blocked_assets.py",
+    "--panel",
+    "A"
+  ],
+  "inputs": [],
+  "outputs": [
+    "build/source_data/Figure_1/A/F1_A_source_data.csv",
+    "build/panels/Figure_1/A/F1_A.svg",
+    "build/panels/Figure_1/A/F1_A.pdf",
+    "build/panels/Figure_1/A/F1_A.png"
+  ],
+  "parameters": {
+    "scientific_values_plotted": 0
+  },
+  "random_seeds": {},
+  "limitations": [
+    "Missing: editable experimental-system schematic. This output is an explicit placeholder."
+  ]
+}

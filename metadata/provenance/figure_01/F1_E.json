@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0.0",
+  "panel_id": "F1_E",
+  "status": "partial_reproduction",
+  "generated_at_utc": "2026-08-15T11:45:13.162987Z",
+  "command": [
+    ".venv/bin/python3.12",
+    "-m",
+    "analyses.figure_01.panel_e.scripts.plot"
+  ],
+  "inputs": [
+    {
+      "relative_path": "analyses/figure_01/panel_e/config/config.json",
+      "sha256": "65800e3a35277a01d07ed84a6a285650b7e557ac7d74c972e37967e63da4b77f",
+      "bytes": 1001
+    },
+    {
+      "relative_path": "analyses/figure_01/plotting.py",
+      "sha256": "fee4d8f83fc291e6ccd03293afcb88e6c154ee44aaf385cab4cb9bb1d286d54c",
+      "bytes": 29304
+    },
+    {
+      "relative_path": "analyses/figure_01/panel_e/scripts/plot.py",
+      "sha256": "a73aee31ff37f5af272109b76a38245ac1063fb07c07b24beeb681305d1971d5",
+      "bytes": 150
+    },
+    {
+      "relative_path": "src/flagella_repro/theme.py",
+      "sha256": "d3e93c1eed74fd0b647748e61326d019047f015627fb50377c8b3f1f2cb1cb41",
+      "bytes": 11960
+    },
+    {
+      "relative_path": "config/palette.yaml",
+      "sha256": "1db43aaa3edd5b6f19a03cfcace6efdba38ccb13ac69260539b61e287eb424b7",
+      "bytes": 2704
+    },
+    {
+      "relative_path": "data/processed/figure_01/F1_E/cell_points.csv",
+      "sha256": "949407c2d713642e71c985117d2172fa5f973a0af94fdf823ff20b9aa22eb77b",
+      "bytes": 2057637,
+      "rows": 18873
+    },
+    {
+      "relative_path": "data/processed/figure_01/F1_E/legacy_bubble_counts.csv",
+      "sha256": "980b6f8a0cfbbf948c4f3ec406e7a3f1d1f04885f9663a4cf55a7886fc26d3dd",
+      "bytes": 1961,
+      "rows": 51
+    },
+    {
+      "relative_path": "data/processed/figure_01/F1_E/legacy_statistics.csv",
+      "sha256": "2f2b879b8812e1120950db885b476f5b220d87b97d148149fca951540027b701",
+      "bytes": 296,
+      "rows": 1
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "build/source_data/Figure_1/E/F1_E_bubble_counts.csv",
+      "sha256": "980b6f8a0cfbbf948c4f3ec406e7a3f1d1f04885f9663a4cf55a7886fc26d3dd",
+      "bytes": 1961,
+      "rows": 51
+    },
+    {
+      "relative_path": "build/statistics/Figure_1/E/F1_E_statistics.csv",
+      "sha256": "6931f72810bc6bd334d1c955b28af8946fb0ee5d584197c1e98b466c55ca8568",
+      "bytes": 284,
+      "rows": 1
+    },
+    {
+      "relative_path": "build/panels/Figure_1/E/F1_E.svg",
+      "sha256": "2619ab9fba0b90a6593be30d65c8ca2b98fa6061703dac98fa330e3e291dad2a",
+      "bytes": 44108
+    },
+    {
+      "relative_path": "build/panels/Figure_1/E/F1_E.pdf",
+      "sha256": "e6b55d3970280d64ddbdd9f4b1e11b4ed745d76804d8e17bc7d83eb7958b0438",
+      "bytes": 25745
+    },
+    {
+      "relative_path": "build/panels/Figure_1/E/F1_E.png",
+      "sha256": "dd22ee30c9944e63263fb2e2230402fe00ce3e5fa2f8453d36384b3c05679ac2",
+      "bytes": 36783
+    }
+  ],
+  "software": {
+    "python": "3.12.11",
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "scipy": "1.18.0",
+    "seaborn": "0.13.2"
+  },
+  "parameters": {
+    "recipe": "hook_filament_bubbles",
+    "current_panel_labels": true,
+    "reproduction_scope": "migrated processed tables to standalone panel"
+  },
+  "random_seeds": {
+    "bootstrap": 1337
+  },
+  "limitations": [
+    "Starts from migrated processed per-cell tables, not archived raw microscopy segmentation outputs.",
+    "The current panel omits the legacy title, correlation annotation and cell-count footer; that current crop is encoded here.",
+    "Final multi-panel assembly and pixel-level reference comparison are not yet implemented."
+  ]
+}
