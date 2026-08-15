@@ -1,0 +1,25 @@
+Copyright (c) 2026 María José Giralt-Zúñiga, Michael Jahn, Joshua L. Franklin,
+Kathirvel Alagesan, Florian Kondrot, Eugen Kaganovitch, Lasse Hallenga,
+Sarya Derado, Kelly T. Hughes, Philipp F. Popp, Emmanuelle Charpentier,
+Yann S. Dufour, Marc Erhardt
+
+The code in this collection is free software: you may redistribute it and
+change it under the terms of the GNU General Public License, version 3, as
+published by the Free Software Foundation. The full text is in LICENSE.
+
+It is distributed in the hope that it is useful, but WITHOUT ANY WARRANTY, and
+without the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE. See the GNU General Public License for the detail.
+
+LICENSE covers code. It does not cover everything in the collection.
+Documentation, figure output and the separate data deposit are CC-BY-4.0.
+reference/2026-07-09/ holds the authors' own unpublished figures and
+manuscript; it is not redistributed and claims no public licence.
+
+The vendored upstream trees keep their own licences and their own copyright
+holders: models/motility_simulation/upstream/ is MIT (Max Planck Unit for the
+Science of Pathogens) and models/cell_economy/upstream/ is GPL-3.0-only
+(M. Jahn). Their LICENSE files are redistributed unchanged.
+
+LICENSES.md holds the full per-directory map and is the authority when any
+other file disagrees.

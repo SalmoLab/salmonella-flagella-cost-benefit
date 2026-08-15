@@ -105,8 +105,8 @@ metadata is in `CITATION.cff`.
 GPL-3.0-only for the code, CC-BY-4.0 for documentation and figures. The
 vendored upstream code keeps its own licences: MIT for the motility simulation
 (Max Planck Unit for the Science of Pathogens) and GPL-3.0-only for the
-cell-economy models (M. Jahn). `LICENSES.md` maps every directory and takes
-precedence.
+cell-economy models (M. Jahn). `COPYRIGHT` names the copyright holders and the
+scope; `LICENSES.md` maps every directory and takes precedence.
 
 ## Contact
 
