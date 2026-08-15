@@ -23,15 +23,26 @@ not installed by `make bootstrap`.
 
 ## Data
 
-The data are not in this repository. `data/`, `reference/` and `archive/` come
-to 540 MB and are deposited separately. Download the data deposit
-(**[DOI pending]**, see `docs/AVAILABILITY_STATEMENTS.md`) and unpack it so
-that `data/processed/`, `data/external/` and `data/source_data/` sit at the
-repository root. A clone reproduces nothing until you do.
+The data are not in this repository. A clone reproduces nothing until you add
+them. Download the data deposit (**[data DOI pending]**, see
+`docs/AVAILABILITY_STATEMENTS.md`) and unzip it at the repository root, so that
+`data/processed/`, `data/external/` and `data/source_data/` sit there. The
+archive unzips to exactly that layout. It also writes `README.txt` and
+`CHECKSUMS.tsv` beside them; neither collides with a repository file and you
+may delete both.
 
-`data/raw/` and `data/interim/` contain only `.gitkeep`. Raw microscopy and
-tracking files are not part of this collection; each provenance document that
-depends on them says so in its `limitations` field.
+That deposit already carries the six simulated-trajectory tables of
+Supplementary Figure 4. They are published a second time as their own record
+(**[trajectory DOI pending]**), because the manuscript Data Availability
+statement cites them separately. For reproduction you need only the data
+deposit.
+
+`data/raw/` and `data/interim/` hold no data. Raw microscopy and tracking files
+are not part of this collection; each provenance document that depends on them
+says so in its `limitations` field.
+
+`reference/` and `archive/` are frozen internal baselines. They are not
+deposited, and no panel reads them.
 
 ## Usage
 
@@ -42,6 +53,7 @@ depends on them says so in its `limitations` field.
 | `make reproduce-available` | Run every panel with a registered source (~30 min). |
 | `make figure-qa` | Render previews, colour-vision simulations, check font sizes. |
 | `make source-data-available` | Build one Source Data file per figure. |
+| `make data-deposits` | Build the two Zenodo data archives in `build/deposits/`. |
 | `make supplementary-information` | Build the combined Supplementary PDF. |
 | `make audit` | Cross-check registries, outputs and provenance. |
 | `make test` | Run the test suite. |
@@ -96,8 +108,11 @@ motility simulation, is in `docs/revision_2026-08-12/`.
 ## Citation
 
 Cite the manuscript, and this repository through its Zenodo DOI
-10.5281/zenodo.21950613, which always resolves to the current version. Machine-readable
-metadata is in `CITATION.cff`.
+10.5281/zenodo.21950613, which always resolves to the current version.
+
+To cite the exact code that produced the published figures, use the version DOI
+of the release instead: 10.5281/zenodo.21950614 (v1.0.0). A later version may
+not reproduce them. Machine-readable metadata is in `CITATION.cff`.
 
 ## Licence
 

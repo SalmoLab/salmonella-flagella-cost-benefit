@@ -6,12 +6,15 @@ statement and must not contain invented accessions or DOIs.
 ## Planned access routes
 
 - Mass-spectrometry proteomics: PRIDE/ProteomeXchange accession — **pending**.
-- Other raw and processed source data: stable DOI-bearing repository — **pending**.
-- Supplementary Figure 4 simulated trajectories: the same DOI-bearing
-  repository. The bundle is built and checksummed; only the DOI is
-  **pending**. See [the deposit section](#supplementary-figure-4-trajectory-deposit).
-- Canonical code and workflow release: versioned repository plus archived DOI —
-  **pending**.
+- Other processed and source data: Zenodo, direct upload. The archive is built
+  and checksummed; only the DOI is **pending**. See
+  [the archive section](#the-two-built-data-archives).
+- Supplementary Figure 4 simulated trajectories: a second Zenodo record, direct
+  upload. The bundle is built and checksummed; only the DOI is **pending**. See
+  [the deposit section](#supplementary-figure-4-trajectory-deposit).
+- Canonical code and workflow release: done. GitHub release `v1.0.0` of
+  `SalmoLab/salmonella-flagella-cost-benefit`, archived at Zenodo under version
+  DOI **10.5281/zenodo.21950614**; concept DOI **10.5281/zenodo.21950613**.
 - Microscopy raw data: repository/location and size assessment — **pending**.
 - External cell-economy model: exact commit, licence and archival permission —
   **pending collaborator package**.
@@ -22,6 +25,52 @@ statement and must not contain invented accessions or DOIs.
   the delivery rather than from the public repository. Confirm the citable URL,
   commit and licence against the public repository, and agree an archival DOI —
   **pending**.
+
+## The two built data archives
+
+`make data-deposits` writes both Zenodo uploads to `build/deposits/`. Both are
+byte-reproducible; a rebuild gives the same sha256.
+
+| Archive | Bytes | sha256 |
+|---|---|---|
+| `flagella_cost_benefit_data_v1.0.0.zip` | 60,019,267 | `2be09c8830261b0de115823d74cd7e7a25822c9cbd85008fa62e364d53d62126` |
+| `flagella_cost_benefit_S4_trajectories_v1.0.0.zip` | 28,430,263 | `ee8b2b6f41f5080b2ade67fb3fec8a386d3fc5aaa9fdb3bebf97909851fb27ec` |
+
+The data archive holds `data/external/` (39 files), `data/processed/`
+(83 files) and `data/source_data/` (134 files): 256 files, 145.6 MB
+uncompressed. It unzips at the repository root and reproduces every panel that
+has a registered source. All 98 registered `data/` artifacts of
+`config/artifacts.csv` resolve from it with the recorded sha256.
+
+Two decisions are recorded here because a reader of the deposit will ask.
+
+**`data/source_data/` is included.** It was populated by migration scripts, so
+it is generated rather than collected. It is nonetheless the registered input of
+eight panel producers — `figure_04_revision`, `figure_05_revision`,
+`figure_06_revision`, `figure_07_revision`, `supplementary_03`,
+`supplementary_04`, `collaborator_science` and the `s2_a` report — and
+`config/artifacts.csv` registers 35 of its files as `partial_source_data`
+inputs. Leaving it out would make the archive smaller and the deposit
+unusable.
+
+**`data/source_data/superseded_2026-07/` is excluded.** Nine directories of
+source data for the July 2026 figure layout, 60 kB. Nothing in the code reads
+them and no figure in the paper plots them. Publishing them beside the paper
+would invite a reader to plot panels the paper withdrew. They stay on disk and
+with the authors, as their own `README.md` intends, and are available on
+request. Size played no part in this: it is 0.04 % of the archive.
+
+`.DS_Store`, `__pycache__` and `.gitkeep` are excluded as machine litter and
+repository placeholders.
+
+**One licence exception.** [`../LICENSES.md`](../LICENSES.md) puts
+`data/external/cell_economy_results/` (28 files, 236 kB) under GPL-3.0-only,
+following the delivering package rather than the deposit. A Zenodo record holds
+one licence, so the record licence is CC-BY-4.0 and the archive `README.txt`
+names the exception. Confirm this before publishing.
+
+The metadata for both Zenodo records is in
+[`revision_2026-08-12/zenodo_data_deposits.md`](revision_2026-08-12/zenodo_data_deposits.md).
 
 ## Source Data files
 
@@ -53,9 +102,13 @@ time step: 26 cells × 8001 steps at a 0.0025 s time step over 20 s. The bundle
 also carries `README.txt` and `MANIFEST.tsv`, which list the sha256, the seeds
 and the exact regeneration command of every table.
 
-**Where it will live.** The DOI-bearing repository, **[repository and DOI
-pending]**. Do not invent an accession. The build writes the same bundle to
-`build/source_data/deposit/Supplementary_Figure_4_trajectories/`.
+**Where it will live.** Its own Zenodo record, **[trajectory DOI pending]**. Do
+not invent an accession. `make source-data-available` writes the bundle to
+`build/source_data/deposit/Supplementary_Figure_4_trajectories/`, and
+`make data-deposits` packages it unchanged, adding a deposit-level `README.txt`
+and a `CHECKSUMS.tsv`. The data archive carries a byte-identical copy of the six
+tables, so a reader who wants to reproduce the panel needs only that one
+download.
 
 **Why it is deposited rather than submitted.** The tables are raw model output,
 not measurement. No reviewer will re-derive a figure value by hand from 208,026
@@ -80,23 +133,31 @@ it, and lists the sha256 of every deposited table.
 
 ## Draft manuscript sections
 
-### Data Availability
+The submission-ready wording now lives in
+[`AVAILABILITY_STATEMENTS.md`](AVAILABILITY_STATEMENTS.md). Only the open items
+stay here.
 
-The raw mass-spectrometry proteomics data and associated identification and
-quantification files will be deposited in the ProteomeXchange Consortium through
-the PRIDE partner repository under accession **[PXD pending]**. Processed data,
-figure source-data tables, microscopy source material and associated metadata will
-be deposited under **[repository and DOI pending]**. Repository records and this
-statement must be updated together before submission.
+### Data Availability — still open
 
-### Code Availability
+- The PRIDE/ProteomeXchange accession, **[PXD pending]**. Kathirvel Alagesan
+  acts.
+- The two Zenodo data DOIs, **[data DOI pending]** and
+  **[trajectory DOI pending]**. Both archives are built and checksummed. Marc
+  Erhardt uploads.
+- Microscopy raw data have no repository. If they stay undeposited, the
+  statement needs one sentence naming what the corresponding author can supply,
+  and why.
 
-The versioned analysis, simulation and figure-generation code required to
-reproduce the manuscript results will be available from **[repository pending]**
-and archived under **[DOI pending]**. The release will include a Python 3.12
-environment lock, workflow definition, model parameters, random seeds and exact
-reproduction commands. The cell-economy model source and licence remain pending
-receipt and verification of the final collaborator package.
+### Code Availability — settled
+
+The code is released and archived: GitHub release `v1.0.0` of
+`SalmoLab/salmonella-flagella-cost-benefit`, version DOI
+**10.5281/zenodo.21950614**, concept DOI **10.5281/zenodo.21950613**. The
+statement cites the version DOI, because the concept DOI resolves to whatever
+version is newest.
+
+One item stays open: the motility-simulation DOI, **[motility DOI pending]**,
+which depends on Michael Jahn making a GitHub release.
 
 ## Release gate
 

@@ -18,11 +18,18 @@ __pycache__/
 
 # Regenerable build outputs (163 MB). Every figure, panel, statistic and
 # Source Data table here is reproduced by `make reproduce-available`.
-build/
+/build/
 
 # Large static inputs and frozen baselines, versioned outside git.
 # These are NOT regenerable; they are backed up separately and are read-only
-# for the build. Track them with git-lfs or a data repository if needed.
-data/
-reference/
-archive/
+# for the build. `data/` is published as a Zenodo deposit; see README.md.
+#
+# The leading slash matters. Without it, `data/` also matched
+# `models/motility_simulation/upstream/data/`, so a clone lost the vendored
+# simulation's own `config.yml` and `motility_summary_parameters.csv`, and
+# Supplementary Figures 4 and 5 could not build from a clone. The upstream
+# `CHECKSUMS.sha256` lists both files, so the tree was incomplete against its
+# own record. Anchored on 15 August 2026.
+/data/
+/reference/
+/archive/

@@ -1,0 +1,36 @@
+# Simulation configuration for salmonella_motility_simulation
+# All physical quantities use SI-derived units as indicated by the suffix:
+#   _um   = micrometres
+#   _s    = seconds
+#   _um_s = micrometres per second
+#   _rad  = radians
+#   _um2_s = micrometres squared per second
+
+# Cell state identifiers (integer flags used internally)
+states:
+  run: 0
+  reorient: 1
+  stalled: 2
+  non_motile: 3
+
+# Simulation domain and timing
+simulation:
+  box_width_um: 148.0
+  box_height_um: 96.0
+  dt_s: 0.05
+  track_duration_s: 20.0
+  n_cells: 26
+  base_seed: 17
+
+# Obstacle field (agarose condition only)
+obstacles:
+  count: 58
+  radius_range_um: [2.5, 5.2]
+  clearance_um: 1.7
+
+# Internal noise and contact-interaction scaling factors
+noise:
+  run_translational_scale: 0.12
+  reorientation_diffusion_scale: 0.40
+  stall_slide_fraction: 0.28
+  stall_rotational_diffusion_scale: 1.8

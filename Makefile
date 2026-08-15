@@ -6,7 +6,7 @@ VENV_PYTHON := $(PROJECT_ROOT)/.venv/bin/python
 SNAKEFILE := $(PROJECT_ROOT)/workflow/Snakefile
 export PYTHONPATH := $(PROJECT_ROOT)/src
 
-.PHONY: bootstrap inventory organize reproduce-available reproduce audit source-data-available figure-qa supplementary-information software-versions clean-room clean test
+.PHONY: bootstrap inventory organize reproduce-available reproduce audit source-data-available data-deposits figure-qa supplementary-information software-versions clean-room clean test
 
 bootstrap:
 	$(PROJECT_ROOT)/scripts/bootstrap_environment.sh
@@ -40,6 +40,10 @@ audit:
 source-data-available:
 	@test -x $(VENV_PYTHON) || { echo "Environment missing; run 'make bootstrap' first." >&2; exit 2; }
 	$(VENV_PYTHON) $(PROJECT_ROOT)/tools/build_source_data_workbook.py --root $(PROJECT_ROOT)
+
+data-deposits:
+	@test -x $(VENV_PYTHON) || { echo "Environment missing; run 'make bootstrap' first." >&2; exit 2; }
+	$(VENV_PYTHON) $(PROJECT_ROOT)/tools/build_data_deposits.py --root $(PROJECT_ROOT)
 
 figure-qa:
 	@test -x $(VENV_PYTHON) || { echo "Environment missing; run 'make bootstrap' first." >&2; exit 2; }
