@@ -20,8 +20,8 @@
 #     repository. Every other author has no `orcid` key. Do not guess one:
 #     CFF requires the exact form `https://orcid.org/0000-0000-0000-0000`, and
 #     a wrong identifier points at a different person.
-#   * identifiers / preferred-citation — add the Zenodo DOI and the manuscript
-#     citation once they exist. Templates are at the end of this file.
+#   * preferred-citation — add the manuscript citation once it exists.
+#     A template is at the end of this file.
 
 cff-version: 1.2.0
 message: >-
@@ -119,18 +119,16 @@ keywords:
   - figure reproduction
   - Snakemake
 
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21950613
+    description: Concept DOI. It always resolves to the newest version.
+  - type: doi
+    value: 10.5281/zenodo.21950614
+    description: DOI of version 1.0.0.
+
 # --------------------------------------------------------------------------
 # Templates. Paste them above this block and fill the values in.
-#
-# Add the Zenodo DOI after the first release is minted:
-#
-# identifiers:
-#   - type: doi
-#     value: 10.5281/zenodo.XXXXXXX
-#     description: Concept DOI. It always resolves to the newest version.
-#   - type: doi
-#     value: 10.5281/zenodo.YYYYYYY
-#     description: DOI of version 1.0.0.
 #
 # Add the manuscript once it has a journal, a year and a DOI:
 #

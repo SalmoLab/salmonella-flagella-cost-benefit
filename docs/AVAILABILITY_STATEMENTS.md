@@ -17,7 +17,7 @@ working record wins and this file is wrong.
 | 1 | Mass-spectrometry proteomics: raw files, identification and quantification output | ProteomeXchange, through the PRIDE partner repository | Kathirvel Alagesan | **[PXD pending]** |
 | 2 | Supplementary Figure 4 simulated-trajectory bundle, plus the processed input tables and figure source data | Zenodo | this group | **[data DOI pending]** |
 | 3 | Motility simulation source code | Zenodo, through a GitHub release of `MPUSP/salmonella-motility-simulation` | Michael Jahn | **[motility DOI pending]** |
-| 4 | This analysis and figure collection | Zenodo, through a GitHub release | Marc Erhardt | **[code DOI pending]** |
+| 4 | This analysis and figure collection | Zenodo, through a GitHub release | Marc Erhardt | **10.5281/zenodo.21950613** |
 
 Deposits 3 and 4 are separate records. The motility simulation is a third-party
 MIT code base with its own authorship; it is cited, not absorbed.
@@ -60,7 +60,7 @@ MIT code base with its own authorship; it is cited, not absorbed.
 > The analysis, simulation and figure-generation code that reproduces the
 > results of this study is available at
 > `https://github.com/`**SalmoLab/salmonella-flagella-cost-benefit** and is archived at Zenodo under
-> **[code DOI pending]**. The release contains the pinned Python 3.12
+> **10.5281/zenodo.21950613**. The release contains the pinned Python 3.12
 > environment, the workflow definition, the panel registry, the model
 > parameters, the random seeds and the exact reproduction commands. The
 > coarse-grained cell-economy model of Jahn et al. is included as an unmodified

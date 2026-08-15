@@ -1,8 +1,6 @@
 # Analysis and figure code: the cost-benefit trade-off of peritrichous flagellation in bacteria
 
-<!-- Uncomment after the first Zenodo release and fill in the DOI.
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
--->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21950613.svg)](https://doi.org/10.5281/zenodo.21950613)
 
 Code that produces the figures of Giralt-Zúñiga et al., "The cost-benefit
 trade-off of peritrichous flagellation in bacteria": seven main figures, five
@@ -97,7 +95,8 @@ motility simulation, is in `docs/revision_2026-08-12/`.
 
 ## Citation
 
-Cite the manuscript, and this repository through its Zenodo DOI. Machine-readable
+Cite the manuscript, and this repository through its Zenodo DOI
+10.5281/zenodo.21950613, which always resolves to the current version. Machine-readable
 metadata is in `CITATION.cff`.
 
 ## Licence
